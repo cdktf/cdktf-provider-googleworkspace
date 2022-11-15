@@ -278,6 +278,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -310,6 +312,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.isTerraformElement"></a>
+
+```typescript
+import { chromePolicy } from '@cdktf/provider-googleworkspace'
+
+chromePolicy.ChromePolicy.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.isTerraformResource"></a>
+
+```typescript
+import { chromePolicy } from '@cdktf/provider-googleworkspace'
+
+chromePolicy.ChromePolicy.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -823,6 +853,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -855,6 +887,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceChromePolicySchema } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceChromePolicySchema } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1394,6 +1454,8 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceDomain.DataGoogleworkspaceDomain.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceDomain.DataGoogleworkspaceDomain.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceDomain.DataGoogleworkspaceDomain.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -1426,6 +1488,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceDomain.DataGoogleworkspaceDomain.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceDomain } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceDomain.DataGoogleworkspaceDomain.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceDomain.DataGoogleworkspaceDomain.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceDomain.DataGoogleworkspaceDomain.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceDomain } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceDomain.DataGoogleworkspaceDomain.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceDomain.DataGoogleworkspaceDomain.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1932,6 +2022,8 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceDomainAlias.DataGoogleworkspaceDomainAlias.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceDomainAlias.DataGoogleworkspaceDomainAlias.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceDomainAlias.DataGoogleworkspaceDomainAlias.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -1964,6 +2056,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceDomainAlias.DataGoogleworkspaceDomainAlias.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceDomainAlias } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceDomainAlias.DataGoogleworkspaceDomainAlias.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceDomainAlias.DataGoogleworkspaceDomainAlias.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceDomainAlias.DataGoogleworkspaceDomainAlias.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceDomainAlias } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceDomainAlias.DataGoogleworkspaceDomainAlias.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceDomainAlias.DataGoogleworkspaceDomainAlias.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2473,6 +2593,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroup.DataGoogleworkspaceGroup.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroup.DataGoogleworkspaceGroup.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroup.DataGoogleworkspaceGroup.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -2505,6 +2627,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroup.DataGoogleworkspaceGroup.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceGroup } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceGroup.DataGoogleworkspaceGroup.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroup.DataGoogleworkspaceGroup.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroup.DataGoogleworkspaceGroup.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceGroup } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceGroup.DataGoogleworkspaceGroup.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroup.DataGoogleworkspaceGroup.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3058,6 +3208,8 @@ public resetMemberId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMember.DataGoogleworkspaceGroupMember.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMember.DataGoogleworkspaceGroupMember.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMember.DataGoogleworkspaceGroupMember.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -3090,6 +3242,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMember.DataGoogleworkspaceGroupMember.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceGroupMember } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceGroupMember.DataGoogleworkspaceGroupMember.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMember.DataGoogleworkspaceGroupMember.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMember.DataGoogleworkspaceGroupMember.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceGroupMember } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceGroupMember.DataGoogleworkspaceGroupMember.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMember.DataGoogleworkspaceGroupMember.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3647,6 +3827,8 @@ public resetIncludeDerivedMembership(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMembers.DataGoogleworkspaceGroupMembers.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMembers.DataGoogleworkspaceGroupMembers.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMembers.DataGoogleworkspaceGroupMembers.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -3679,6 +3861,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMembers.DataGoogleworkspaceGroupMembers.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceGroupMembers } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceGroupMembers.DataGoogleworkspaceGroupMembers.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMembers.DataGoogleworkspaceGroupMembers.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMembers.DataGoogleworkspaceGroupMembers.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceGroupMembers } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceGroupMembers.DataGoogleworkspaceGroupMembers.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupMembers.DataGoogleworkspaceGroupMembers.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4181,6 +4391,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -4213,6 +4425,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceGroups } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceGroups } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4664,6 +4904,8 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -4696,6 +4938,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceGroupSettings } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceGroupSettings } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -5480,6 +5750,8 @@ public resetOrgUnitPath(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceOrgUnit.DataGoogleworkspaceOrgUnit.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceOrgUnit.DataGoogleworkspaceOrgUnit.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceOrgUnit.DataGoogleworkspaceOrgUnit.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -5512,6 +5784,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceOrgUnit.DataGoogleworkspaceOrgUnit.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceOrgUnit } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceOrgUnit.DataGoogleworkspaceOrgUnit.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceOrgUnit.DataGoogleworkspaceOrgUnit.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceOrgUnit.DataGoogleworkspaceOrgUnit.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceOrgUnit } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceOrgUnit.DataGoogleworkspaceOrgUnit.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceOrgUnit.DataGoogleworkspaceOrgUnit.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6058,6 +6358,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspacePrivileges.DataGoogleworkspacePrivileges.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspacePrivileges.DataGoogleworkspacePrivileges.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspacePrivileges.DataGoogleworkspacePrivileges.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -6090,6 +6392,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspacePrivileges.DataGoogleworkspacePrivileges.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspacePrivileges } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspacePrivileges.DataGoogleworkspacePrivileges.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspacePrivileges.DataGoogleworkspacePrivileges.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspacePrivileges.DataGoogleworkspacePrivileges.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspacePrivileges } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspacePrivileges.DataGoogleworkspacePrivileges.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspacePrivileges.DataGoogleworkspacePrivileges.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6552,6 +6882,8 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -6584,6 +6916,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceRole } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceRole } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -7104,6 +7464,8 @@ public resetSchemaName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceSchema.DataGoogleworkspaceSchema.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceSchema.DataGoogleworkspaceSchema.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceSchema.DataGoogleworkspaceSchema.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -7136,6 +7498,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceSchema.DataGoogleworkspaceSchema.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceSchema } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceSchema.DataGoogleworkspaceSchema.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceSchema.DataGoogleworkspaceSchema.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceSchema.DataGoogleworkspaceSchema.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceSchema } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceSchema.DataGoogleworkspaceSchema.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceSchema.DataGoogleworkspaceSchema.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -7656,6 +8046,8 @@ public resetPrimaryEmail(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUser.DataGoogleworkspaceUser.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUser.DataGoogleworkspaceUser.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUser.DataGoogleworkspaceUser.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -7688,6 +8080,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUser.DataGoogleworkspaceUser.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceUser } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceUser.DataGoogleworkspaceUser.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUser.DataGoogleworkspaceUser.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUser.DataGoogleworkspaceUser.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceUser } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceUser.DataGoogleworkspaceUser.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUser.DataGoogleworkspaceUser.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8608,6 +9028,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -8640,6 +9062,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.isTerraformElement"></a>
+
+```typescript
+import { dataGoogleworkspaceUsers } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.isTerraformDataSource"></a>
+
+```typescript
+import { dataGoogleworkspaceUsers } from '@cdktf/provider-googleworkspace'
+
+dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -9091,6 +9541,8 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.domain.Domain.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.domain.Domain.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.domain.Domain.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -9123,6 +9575,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.domain.Domain.isTerraformElement"></a>
+
+```typescript
+import { domain } from '@cdktf/provider-googleworkspace'
+
+domain.Domain.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.domain.Domain.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.domain.Domain.isTerraformResource"></a>
+
+```typescript
+import { domain } from '@cdktf/provider-googleworkspace'
+
+domain.Domain.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.domain.Domain.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -9658,6 +10138,8 @@ public resetParentDomainName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -9690,6 +10172,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isTerraformElement"></a>
+
+```typescript
+import { domainAlias } from '@cdktf/provider-googleworkspace'
+
+domainAlias.DomainAlias.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isTerraformResource"></a>
+
+```typescript
+import { domainAlias } from '@cdktf/provider-googleworkspace'
+
+domainAlias.DomainAlias.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10273,6 +10783,8 @@ public resetTreatAsAlias(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -10305,6 +10817,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.isTerraformElement"></a>
+
+```typescript
+import { gmailSendAsAlias } from '@cdktf/provider-googleworkspace'
+
+gmailSendAsAlias.GmailSendAsAlias.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.isTerraformResource"></a>
+
+```typescript
+import { gmailSendAsAlias } from '@cdktf/provider-googleworkspace'
+
+gmailSendAsAlias.GmailSendAsAlias.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10873,6 +11413,8 @@ public resetServiceAccount(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
 
 ---
 
@@ -10905,6 +11447,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformElement"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-googleworkspace'
+
+provider.GoogleworkspaceProvider.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformProvider"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-googleworkspace'
+
+provider.GoogleworkspaceProvider.isTerraformProvider(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -11474,6 +12044,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.group.Group.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.group.Group.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.group.Group.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -11506,6 +12078,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.group.Group.isTerraformElement"></a>
+
+```typescript
+import { group } from '@cdktf/provider-googleworkspace'
+
+group.Group.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.group.Group.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.group.Group.isTerraformResource"></a>
+
+```typescript
+import { group } from '@cdktf/provider-googleworkspace'
+
+group.Group.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.group.Group.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -12152,6 +12752,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -12184,6 +12786,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.isTerraformElement"></a>
+
+```typescript
+import { groupMember } from '@cdktf/provider-googleworkspace'
+
+groupMember.GroupMember.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.isTerraformResource"></a>
+
+```typescript
+import { groupMember } from '@cdktf/provider-googleworkspace'
+
+groupMember.GroupMember.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -12820,6 +13450,8 @@ public resetMembers(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembers.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembers.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembers.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -12852,6 +13484,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.groupMembers.GroupMembers.isTerraformElement"></a>
+
+```typescript
+import { groupMembers } from '@cdktf/provider-googleworkspace'
+
+groupMembers.GroupMembers.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.groupMembers.GroupMembers.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.groupMembers.GroupMembers.isTerraformResource"></a>
+
+```typescript
+import { groupMembers } from '@cdktf/provider-googleworkspace'
+
+groupMembers.GroupMembers.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.groupMembers.GroupMembers.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -13560,6 +14220,8 @@ public resetWhoCanViewMembership(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -13592,6 +14254,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.isTerraformElement"></a>
+
+```typescript
+import { groupSettings } from '@cdktf/provider-googleworkspace'
+
+groupSettings.GroupSettings.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.isTerraformResource"></a>
+
+```typescript
+import { groupSettings } from '@cdktf/provider-googleworkspace'
+
+groupSettings.GroupSettings.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -14720,6 +15410,8 @@ public resetParentOrgUnitPath(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.orgUnit.OrgUnit.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.orgUnit.OrgUnit.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.orgUnit.OrgUnit.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -14752,6 +15444,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.orgUnit.OrgUnit.isTerraformElement"></a>
+
+```typescript
+import { orgUnit } from '@cdktf/provider-googleworkspace'
+
+orgUnit.OrgUnit.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.orgUnit.OrgUnit.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.orgUnit.OrgUnit.isTerraformResource"></a>
+
+```typescript
+import { orgUnit } from '@cdktf/provider-googleworkspace'
+
+orgUnit.OrgUnit.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.orgUnit.OrgUnit.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15366,6 +16086,8 @@ public resetDescription(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.role.Role.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.role.Role.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.role.Role.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -15398,6 +16120,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.role.Role.isTerraformElement"></a>
+
+```typescript
+import { role } from '@cdktf/provider-googleworkspace'
+
+role.Role.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.role.Role.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.role.Role.isTerraformResource"></a>
+
+```typescript
+import { role } from '@cdktf/provider-googleworkspace'
+
+role.Role.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.role.Role.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15962,6 +16712,8 @@ public resetScopeType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -15994,6 +16746,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.isTerraformElement"></a>
+
+```typescript
+import { roleAssignment } from '@cdktf/provider-googleworkspace'
+
+roleAssignment.RoleAssignment.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.isTerraformResource"></a>
+
+```typescript
+import { roleAssignment } from '@cdktf/provider-googleworkspace'
+
+roleAssignment.RoleAssignment.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -16584,6 +17364,8 @@ public resetTimeouts(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -16616,6 +17398,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.schema.Schema.isTerraformElement"></a>
+
+```typescript
+import { schema } from '@cdktf/provider-googleworkspace'
+
+schema.Schema.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.schema.Schema.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.schema.Schema.isTerraformResource"></a>
+
+```typescript
+import { schema } from '@cdktf/provider-googleworkspace'
+
+schema.Schema.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.schema.Schema.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -17574,6 +18384,8 @@ public resetWebsites(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-googleworkspace.user.User.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.User.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -17606,6 +18418,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-googleworkspace.user.User.isTerraformElement"></a>
+
+```typescript
+import { user } from '@cdktf/provider-googleworkspace'
+
+user.User.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.user.User.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-googleworkspace.user.User.isTerraformResource"></a>
+
+```typescript
+import { user } from '@cdktf/provider-googleworkspace'
+
+user.User.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.user.User.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
