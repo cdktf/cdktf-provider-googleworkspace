@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/googleworkspace goog
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 provider.NewGoogleworkspaceProvider(scope Construct, id *string, config GoogleworkspaceProviderConfig) GoogleworkspaceProvider
 ```
@@ -185,7 +185,7 @@ func ResetServiceAccount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 provider.GoogleworkspaceProvider_IsConstruct(x interface{}) *bool
 ```
@@ -217,7 +217,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 provider.GoogleworkspaceProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -231,7 +231,7 @@ provider.GoogleworkspaceProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 provider.GoogleworkspaceProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 &provider.GoogleworkspaceProviderConfig {
 	AccessToken: *string,
