@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/gr
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/datagoogleworkspacegroups"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroups"
 
 datagoogleworkspacegroups.NewDataGoogleworkspaceGroups(scope Construct, id *string, config DataGoogleworkspaceGroupsConfig) DataGoogleworkspaceGroups
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/datagoogleworkspacegroups"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroups"
 
 datagoogleworkspacegroups.DataGoogleworkspaceGroups_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/datagoogleworkspacegroups"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroups"
 
 datagoogleworkspacegroups.DataGoogleworkspaceGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagoogleworkspacegroups.DataGoogleworkspaceGroups_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/datagoogleworkspacegroups"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroups"
 
 datagoogleworkspacegroups.DataGoogleworkspaceGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/datagoogleworkspacegroups"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroups"
 
 &datagoogleworkspacegroups.DataGoogleworkspaceGroupsConfig {
 	Connection: interface{},
@@ -648,7 +648,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/datagoogleworkspacegroups"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroups"
 
 &datagoogleworkspacegroups.DataGoogleworkspaceGroupsGroups {
 
@@ -663,7 +663,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/da
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/datagoogleworkspacegroups"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroups"
 
 datagoogleworkspacegroups.NewDataGoogleworkspaceGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleworkspaceGroupsGroupsList
 ```
@@ -795,7 +795,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroups.DataGoogleworkspaceGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v3/datagoogleworkspacegroups"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroups"
 
 datagoogleworkspacegroups.NewDataGoogleworkspaceGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleworkspaceGroupsGroupsOutputReference
 ```
