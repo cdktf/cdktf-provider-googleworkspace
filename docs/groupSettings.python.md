@@ -1,3 +1,7 @@
+# `googleworkspace_group_settings`
+
+Refer to the Terraform Registory for docs: [`googleworkspace_group_settings`](https://www.terraform.io/docs/providers/googleworkspace/r/group_settings).
+
 # `groupSettings` Submodule <a name="`groupSettings` Submodule" id="@cdktf/provider-googleworkspace.groupSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

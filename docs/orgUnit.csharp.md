@@ -1,3 +1,7 @@
+# `googleworkspace_org_unit`
+
+Refer to the Terraform Registory for docs: [`googleworkspace_org_unit`](https://www.terraform.io/docs/providers/googleworkspace/r/org_unit).
+
 # `orgUnit` Submodule <a name="`orgUnit` Submodule" id="@cdktf/provider-googleworkspace.orgUnit"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

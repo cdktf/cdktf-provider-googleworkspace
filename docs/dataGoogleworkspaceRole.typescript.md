@@ -1,3 +1,7 @@
+# `data_googleworkspace_role`
+
+Refer to the Terraform Registory for docs: [`data_googleworkspace_role`](https://www.terraform.io/docs/providers/googleworkspace/d/role).
+
 # `dataGoogleworkspaceRole` Submodule <a name="`dataGoogleworkspaceRole` Submodule" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

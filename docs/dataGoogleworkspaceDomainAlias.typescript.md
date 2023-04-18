@@ -1,3 +1,7 @@
+# `data_googleworkspace_domain_alias`
+
+Refer to the Terraform Registory for docs: [`data_googleworkspace_domain_alias`](https://www.terraform.io/docs/providers/googleworkspace/d/domain_alias).
+
 # `dataGoogleworkspaceDomainAlias` Submodule <a name="`dataGoogleworkspaceDomainAlias` Submodule" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceDomainAlias"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
