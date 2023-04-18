@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/r/domain
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * The domain name of the customer.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/domain#domain_name Domain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain#domain_name Domain#domain_name}
   */
   readonly domainName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/r/domain googleworkspace_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain googleworkspace_domain}
 */
 export class Domain extends cdktf.TerraformResource {
 
@@ -30,7 +30,7 @@ export class Domain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/r/domain googleworkspace_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain googleworkspace_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

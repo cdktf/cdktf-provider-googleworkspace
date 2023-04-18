@@ -1,6 +1,6 @@
 # `googleworkspace_group_settings`
 
-Refer to the Terraform Registory for docs: [`googleworkspace_group_settings`](https://www.terraform.io/docs/providers/googleworkspace/r/group_settings).
+Refer to the Terraform Registory for docs: [`googleworkspace_group_settings`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings).
 
 # `groupSettings` Submodule <a name="`groupSettings` Submodule" id="@cdktf/provider-googleworkspace.groupSettings"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`googleworkspace_group_settings`](ht
 
 ### GroupSettings <a name="GroupSettings" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings googleworkspace_group_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings googleworkspace_group_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer"></a>
 
@@ -19,7 +19,7 @@ groupSettings.GroupSettings(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -61,7 +61,7 @@ groupSettings.GroupSettings(
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -164,7 +164,7 @@ Must be unique amongst siblings in the same scope
 
 The group's email address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#email GroupSettings#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#email GroupSettings#email}
 
 ---
 
@@ -176,7 +176,7 @@ Defaults to `false`.
 
 Identifies whether members external to your organization can join the group. If true, Google Workspace users external to your organization can become members of this group. If false, users not belonging to the organization are not allowed to become members of this group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#allow_external_members GroupSettings#allow_external_members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#allow_external_members GroupSettings#allow_external_members}
 
 ---
 
@@ -188,7 +188,7 @@ Defaults to `true`.
 
 Allows posting from web. If true, allows any member to post to the group forum. If false, Members only use Gmail to communicate with the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#allow_web_posting GroupSettings#allow_web_posting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#allow_web_posting GroupSettings#allow_web_posting}
 
 ---
 
@@ -200,7 +200,7 @@ Defaults to `false`.
 
 Allows the group to be archived only. If true, Group is archived and the group is inactive. New messages to this group are rejected. The older archived messages are browsable and searchable. If true, the `who_can_post_message` property is set to `NONE_CAN_POST`. If reverted from true to false, `who_can_post_message` is set to `ALL_MANAGERS_CAN_POST`. If false, The group is active and can receive messages. When false, updating `who_can_post_message` to `NONE_CAN_POST`, results in an error.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#archive_only GroupSettings#archive_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#archive_only GroupSettings#archive_only}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Set the content of custom footer text. The maximum number of characters is 1,000.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#custom_footer_text GroupSettings#custom_footer_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#custom_footer_text GroupSettings#custom_footer_text}
 
 ---
 
@@ -222,7 +222,7 @@ An email address used when replying to a message if the `reply_to` property is s
 
 This address is defined by an account administrator. When the group's `reply_to` property is set to `REPLY_TO_CUSTOM`, the `custom_reply_to` property holds a custom email address used when replying to a message, the `custom_reply_to` property must have a text value or an error is returned.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#custom_reply_to GroupSettings#custom_reply_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#custom_reply_to GroupSettings#custom_reply_to}
 
 ---
 
@@ -234,7 +234,7 @@ When a message is rejected, this is text for the rejection notification sent to 
 
 By default, this property is empty and has no value in the API's response body. The maximum notification text size is 10,000 characters. Requires `send_message_deny_notification` property to be true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#default_message_deny_notification_text GroupSettings#default_message_deny_notification_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#default_message_deny_notification_text GroupSettings#default_message_deny_notification_text}
 
 ---
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Defaults to `false`. Specifies whether a collaborative inbox will remain turned on for the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#enable_collaborative_inbox GroupSettings#enable_collaborative_inbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#enable_collaborative_inbox GroupSettings#enable_collaborative_inbox}
 
 ---
 
@@ -254,7 +254,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Defaults to `false`. Whether to include custom footer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#include_custom_footer GroupSettings#include_custom_footer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#include_custom_footer GroupSettings#include_custom_footer}
 
 ---
 
@@ -266,7 +266,7 @@ Defaults to `true`.
 
 Enables the group to be included in the Global Address List. If true, the group is included in the Global Address List. If false, it is not included in the Global Address List.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#include_in_global_address_list GroupSettings#include_in_global_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#include_in_global_address_list GroupSettings#include_in_global_address_list}
 
 ---
 
@@ -278,7 +278,7 @@ Defaults to `false`.
 
 Allows the Group contents to be archived. If true, archive messages sent to the group. If false, Do not keep an archive of messages sent to this group. If false, previously archived messages remain in the archive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#is_archived GroupSettings#is_archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#is_archived GroupSettings#is_archived}
 
 ---
 
@@ -290,7 +290,7 @@ Defaults to `false`.
 
 Enables members to post messages as the group. If true, group member can post messages using the group's email address instead of their own email address. Message appear to originate from the group itself. Any message moderation settings on individual users or new members do not apply to posts made on behalf of the group. If false, members can not post in behalf of the group's email address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#members_can_post_as_the_group GroupSettings#members_can_post_as_the_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#members_can_post_as_the_group GroupSettings#members_can_post_as_the_group}
 
 ---
 
@@ -308,7 +308,7 @@ Moderation level of incoming messages. Possible values are:
 * `MODERATE_NONE`: No moderator approval is required. Messages are delivered directly to the group.
   Note: When the `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the `message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam.When `member_can_post_as_the_group` is true, any message moderation settings on individual users or new members will not apply to posts made on behalf of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#message_moderation_level GroupSettings#message_moderation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#message_moderation_level GroupSettings#message_moderation_level}
 
 ---
 
@@ -320,7 +320,7 @@ The primary language for group.
 
 For a group's primary language use the language tags from the Google Workspace languages found at Google Workspace Email Settings API Email Language Tags.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#primary_language GroupSettings#primary_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#primary_language GroupSettings#primary_language}
 
 ---
 
@@ -339,7 +339,7 @@ Specifies who receives the default reply. Possible values are:
 * `REPLY_TO_IGNORE`: Group users individually decide where the message reply is sent.
 * `REPLY_TO_MANAGERS`: This reply message is sent to the group's managers, which includes all managers and the group owner.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#reply_to GroupSettings#reply_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#reply_to GroupSettings#reply_to}
 
 ---
 
@@ -351,7 +351,7 @@ Defaults to `false`.
 
 Allows a member to be notified if the member's message to the group is denied by the group owner. If true, when a message is rejected, send the deny message notification to the message author. The `default_message_deny_notification_text` property is dependent on the `send_message_deny_notification` property being true. If false, when a message is rejected, no notification is sent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#send_message_deny_notification GroupSettings#send_message_deny_notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#send_message_deny_notification GroupSettings#send_message_deny_notification}
 
 ---
 
@@ -368,7 +368,7 @@ Specifies moderation levels for messages detected as spam. Possible values are:
 * `SILENTLY_MODERATE`: Send the message to the moderation queue, but do not send notification to moderators.
 * `REJECT`: Immediately reject the message.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#spam_moderation_level GroupSettings#spam_moderation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#spam_moderation_level GroupSettings#spam_moderation_level}
 
 ---
 
@@ -378,7 +378,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#timeouts GroupSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#timeouts GroupSettings#timeouts}
 
 ---
 
@@ -388,7 +388,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Defaults to `NONE`. Specifies who can moderate metadata. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `MANAGERS_ONLY` - `OWNERS_ONLY` - `NONE`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_assist_content GroupSettings#who_can_assist_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_assist_content GroupSettings#who_can_assist_content}
 
 ---
 
@@ -406,7 +406,7 @@ Permission to contact owner of the group via web UI. Possible values are:
 * `ANYONE_CAN_CONTACT`
 * `ALL_OWNERS_CAN_CONTACT`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_contact_owner GroupSettings#who_can_contact_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_contact_owner GroupSettings#who_can_contact_owner}
 
 ---
 
@@ -422,7 +422,7 @@ Specifies the set of users for whom this group is discoverable. Possible values 
 * `ALL_IN_DOMAIN_CAN_DISCOVER`
 * `ALL_MEMBERS_CAN_DISCOVER`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_discover_group GroupSettings#who_can_discover_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_discover_group GroupSettings#who_can_discover_group}
 
 ---
 
@@ -439,7 +439,7 @@ Permission to join group. Possible values are:
 * `INVITED_CAN_JOIN`: Candidates for membership can be invited to join.
 * `CAN_REQUEST_TO_JOIN`: Non members can request an invitation to join.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_join GroupSettings#who_can_join}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_join GroupSettings#who_can_join}
 
 ---
 
@@ -449,7 +449,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Defaults to `ALL_MEMBERS_CAN_LEAVE`. Permission to leave the group. Possible values are: - `ALL_MANAGERS_CAN_LEAVE` - `ALL_MEMBERS_CAN_LEAVE` - `NONE_CAN_LEAVE`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_leave_group GroupSettings#who_can_leave_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_leave_group GroupSettings#who_can_leave_group}
 
 ---
 
@@ -459,7 +459,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Defaults to `OWNERS_AND_MANAGERS`. Specifies who can moderate content. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_moderate_content GroupSettings#who_can_moderate_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_moderate_content GroupSettings#who_can_moderate_content}
 
 ---
 
@@ -469,7 +469,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Defaults to `OWNERS_AND_MANAGERS`. Specifies who can manage members. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_moderate_members GroupSettings#who_can_moderate_members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_moderate_members GroupSettings#who_can_moderate_members}
 
 ---
 
@@ -489,7 +489,7 @@ Possible values are:
 * `ANYONE_CAN_POST`: Any Internet user who outside your account can access your Google Groups service and post a message.
   Note: When `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the`message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam. Users not belonging to the organization are not allowed to become members of this group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_post_message GroupSettings#who_can_post_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_post_message GroupSettings#who_can_post_message}
 
 ---
 
@@ -507,7 +507,7 @@ Permissions to view group messages. Possible values are:
 * `ALL_MANAGERS_CAN_VIEW`: Any group manager can view this group's messages.
 * `ALL_OWNERS_CAN_VIEW`: The group owners can view this group's messages.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_view_group GroupSettings#who_can_view_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_view_group GroupSettings#who_can_view_group}
 
 ---
 
@@ -524,7 +524,7 @@ Permissions to view membership. Possible values are:
 * `ALL_MANAGERS_CAN_VIEW`: The group managers can view group members list.
 * `ALL_OWNERS_CAN_VIEW`: The group owners can view group members list.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_view_membership GroupSettings#who_can_view_membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_view_membership GroupSettings#who_can_view_membership}
 
 ---
 
@@ -801,7 +801,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#create GroupSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#create GroupSettings#create}.
 
 ---
 
@@ -809,7 +809,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#update GroupSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#update GroupSettings#update}.
 
 ---
 
@@ -1063,7 +1063,7 @@ groupSettings.GroupSettings.is_terraform_resource(
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1217,10 +1217,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1903,7 +1903,7 @@ from cdktf_cdktf_provider_googleworkspace import group_settings
 
 groupSettings.GroupSettingsConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1945,7 +1945,7 @@ groupSettings.GroupSettingsConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1995,10 +1995,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -2062,7 +2062,7 @@ email: str
 
 The group's email address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#email GroupSettings#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#email GroupSettings#email}
 
 ---
 
@@ -2078,7 +2078,7 @@ Defaults to `false`.
 
 Identifies whether members external to your organization can join the group. If true, Google Workspace users external to your organization can become members of this group. If false, users not belonging to the organization are not allowed to become members of this group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#allow_external_members GroupSettings#allow_external_members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#allow_external_members GroupSettings#allow_external_members}
 
 ---
 
@@ -2094,7 +2094,7 @@ Defaults to `true`.
 
 Allows posting from web. If true, allows any member to post to the group forum. If false, Members only use Gmail to communicate with the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#allow_web_posting GroupSettings#allow_web_posting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#allow_web_posting GroupSettings#allow_web_posting}
 
 ---
 
@@ -2110,7 +2110,7 @@ Defaults to `false`.
 
 Allows the group to be archived only. If true, Group is archived and the group is inactive. New messages to this group are rejected. The older archived messages are browsable and searchable. If true, the `who_can_post_message` property is set to `NONE_CAN_POST`. If reverted from true to false, `who_can_post_message` is set to `ALL_MANAGERS_CAN_POST`. If false, The group is active and can receive messages. When false, updating `who_can_post_message` to `NONE_CAN_POST`, results in an error.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#archive_only GroupSettings#archive_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#archive_only GroupSettings#archive_only}
 
 ---
 
@@ -2124,7 +2124,7 @@ custom_footer_text: str
 
 Set the content of custom footer text. The maximum number of characters is 1,000.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#custom_footer_text GroupSettings#custom_footer_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#custom_footer_text GroupSettings#custom_footer_text}
 
 ---
 
@@ -2140,7 +2140,7 @@ An email address used when replying to a message if the `reply_to` property is s
 
 This address is defined by an account administrator. When the group's `reply_to` property is set to `REPLY_TO_CUSTOM`, the `custom_reply_to` property holds a custom email address used when replying to a message, the `custom_reply_to` property must have a text value or an error is returned.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#custom_reply_to GroupSettings#custom_reply_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#custom_reply_to GroupSettings#custom_reply_to}
 
 ---
 
@@ -2156,7 +2156,7 @@ When a message is rejected, this is text for the rejection notification sent to 
 
 By default, this property is empty and has no value in the API's response body. The maximum notification text size is 10,000 characters. Requires `send_message_deny_notification` property to be true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#default_message_deny_notification_text GroupSettings#default_message_deny_notification_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#default_message_deny_notification_text GroupSettings#default_message_deny_notification_text}
 
 ---
 
@@ -2170,7 +2170,7 @@ enable_collaborative_inbox: typing.Union[bool, IResolvable]
 
 Defaults to `false`. Specifies whether a collaborative inbox will remain turned on for the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#enable_collaborative_inbox GroupSettings#enable_collaborative_inbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#enable_collaborative_inbox GroupSettings#enable_collaborative_inbox}
 
 ---
 
@@ -2184,7 +2184,7 @@ include_custom_footer: typing.Union[bool, IResolvable]
 
 Defaults to `false`. Whether to include custom footer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#include_custom_footer GroupSettings#include_custom_footer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#include_custom_footer GroupSettings#include_custom_footer}
 
 ---
 
@@ -2200,7 +2200,7 @@ Defaults to `true`.
 
 Enables the group to be included in the Global Address List. If true, the group is included in the Global Address List. If false, it is not included in the Global Address List.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#include_in_global_address_list GroupSettings#include_in_global_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#include_in_global_address_list GroupSettings#include_in_global_address_list}
 
 ---
 
@@ -2216,7 +2216,7 @@ Defaults to `false`.
 
 Allows the Group contents to be archived. If true, archive messages sent to the group. If false, Do not keep an archive of messages sent to this group. If false, previously archived messages remain in the archive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#is_archived GroupSettings#is_archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#is_archived GroupSettings#is_archived}
 
 ---
 
@@ -2232,7 +2232,7 @@ Defaults to `false`.
 
 Enables members to post messages as the group. If true, group member can post messages using the group's email address instead of their own email address. Message appear to originate from the group itself. Any message moderation settings on individual users or new members do not apply to posts made on behalf of the group. If false, members can not post in behalf of the group's email address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#members_can_post_as_the_group GroupSettings#members_can_post_as_the_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#members_can_post_as_the_group GroupSettings#members_can_post_as_the_group}
 
 ---
 
@@ -2254,7 +2254,7 @@ Moderation level of incoming messages. Possible values are:
 * `MODERATE_NONE`: No moderator approval is required. Messages are delivered directly to the group.
   Note: When the `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the `message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam.When `member_can_post_as_the_group` is true, any message moderation settings on individual users or new members will not apply to posts made on behalf of the group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#message_moderation_level GroupSettings#message_moderation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#message_moderation_level GroupSettings#message_moderation_level}
 
 ---
 
@@ -2270,7 +2270,7 @@ The primary language for group.
 
 For a group's primary language use the language tags from the Google Workspace languages found at Google Workspace Email Settings API Email Language Tags.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#primary_language GroupSettings#primary_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#primary_language GroupSettings#primary_language}
 
 ---
 
@@ -2293,7 +2293,7 @@ Specifies who receives the default reply. Possible values are:
 * `REPLY_TO_IGNORE`: Group users individually decide where the message reply is sent.
 * `REPLY_TO_MANAGERS`: This reply message is sent to the group's managers, which includes all managers and the group owner.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#reply_to GroupSettings#reply_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#reply_to GroupSettings#reply_to}
 
 ---
 
@@ -2309,7 +2309,7 @@ Defaults to `false`.
 
 Allows a member to be notified if the member's message to the group is denied by the group owner. If true, when a message is rejected, send the deny message notification to the message author. The `default_message_deny_notification_text` property is dependent on the `send_message_deny_notification` property being true. If false, when a message is rejected, no notification is sent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#send_message_deny_notification GroupSettings#send_message_deny_notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#send_message_deny_notification GroupSettings#send_message_deny_notification}
 
 ---
 
@@ -2330,7 +2330,7 @@ Specifies moderation levels for messages detected as spam. Possible values are:
 * `SILENTLY_MODERATE`: Send the message to the moderation queue, but do not send notification to moderators.
 * `REJECT`: Immediately reject the message.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#spam_moderation_level GroupSettings#spam_moderation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#spam_moderation_level GroupSettings#spam_moderation_level}
 
 ---
 
@@ -2344,7 +2344,7 @@ timeouts: GroupSettingsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#timeouts GroupSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#timeouts GroupSettings#timeouts}
 
 ---
 
@@ -2358,7 +2358,7 @@ who_can_assist_content: str
 
 Defaults to `NONE`. Specifies who can moderate metadata. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `MANAGERS_ONLY` - `OWNERS_ONLY` - `NONE`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_assist_content GroupSettings#who_can_assist_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_assist_content GroupSettings#who_can_assist_content}
 
 ---
 
@@ -2380,7 +2380,7 @@ Permission to contact owner of the group via web UI. Possible values are:
 * `ANYONE_CAN_CONTACT`
 * `ALL_OWNERS_CAN_CONTACT`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_contact_owner GroupSettings#who_can_contact_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_contact_owner GroupSettings#who_can_contact_owner}
 
 ---
 
@@ -2400,7 +2400,7 @@ Specifies the set of users for whom this group is discoverable. Possible values 
 * `ALL_IN_DOMAIN_CAN_DISCOVER`
 * `ALL_MEMBERS_CAN_DISCOVER`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_discover_group GroupSettings#who_can_discover_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_discover_group GroupSettings#who_can_discover_group}
 
 ---
 
@@ -2421,7 +2421,7 @@ Permission to join group. Possible values are:
 * `INVITED_CAN_JOIN`: Candidates for membership can be invited to join.
 * `CAN_REQUEST_TO_JOIN`: Non members can request an invitation to join.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_join GroupSettings#who_can_join}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_join GroupSettings#who_can_join}
 
 ---
 
@@ -2435,7 +2435,7 @@ who_can_leave_group: str
 
 Defaults to `ALL_MEMBERS_CAN_LEAVE`. Permission to leave the group. Possible values are: - `ALL_MANAGERS_CAN_LEAVE` - `ALL_MEMBERS_CAN_LEAVE` - `NONE_CAN_LEAVE`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_leave_group GroupSettings#who_can_leave_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_leave_group GroupSettings#who_can_leave_group}
 
 ---
 
@@ -2449,7 +2449,7 @@ who_can_moderate_content: str
 
 Defaults to `OWNERS_AND_MANAGERS`. Specifies who can moderate content. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_moderate_content GroupSettings#who_can_moderate_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_moderate_content GroupSettings#who_can_moderate_content}
 
 ---
 
@@ -2463,7 +2463,7 @@ who_can_moderate_members: str
 
 Defaults to `OWNERS_AND_MANAGERS`. Specifies who can manage members. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_moderate_members GroupSettings#who_can_moderate_members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_moderate_members GroupSettings#who_can_moderate_members}
 
 ---
 
@@ -2487,7 +2487,7 @@ Possible values are:
 * `ANYONE_CAN_POST`: Any Internet user who outside your account can access your Google Groups service and post a message.
   Note: When `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the`message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam. Users not belonging to the organization are not allowed to become members of this group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_post_message GroupSettings#who_can_post_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_post_message GroupSettings#who_can_post_message}
 
 ---
 
@@ -2509,7 +2509,7 @@ Permissions to view group messages. Possible values are:
 * `ALL_MANAGERS_CAN_VIEW`: Any group manager can view this group's messages.
 * `ALL_OWNERS_CAN_VIEW`: The group owners can view this group's messages.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_view_group GroupSettings#who_can_view_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_view_group GroupSettings#who_can_view_group}
 
 ---
 
@@ -2530,7 +2530,7 @@ Permissions to view membership. Possible values are:
 * `ALL_MANAGERS_CAN_VIEW`: The group managers can view group members list.
 * `ALL_OWNERS_CAN_VIEW`: The group owners can view group members list.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#who_can_view_membership GroupSettings#who_can_view_membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_view_membership GroupSettings#who_can_view_membership}
 
 ---
 
@@ -2551,8 +2551,8 @@ groupSettings.GroupSettingsTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#create GroupSettings#create}. |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#update GroupSettings#update}. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#create GroupSettings#create}. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#update GroupSettings#update}. |
 
 ---
 
@@ -2564,7 +2564,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#create GroupSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#create GroupSettings#create}.
 
 ---
 
@@ -2576,7 +2576,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_settings#update GroupSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#update GroupSettings#update}.
 
 ---
 

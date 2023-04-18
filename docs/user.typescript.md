@@ -1,6 +1,6 @@
 # `googleworkspace_user`
 
-Refer to the Terraform Registory for docs: [`googleworkspace_user`](https://www.terraform.io/docs/providers/googleworkspace/r/user).
+Refer to the Terraform Registory for docs: [`googleworkspace_user`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-googleworkspace.user"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`googleworkspace_user`](https://www.
 
 ### User <a name="User" id="@cdktf/provider-googleworkspace.user.User"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/r/user googleworkspace_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user googleworkspace_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.User.Initializer"></a>
 
@@ -736,7 +736,7 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.User.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.User.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -903,10 +903,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-googleworkspace.user.User.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1750,7 +1750,7 @@ public readonly type: string;
 
 The address type. Acceptable values: `custom`, `home`, `other`, `work`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -1764,7 +1764,7 @@ public readonly country: string;
 
 Country.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#country User#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#country User#country}
 
 ---
 
@@ -1778,7 +1778,7 @@ public readonly countryCode: string;
 
 The country code. Uses the ISO 3166-1 standard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#country_code User#country_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#country_code User#country_code}
 
 ---
 
@@ -1792,7 +1792,7 @@ public readonly customType: string;
 
 If the address type is custom, this property contains the custom value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -1806,7 +1806,7 @@ public readonly extendedAddress: string;
 
 For extended addresses, such as an address that includes a sub-region.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#extended_address User#extended_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#extended_address User#extended_address}
 
 ---
 
@@ -1820,7 +1820,7 @@ public readonly formatted: string;
 
 A full and unstructured postal address. This is not synced with the structured address fields.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#formatted User#formatted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#formatted User#formatted}
 
 ---
 
@@ -1834,7 +1834,7 @@ public readonly locality: string;
 
 The town or city of the address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#locality User#locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#locality User#locality}
 
 ---
 
@@ -1848,7 +1848,7 @@ public readonly poBox: string;
 
 The post office box, if present.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#po_box User#po_box}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#po_box User#po_box}
 
 ---
 
@@ -1862,7 +1862,7 @@ public readonly postalCode: string;
 
 The ZIP or postal code, if applicable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#postal_code User#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#postal_code User#postal_code}
 
 ---
 
@@ -1876,7 +1876,7 @@ public readonly primary: boolean | IResolvable;
 
 If this is the user's primary address. The addresses list may contain only one primary address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -1890,7 +1890,7 @@ public readonly region: string;
 
 The abbreviated province or state.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#region User#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#region User#region}
 
 ---
 
@@ -1904,7 +1904,7 @@ public readonly sourceIsStructured: boolean | IResolvable;
 
 Indicates if the user-supplied address was formatted. Formatted addresses are not currently supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#source_is_structured User#source_is_structured}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#source_is_structured User#source_is_structured}
 
 ---
 
@@ -1918,7 +1918,7 @@ public readonly streetAddress: string;
 
 The street address, such as 1600 Amphitheatre Parkway. Whitespace within the string is ignored; however, newlines are significant.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#street_address User#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#street_address User#street_address}
 
 ---
 
@@ -1937,7 +1937,7 @@ const userConfig: user.UserConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1988,10 +1988,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-googleworkspace.user.UserConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -2055,7 +2055,7 @@ public readonly name: UserName;
 
 name block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#name User#name}
 
 ---
 
@@ -2069,7 +2069,7 @@ public readonly primaryEmail: string;
 
 The user's primary email address. The primaryEmail must be unique and cannot be an alias of another user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary_email User#primary_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary_email User#primary_email}
 
 ---
 
@@ -2083,7 +2083,7 @@ public readonly addresses: IResolvable | UserAddresses[];
 
 addresses block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#addresses User#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#addresses User#addresses}
 
 ---
 
@@ -2097,7 +2097,7 @@ public readonly aliases: string[];
 
 asps.list of the user's alias email addresses.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#aliases User#aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#aliases User#aliases}
 
 ---
 
@@ -2111,7 +2111,7 @@ public readonly archived: boolean | IResolvable;
 
 Indicates if user is archived.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#archived User#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#archived User#archived}
 
 ---
 
@@ -2127,7 +2127,7 @@ Indicates if the user is forced to change their password at next login.
 
 This setting doesn't apply when the user signs in via a third-party identity provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#change_password_at_next_login User#change_password_at_next_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#change_password_at_next_login User#change_password_at_next_login}
 
 ---
 
@@ -2141,7 +2141,7 @@ public readonly customSchemas: IResolvable | UserCustomSchemas[];
 
 custom_schemas block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_schemas User#custom_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_schemas User#custom_schemas}
 
 ---
 
@@ -2155,7 +2155,7 @@ public readonly emails: IResolvable | UserEmails[];
 
 emails block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#emails User#emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#emails User#emails}
 
 ---
 
@@ -2169,7 +2169,7 @@ public readonly externalIds: IResolvable | UserExternalIds[];
 
 external_ids block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#external_ids User#external_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#external_ids User#external_ids}
 
 ---
 
@@ -2185,7 +2185,7 @@ Stores the hash format of the password property.
 
 We recommend sending the password property value as a base 16 bit hexadecimal-encoded hash value. Set the hashFunction values as either the SHA-1, MD5, or crypt hash format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#hash_function User#hash_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#hash_function User#hash_function}
 
 ---
 
@@ -2199,7 +2199,7 @@ public readonly ims: IResolvable | UserIms[];
 
 ims block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#ims User#ims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#ims User#ims}
 
 ---
 
@@ -2215,7 +2215,7 @@ Defaults to `true`.
 
 Indicates if the user's profile is visible in the Google Workspace global address list when the contact sharing feature is enabled for the domain.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#include_in_global_address_list User#include_in_global_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#include_in_global_address_list User#include_in_global_address_list}
 
 ---
 
@@ -2229,7 +2229,7 @@ public readonly ipAllowlist: boolean | IResolvable;
 
 If true, the user's IP address is added to the allow list.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#ip_allowlist User#ip_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#ip_allowlist User#ip_allowlist}
 
 ---
 
@@ -2243,7 +2243,7 @@ public readonly isAdmin: boolean | IResolvable;
 
 Indicates a user with super admininistrator privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#is_admin User#is_admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#is_admin User#is_admin}
 
 ---
 
@@ -2257,7 +2257,7 @@ public readonly keywords: IResolvable | UserKeywords[];
 
 keywords block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#keywords User#keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#keywords User#keywords}
 
 ---
 
@@ -2271,7 +2271,7 @@ public readonly languages: IResolvable | UserLanguages[];
 
 languages block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#languages User#languages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#languages User#languages}
 
 ---
 
@@ -2285,7 +2285,7 @@ public readonly locations: IResolvable | UserLocations[];
 
 locations block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#locations User#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#locations User#locations}
 
 ---
 
@@ -2299,7 +2299,7 @@ public readonly organizations: IResolvable | UserOrganizations[];
 
 organizations block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#organizations User#organizations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#organizations User#organizations}
 
 ---
 
@@ -2315,7 +2315,7 @@ The full path of the parent organization associated with the user.
 
 If the parent organization is the top-level, it is represented as a forward slash (/).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#org_unit_path User#org_unit_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#org_unit_path User#org_unit_path}
 
 ---
 
@@ -2331,7 +2331,7 @@ Stores the password for the user account.
 
 A password can contain any combination of ASCII characters. A minimum of 8 characters is required. The maximum length is 100 characters. As the API does not return the value of password, this field is write-only, and the value stored in the state will be what is provided in the configuration. The field is required on create and will be empty on import.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#password User#password}
 
 ---
 
@@ -2345,7 +2345,7 @@ public readonly phones: IResolvable | UserPhones[];
 
 phones block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#phones User#phones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#phones User#phones}
 
 ---
 
@@ -2359,7 +2359,7 @@ public readonly posixAccounts: IResolvable | UserPosixAccounts[];
 
 posix_accounts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#posix_accounts User#posix_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#posix_accounts User#posix_accounts}
 
 ---
 
@@ -2373,7 +2373,7 @@ public readonly recoveryEmail: string;
 
 Recovery email of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#recovery_email User#recovery_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#recovery_email User#recovery_email}
 
 ---
 
@@ -2389,7 +2389,7 @@ Recovery phone of the user.
 
 The phone number must be in the E.164 format, starting with the plus sign (+). Example: +16506661212.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#recovery_phone User#recovery_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#recovery_phone User#recovery_phone}
 
 ---
 
@@ -2403,7 +2403,7 @@ public readonly relations: IResolvable | UserRelations[];
 
 relations block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#relations User#relations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#relations User#relations}
 
 ---
 
@@ -2417,7 +2417,7 @@ public readonly sshPublicKeys: IResolvable | UserSshPublicKeys[];
 
 ssh_public_keys block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#ssh_public_keys User#ssh_public_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#ssh_public_keys User#ssh_public_keys}
 
 ---
 
@@ -2431,7 +2431,7 @@ public readonly suspended: boolean | IResolvable;
 
 Indicates if user is suspended.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#suspended User#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#suspended User#suspended}
 
 ---
 
@@ -2445,7 +2445,7 @@ public readonly timeouts: UserTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#timeouts User#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#timeouts User#timeouts}
 
 ---
 
@@ -2459,7 +2459,7 @@ public readonly websites: IResolvable | UserWebsites[];
 
 websites block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#websites User#websites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#websites User#websites}
 
 ---
 
@@ -2492,7 +2492,7 @@ public readonly schemaName: string;
 
 The name of the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#schema_name User#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#schema_name User#schema_name}
 
 ---
 
@@ -2506,7 +2506,7 @@ public readonly schemaValues: {[ key: string ]: string};
 
 JSON encoded map that represents key/value pairs that correspond to the given schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#schema_values User#schema_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#schema_values User#schema_values}
 
 ---
 
@@ -2541,7 +2541,7 @@ public readonly type: string;
 
 The type of the email account. Acceptable values: `custom`, `home`, `other`, `work`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -2557,7 +2557,7 @@ The user's email address.
 
 Also serves as the email ID. This value can be the user's primary email address or an alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#address User#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#address User#address}
 
 ---
 
@@ -2571,7 +2571,7 @@ public readonly customType: string;
 
 If the value of type is custom, this property contains the custom type string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -2585,7 +2585,7 @@ public readonly primary: boolean | IResolvable;
 
 Defaults to `false`. Indicates if this is the user's primary email. Only one entry can be marked as primary.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -2621,7 +2621,7 @@ The type of external ID.
 
 If set to custom, customType must also be set. Acceptable values: `account`, `custom`, `customer`, `login_id`, `network`, `organization`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -2635,7 +2635,7 @@ public readonly value: string;
 
 The value of the ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -2649,7 +2649,7 @@ public readonly customType: string;
 
 If the external ID type is custom, this property contains the custom value and must be set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -2688,7 +2688,7 @@ An IM protocol identifies the IM network.
 
 The value can be a custom network or the standard network. Acceptable values: `aim`, `custom_protocol`, `gtalk`, `icq`, `jabber`, `msn`, `net_meeting`, `qq`, `skype`, `yahoo`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#protocol User#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#protocol User#protocol}
 
 ---
 
@@ -2702,7 +2702,7 @@ public readonly type: string;
 
 Acceptable values: `custom`, `home`, `other`, `work`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -2716,7 +2716,7 @@ public readonly customProtocol: string;
 
 If the protocol value is custom_protocol, this property holds the custom protocol's string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_protocol User#custom_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_protocol User#custom_protocol}
 
 ---
 
@@ -2730,7 +2730,7 @@ public readonly customType: string;
 
 If the IM type is custom, this property holds the custom type string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -2744,7 +2744,7 @@ public readonly im: string;
 
 The user's IM network ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#im User#im}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#im User#im}
 
 ---
 
@@ -2760,7 +2760,7 @@ If this is the user's primary IM.
 
 Only one entry in the IM list can have a value of true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -2796,7 +2796,7 @@ Each entry can have a type which indicates standard type of that entry.
 
 For example, keyword could be of type occupation or outlook. In addition to the standard type, an entry can have a custom type and can give it any name. Such types should have the CUSTOM value as type and also have a customType value. Acceptable values: `custom`, `mission`, `occupation`, `outlook`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -2810,7 +2810,7 @@ public readonly value: string;
 
 Keyword.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -2824,7 +2824,7 @@ public readonly customType: string;
 
 Custom Type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -2860,7 +2860,7 @@ Other language.
 
 A user can provide their own language name if there is no corresponding Google III language code. If this is set, LanguageCode can't be set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_language User#custom_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_language User#custom_language}
 
 ---
 
@@ -2876,7 +2876,7 @@ Defaults to `en`.
 
 Language Code. Should be used for storing Google III LanguageCode string representation for language. Illegal values cause SchemaException.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#language_code User#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#language_code User#language_code}
 
 ---
 
@@ -2892,7 +2892,7 @@ Defaults to `preferred`.
 
 If present, controls whether the specified languageCode is the user's preferred language. Allowed values are `preferred` and `not_preferred`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#preference User#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#preference User#preference}
 
 ---
 
@@ -2930,7 +2930,7 @@ public readonly type: string;
 
 The location type. Acceptable values: `custom`, `default`, `desk`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -2946,7 +2946,7 @@ Textual location.
 
 This is most useful for display purposes to concisely describe the location. For example, Mountain View, CA or Near Seattle.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#area User#area}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#area User#area}
 
 ---
 
@@ -2960,7 +2960,7 @@ public readonly buildingId: string;
 
 Building identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#building_id User#building_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#building_id User#building_id}
 
 ---
 
@@ -2974,7 +2974,7 @@ public readonly customType: string;
 
 If the location type is custom, this property contains the custom value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -2988,7 +2988,7 @@ public readonly deskCode: string;
 
 Most specific textual code of individual desk location.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#desk_code User#desk_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#desk_code User#desk_code}
 
 ---
 
@@ -3002,7 +3002,7 @@ public readonly floorName: string;
 
 Floor name/number.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#floor_name User#floor_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#floor_name User#floor_name}
 
 ---
 
@@ -3018,7 +3018,7 @@ Floor section.
 
 More specific location within the floor. For example, if a floor is divided into sections A, B, and C, this field would identify one of those values.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#floor_section User#floor_section}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#floor_section User#floor_section}
 
 ---
 
@@ -3051,7 +3051,7 @@ public readonly familyName: string;
 
 The user's last name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#family_name User#family_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#family_name User#family_name}
 
 ---
 
@@ -3065,7 +3065,7 @@ public readonly givenName: string;
 
 The user's first name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#given_name User#given_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#given_name User#given_name}
 
 ---
 
@@ -3108,7 +3108,7 @@ public readonly type: string;
 
 The type of organization. Acceptable values: `domain_only`, `school`, `unknown`, `work`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -3122,7 +3122,7 @@ public readonly costCenter: string;
 
 The cost center of the user's organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#cost_center User#cost_center}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#cost_center User#cost_center}
 
 ---
 
@@ -3136,7 +3136,7 @@ public readonly customType: string;
 
 If the value of type is custom, this property contains the custom value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -3150,7 +3150,7 @@ public readonly department: string;
 
 Specifies the department within the organization, such as sales or engineering.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#department User#department}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#department User#department}
 
 ---
 
@@ -3164,7 +3164,7 @@ public readonly description: string;
 
 The description of the organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#description User#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#description User#description}
 
 ---
 
@@ -3178,7 +3178,7 @@ public readonly domain: string;
 
 The domain the organization belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#domain User#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#domain User#domain}
 
 ---
 
@@ -3192,7 +3192,7 @@ public readonly fullTimeEquivalent: number;
 
 The full-time equivalent millipercent within the organization (100000 = 100%).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#full_time_equivalent User#full_time_equivalent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#full_time_equivalent User#full_time_equivalent}
 
 ---
 
@@ -3206,7 +3206,7 @@ public readonly location: string;
 
 The physical location of the organization. This does not need to be a fully qualified address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#location User#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#location User#location}
 
 ---
 
@@ -3220,7 +3220,7 @@ public readonly name: string;
 
 The name of the organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#name User#name}
 
 ---
 
@@ -3234,7 +3234,7 @@ public readonly primary: boolean | IResolvable;
 
 Indicates if this is the user's primary organization. A user may only have one primary organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -3248,7 +3248,7 @@ public readonly symbol: string;
 
 Text string symbol of the organization. For example, the text symbol for Google is GOOG.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#symbol User#symbol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#symbol User#symbol}
 
 ---
 
@@ -3262,7 +3262,7 @@ public readonly title: string;
 
 The user's title within the organization. For example, member or engineer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#title User#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#title User#title}
 
 ---
 
@@ -3299,7 +3299,7 @@ The type of phone number.
 
 Acceptable values: `assistant`, `callback`, `car`, `company_main` , `custom`, `grand_central`, `home`, `home_fax`, `isdn`, `main`, `mobile`, `other`, `other_fax`, `pager`, `radio`, `telex`, `tty_tdd`, `work`, `work_fax`, `work_mobile`, `work_pager`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -3313,7 +3313,7 @@ public readonly value: string;
 
 A human-readable phone number. It may be in any telephone number format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -3327,7 +3327,7 @@ public readonly customType: string;
 
 If the phone number type is custom, this property contains the custom value and must be set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -3341,7 +3341,7 @@ public readonly primary: boolean | IResolvable;
 
 Indicates if this is the user's primary phone number. A user may only have one primary phone number.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -3382,7 +3382,7 @@ public readonly accountId: string;
 
 A POSIX account field identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#account_id User#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#account_id User#account_id}
 
 ---
 
@@ -3396,7 +3396,7 @@ public readonly gecos: string;
 
 The GECOS (user information) for this account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#gecos User#gecos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#gecos User#gecos}
 
 ---
 
@@ -3410,7 +3410,7 @@ public readonly gid: string;
 
 The default group ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#gid User#gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#gid User#gid}
 
 ---
 
@@ -3424,7 +3424,7 @@ public readonly homeDirectory: string;
 
 The path to the home directory for this account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#home_directory User#home_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#home_directory User#home_directory}
 
 ---
 
@@ -3438,7 +3438,7 @@ public readonly operatingSystemType: string;
 
 The operating system type for this account. Acceptable values: `linux`, `unspecified`, `windows`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#operating_system_type User#operating_system_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#operating_system_type User#operating_system_type}
 
 ---
 
@@ -3452,7 +3452,7 @@ public readonly primary: boolean | IResolvable;
 
 If this is user's primary account within the SystemId.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -3466,7 +3466,7 @@ public readonly shell: string;
 
 The path to the login shell for this account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#shell User#shell}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#shell User#shell}
 
 ---
 
@@ -3480,7 +3480,7 @@ public readonly systemId: string;
 
 System identifier for which account Username or Uid apply to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#system_id User#system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#system_id User#system_id}
 
 ---
 
@@ -3494,7 +3494,7 @@ public readonly uid: string;
 
 The POSIX compliant user ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#uid User#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#uid User#uid}
 
 ---
 
@@ -3508,7 +3508,7 @@ public readonly username: string;
 
 The username of the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#username User#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#username User#username}
 
 ---
 
@@ -3544,7 +3544,7 @@ The type of relation.
 
 Acceptable values: `admin_assistant`, `assistant`, `brother`, `child`, `custom`, `domestic_partner`, `dotted_line_manager`, `exec_assistant`, `father`, `friend`, `manager`, `mother`, `parent`, `partner`, `referred_by`, `relative`, `sister`, `spouse`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -3558,7 +3558,7 @@ public readonly value: string;
 
 The name of the person the user is related to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -3572,7 +3572,7 @@ public readonly customType: string;
 
 If the value of type is custom, this property contains the custom type string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -3605,7 +3605,7 @@ public readonly key: string;
 
 An SSH public key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#key User#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#key User#key}
 
 ---
 
@@ -3619,7 +3619,7 @@ public readonly expirationTimeUsec: string;
 
 An expiration time in microseconds since epoch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#expiration_time_usec User#expiration_time_usec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#expiration_time_usec User#expiration_time_usec}
 
 ---
 
@@ -3637,8 +3637,8 @@ const userTimeouts: user.UserTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#create User#create}. |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#update User#update}. |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#create User#create}. |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#update User#update}. |
 
 ---
 
@@ -3650,7 +3650,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#create User#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#create User#create}.
 
 ---
 
@@ -3662,7 +3662,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#update User#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#update User#update}.
 
 ---
 
@@ -3699,7 +3699,7 @@ The type or purpose of the website.
 
 For example, a website could be labeled as home or blog. Alternatively, an entry can have a custom type Custom types must have a customType value. Acceptable values: `app_install_page`, `blog`, `custom`, `ftp` , `home`, `home_page`, `other`, `profile`, `reservations`, `resume`, `work`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -3713,7 +3713,7 @@ public readonly value: string;
 
 The URL of the website.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -3727,7 +3727,7 @@ public readonly customType: string;
 
 The custom type. Only used if the type is custom.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -3741,7 +3741,7 @@ public readonly primary: boolean | IResolvable;
 
 If this is user's primary website or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 

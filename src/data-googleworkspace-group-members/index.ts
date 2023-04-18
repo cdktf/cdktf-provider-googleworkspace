@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/d/group_members
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataGoogleworkspaceGroupMembersConfig extends cdktf.TerraformMe
   /**
   * Identifies the group in the API request. The value can be the group's email address, group alias, or the unique group ID.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/group_members#group_id DataGoogleworkspaceGroupMembers#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_members#group_id DataGoogleworkspaceGroupMembers#group_id}
   */
   readonly groupId: string;
   /**
   * If true, lists indirect group memberships
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/group_members#include_derived_membership DataGoogleworkspaceGroupMembers#include_derived_membership}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_members#include_derived_membership DataGoogleworkspaceGroupMembers#include_derived_membership}
   */
   readonly includeDerivedMembership?: boolean | cdktf.IResolvable;
 }
@@ -111,7 +111,7 @@ export class DataGoogleworkspaceGroupMembersMembersList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/group_members googleworkspace_group_members}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_members googleworkspace_group_members}
 */
 export class DataGoogleworkspaceGroupMembers extends cdktf.TerraformDataSource {
 
@@ -125,7 +125,7 @@ export class DataGoogleworkspaceGroupMembers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/d/group_members googleworkspace_group_members} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_members googleworkspace_group_members} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
