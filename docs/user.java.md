@@ -1,3 +1,7 @@
+# `googleworkspace_user`
+
+Refer to the Terraform Registory for docs: [`googleworkspace_user`](https://www.terraform.io/docs/providers/googleworkspace/r/user).
+
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-googleworkspace.user"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `googleworkspace_role_assignment`
+
+Refer to the Terraform Registory for docs: [`googleworkspace_role_assignment`](https://www.terraform.io/docs/providers/googleworkspace/r/role_assignment).
+
 # `roleAssignment` Submodule <a name="`roleAssignment` Submodule" id="@cdktf/provider-googleworkspace.roleAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

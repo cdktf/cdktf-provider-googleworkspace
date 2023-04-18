@@ -1,3 +1,7 @@
+# `googleworkspace_group`
+
+Refer to the Terraform Registory for docs: [`googleworkspace_group`](https://www.terraform.io/docs/providers/googleworkspace/r/group).
+
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-googleworkspace.group"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

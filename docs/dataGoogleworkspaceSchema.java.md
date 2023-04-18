@@ -1,3 +1,7 @@
+# `data_googleworkspace_schema`
+
+Refer to the Terraform Registory for docs: [`data_googleworkspace_schema`](https://www.terraform.io/docs/providers/googleworkspace/d/schema).
+
 # `dataGoogleworkspaceSchema` Submodule <a name="`dataGoogleworkspaceSchema` Submodule" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceSchema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

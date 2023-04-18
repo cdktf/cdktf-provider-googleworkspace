@@ -1,3 +1,7 @@
+# `googleworkspace_chrome_policy`
+
+Refer to the Terraform Registory for docs: [`googleworkspace_chrome_policy`](https://www.terraform.io/docs/providers/googleworkspace/r/chrome_policy).
+
 # `chromePolicy` Submodule <a name="`chromePolicy` Submodule" id="@cdktf/provider-googleworkspace.chromePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
