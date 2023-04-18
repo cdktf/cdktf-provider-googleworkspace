@@ -1,6 +1,6 @@
 # `googleworkspace_user`
 
-Refer to the Terraform Registory for docs: [`googleworkspace_user`](https://www.terraform.io/docs/providers/googleworkspace/r/user).
+Refer to the Terraform Registory for docs: [`googleworkspace_user`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-googleworkspace.user"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`googleworkspace_user`](https://www.
 
 ### User <a name="User" id="@cdktf/provider-googleworkspace.user.User"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/r/user googleworkspace_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user googleworkspace_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -667,7 +667,7 @@ func ResetWebsites()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -699,7 +699,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -713,7 +713,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -736,7 +736,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.User.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.User.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -903,10 +903,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.user.User.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1715,7 +1715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserAddresses {
 	Type: *string,
@@ -1764,7 +1764,7 @@ Type *string
 
 The address type. Acceptable values: `custom`, `home`, `other`, `work`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -1778,7 +1778,7 @@ Country *string
 
 Country.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#country User#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#country User#country}
 
 ---
 
@@ -1792,7 +1792,7 @@ CountryCode *string
 
 The country code. Uses the ISO 3166-1 standard.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#country_code User#country_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#country_code User#country_code}
 
 ---
 
@@ -1806,7 +1806,7 @@ CustomType *string
 
 If the address type is custom, this property contains the custom value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -1820,7 +1820,7 @@ ExtendedAddress *string
 
 For extended addresses, such as an address that includes a sub-region.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#extended_address User#extended_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#extended_address User#extended_address}
 
 ---
 
@@ -1834,7 +1834,7 @@ Formatted *string
 
 A full and unstructured postal address. This is not synced with the structured address fields.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#formatted User#formatted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#formatted User#formatted}
 
 ---
 
@@ -1848,7 +1848,7 @@ Locality *string
 
 The town or city of the address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#locality User#locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#locality User#locality}
 
 ---
 
@@ -1862,7 +1862,7 @@ PoBox *string
 
 The post office box, if present.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#po_box User#po_box}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#po_box User#po_box}
 
 ---
 
@@ -1876,7 +1876,7 @@ PostalCode *string
 
 The ZIP or postal code, if applicable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#postal_code User#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#postal_code User#postal_code}
 
 ---
 
@@ -1890,7 +1890,7 @@ Primary interface{}
 
 If this is the user's primary address. The addresses list may contain only one primary address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -1904,7 +1904,7 @@ Region *string
 
 The abbreviated province or state.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#region User#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#region User#region}
 
 ---
 
@@ -1918,7 +1918,7 @@ SourceIsStructured interface{}
 
 Indicates if the user-supplied address was formatted. Formatted addresses are not currently supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#source_is_structured User#source_is_structured}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#source_is_structured User#source_is_structured}
 
 ---
 
@@ -1932,7 +1932,7 @@ StreetAddress *string
 
 The street address, such as 1600 Amphitheatre Parkway. Whitespace within the string is ignored; however, newlines are significant.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#street_address User#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#street_address User#street_address}
 
 ---
 
@@ -1941,17 +1941,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Name: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4.user.UserName,
+	Name: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.user.UserName,
 	PrimaryEmail: *string,
 	Addresses: interface{},
 	Aliases: *[]*string,
@@ -1978,7 +1978,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/us
 	Relations: interface{},
 	SshPublicKeys: interface{},
 	Suspended: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4.user.UserTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.user.UserTimeouts,
 	Websites: interface{},
 }
 ```
@@ -1988,7 +1988,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/us
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -2039,10 +2039,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.user.UserConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -2106,7 +2106,7 @@ Name UserName
 
 name block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#name User#name}
 
 ---
 
@@ -2120,7 +2120,7 @@ PrimaryEmail *string
 
 The user's primary email address. The primaryEmail must be unique and cannot be an alias of another user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary_email User#primary_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary_email User#primary_email}
 
 ---
 
@@ -2134,7 +2134,7 @@ Addresses interface{}
 
 addresses block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#addresses User#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#addresses User#addresses}
 
 ---
 
@@ -2148,7 +2148,7 @@ Aliases *[]*string
 
 asps.list of the user's alias email addresses.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#aliases User#aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#aliases User#aliases}
 
 ---
 
@@ -2162,7 +2162,7 @@ Archived interface{}
 
 Indicates if user is archived.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#archived User#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#archived User#archived}
 
 ---
 
@@ -2178,7 +2178,7 @@ Indicates if the user is forced to change their password at next login.
 
 This setting doesn't apply when the user signs in via a third-party identity provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#change_password_at_next_login User#change_password_at_next_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#change_password_at_next_login User#change_password_at_next_login}
 
 ---
 
@@ -2192,7 +2192,7 @@ CustomSchemas interface{}
 
 custom_schemas block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_schemas User#custom_schemas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_schemas User#custom_schemas}
 
 ---
 
@@ -2206,7 +2206,7 @@ Emails interface{}
 
 emails block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#emails User#emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#emails User#emails}
 
 ---
 
@@ -2220,7 +2220,7 @@ ExternalIds interface{}
 
 external_ids block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#external_ids User#external_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#external_ids User#external_ids}
 
 ---
 
@@ -2236,7 +2236,7 @@ Stores the hash format of the password property.
 
 We recommend sending the password property value as a base 16 bit hexadecimal-encoded hash value. Set the hashFunction values as either the SHA-1, MD5, or crypt hash format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#hash_function User#hash_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#hash_function User#hash_function}
 
 ---
 
@@ -2250,7 +2250,7 @@ Ims interface{}
 
 ims block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#ims User#ims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#ims User#ims}
 
 ---
 
@@ -2266,7 +2266,7 @@ Defaults to `true`.
 
 Indicates if the user's profile is visible in the Google Workspace global address list when the contact sharing feature is enabled for the domain.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#include_in_global_address_list User#include_in_global_address_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#include_in_global_address_list User#include_in_global_address_list}
 
 ---
 
@@ -2280,7 +2280,7 @@ IpAllowlist interface{}
 
 If true, the user's IP address is added to the allow list.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#ip_allowlist User#ip_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#ip_allowlist User#ip_allowlist}
 
 ---
 
@@ -2294,7 +2294,7 @@ IsAdmin interface{}
 
 Indicates a user with super admininistrator privileges.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#is_admin User#is_admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#is_admin User#is_admin}
 
 ---
 
@@ -2308,7 +2308,7 @@ Keywords interface{}
 
 keywords block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#keywords User#keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#keywords User#keywords}
 
 ---
 
@@ -2322,7 +2322,7 @@ Languages interface{}
 
 languages block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#languages User#languages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#languages User#languages}
 
 ---
 
@@ -2336,7 +2336,7 @@ Locations interface{}
 
 locations block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#locations User#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#locations User#locations}
 
 ---
 
@@ -2350,7 +2350,7 @@ Organizations interface{}
 
 organizations block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#organizations User#organizations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#organizations User#organizations}
 
 ---
 
@@ -2366,7 +2366,7 @@ The full path of the parent organization associated with the user.
 
 If the parent organization is the top-level, it is represented as a forward slash (/).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#org_unit_path User#org_unit_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#org_unit_path User#org_unit_path}
 
 ---
 
@@ -2382,7 +2382,7 @@ Stores the password for the user account.
 
 A password can contain any combination of ASCII characters. A minimum of 8 characters is required. The maximum length is 100 characters. As the API does not return the value of password, this field is write-only, and the value stored in the state will be what is provided in the configuration. The field is required on create and will be empty on import.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#password User#password}
 
 ---
 
@@ -2396,7 +2396,7 @@ Phones interface{}
 
 phones block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#phones User#phones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#phones User#phones}
 
 ---
 
@@ -2410,7 +2410,7 @@ PosixAccounts interface{}
 
 posix_accounts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#posix_accounts User#posix_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#posix_accounts User#posix_accounts}
 
 ---
 
@@ -2424,7 +2424,7 @@ RecoveryEmail *string
 
 Recovery email of the user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#recovery_email User#recovery_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#recovery_email User#recovery_email}
 
 ---
 
@@ -2440,7 +2440,7 @@ Recovery phone of the user.
 
 The phone number must be in the E.164 format, starting with the plus sign (+). Example: +16506661212.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#recovery_phone User#recovery_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#recovery_phone User#recovery_phone}
 
 ---
 
@@ -2454,7 +2454,7 @@ Relations interface{}
 
 relations block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#relations User#relations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#relations User#relations}
 
 ---
 
@@ -2468,7 +2468,7 @@ SshPublicKeys interface{}
 
 ssh_public_keys block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#ssh_public_keys User#ssh_public_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#ssh_public_keys User#ssh_public_keys}
 
 ---
 
@@ -2482,7 +2482,7 @@ Suspended interface{}
 
 Indicates if user is suspended.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#suspended User#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#suspended User#suspended}
 
 ---
 
@@ -2496,7 +2496,7 @@ Timeouts UserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#timeouts User#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#timeouts User#timeouts}
 
 ---
 
@@ -2510,7 +2510,7 @@ Websites interface{}
 
 websites block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#websites User#websites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#websites User#websites}
 
 ---
 
@@ -2519,7 +2519,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserCustomSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserCustomSchemas {
 	SchemaName: *string,
@@ -2546,7 +2546,7 @@ SchemaName *string
 
 The name of the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#schema_name User#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#schema_name User#schema_name}
 
 ---
 
@@ -2560,7 +2560,7 @@ SchemaValues *map[string]*string
 
 JSON encoded map that represents key/value pairs that correspond to the given schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#schema_values User#schema_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#schema_values User#schema_values}
 
 ---
 
@@ -2569,7 +2569,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserEmails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserEmails {
 	Type: *string,
@@ -2600,7 +2600,7 @@ Type *string
 
 The type of the email account. Acceptable values: `custom`, `home`, `other`, `work`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -2616,7 +2616,7 @@ The user's email address.
 
 Also serves as the email ID. This value can be the user's primary email address or an alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#address User#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#address User#address}
 
 ---
 
@@ -2630,7 +2630,7 @@ CustomType *string
 
 If the value of type is custom, this property contains the custom type string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -2644,7 +2644,7 @@ Primary interface{}
 
 Defaults to `false`. Indicates if this is the user's primary email. Only one entry can be marked as primary.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -2653,7 +2653,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserExternalIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserExternalIds {
 	Type: *string,
@@ -2684,7 +2684,7 @@ The type of external ID.
 
 If set to custom, customType must also be set. Acceptable values: `account`, `custom`, `customer`, `login_id`, `network`, `organization`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -2698,7 +2698,7 @@ Value *string
 
 The value of the ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -2712,7 +2712,7 @@ CustomType *string
 
 If the external ID type is custom, this property contains the custom value and must be set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -2721,7 +2721,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserIms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserIms {
 	Protocol: *string,
@@ -2758,7 +2758,7 @@ An IM protocol identifies the IM network.
 
 The value can be a custom network or the standard network. Acceptable values: `aim`, `custom_protocol`, `gtalk`, `icq`, `jabber`, `msn`, `net_meeting`, `qq`, `skype`, `yahoo`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#protocol User#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#protocol User#protocol}
 
 ---
 
@@ -2772,7 +2772,7 @@ Type *string
 
 Acceptable values: `custom`, `home`, `other`, `work`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -2786,7 +2786,7 @@ CustomProtocol *string
 
 If the protocol value is custom_protocol, this property holds the custom protocol's string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_protocol User#custom_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_protocol User#custom_protocol}
 
 ---
 
@@ -2800,7 +2800,7 @@ CustomType *string
 
 If the IM type is custom, this property holds the custom type string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -2814,7 +2814,7 @@ Im *string
 
 The user's IM network ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#im User#im}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#im User#im}
 
 ---
 
@@ -2830,7 +2830,7 @@ If this is the user's primary IM.
 
 Only one entry in the IM list can have a value of true.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -2839,7 +2839,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserKeywords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserKeywords {
 	Type: *string,
@@ -2870,7 +2870,7 @@ Each entry can have a type which indicates standard type of that entry.
 
 For example, keyword could be of type occupation or outlook. In addition to the standard type, an entry can have a custom type and can give it any name. Such types should have the CUSTOM value as type and also have a customType value. Acceptable values: `custom`, `mission`, `occupation`, `outlook`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -2884,7 +2884,7 @@ Value *string
 
 Keyword.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -2898,7 +2898,7 @@ CustomType *string
 
 Custom Type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -2907,7 +2907,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserLanguages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserLanguages {
 	CustomLanguage: *string,
@@ -2938,7 +2938,7 @@ Other language.
 
 A user can provide their own language name if there is no corresponding Google III language code. If this is set, LanguageCode can't be set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_language User#custom_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_language User#custom_language}
 
 ---
 
@@ -2954,7 +2954,7 @@ Defaults to `en`.
 
 Language Code. Should be used for storing Google III LanguageCode string representation for language. Illegal values cause SchemaException.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#language_code User#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#language_code User#language_code}
 
 ---
 
@@ -2970,7 +2970,7 @@ Defaults to `preferred`.
 
 If present, controls whether the specified languageCode is the user's preferred language. Allowed values are `preferred` and `not_preferred`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#preference User#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#preference User#preference}
 
 ---
 
@@ -2979,7 +2979,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserLocations {
 	Type: *string,
@@ -3016,7 +3016,7 @@ Type *string
 
 The location type. Acceptable values: `custom`, `default`, `desk`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -3032,7 +3032,7 @@ Textual location.
 
 This is most useful for display purposes to concisely describe the location. For example, Mountain View, CA or Near Seattle.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#area User#area}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#area User#area}
 
 ---
 
@@ -3046,7 +3046,7 @@ BuildingId *string
 
 Building identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#building_id User#building_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#building_id User#building_id}
 
 ---
 
@@ -3060,7 +3060,7 @@ CustomType *string
 
 If the location type is custom, this property contains the custom value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -3074,7 +3074,7 @@ DeskCode *string
 
 Most specific textual code of individual desk location.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#desk_code User#desk_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#desk_code User#desk_code}
 
 ---
 
@@ -3088,7 +3088,7 @@ FloorName *string
 
 Floor name/number.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#floor_name User#floor_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#floor_name User#floor_name}
 
 ---
 
@@ -3104,7 +3104,7 @@ Floor section.
 
 More specific location within the floor. For example, if a floor is divided into sections A, B, and C, this field would identify one of those values.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#floor_section User#floor_section}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#floor_section User#floor_section}
 
 ---
 
@@ -3113,7 +3113,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserName {
 	FamilyName: *string,
@@ -3140,7 +3140,7 @@ FamilyName *string
 
 The user's last name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#family_name User#family_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#family_name User#family_name}
 
 ---
 
@@ -3154,7 +3154,7 @@ GivenName *string
 
 The user's first name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#given_name User#given_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#given_name User#given_name}
 
 ---
 
@@ -3163,7 +3163,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserOrganizations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserOrganizations {
 	Type: *string,
@@ -3210,7 +3210,7 @@ Type *string
 
 The type of organization. Acceptable values: `domain_only`, `school`, `unknown`, `work`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -3224,7 +3224,7 @@ CostCenter *string
 
 The cost center of the user's organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#cost_center User#cost_center}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#cost_center User#cost_center}
 
 ---
 
@@ -3238,7 +3238,7 @@ CustomType *string
 
 If the value of type is custom, this property contains the custom value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -3252,7 +3252,7 @@ Department *string
 
 Specifies the department within the organization, such as sales or engineering.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#department User#department}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#department User#department}
 
 ---
 
@@ -3266,7 +3266,7 @@ Description *string
 
 The description of the organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#description User#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#description User#description}
 
 ---
 
@@ -3280,7 +3280,7 @@ Domain *string
 
 The domain the organization belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#domain User#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#domain User#domain}
 
 ---
 
@@ -3294,7 +3294,7 @@ FullTimeEquivalent *f64
 
 The full-time equivalent millipercent within the organization (100000 = 100%).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#full_time_equivalent User#full_time_equivalent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#full_time_equivalent User#full_time_equivalent}
 
 ---
 
@@ -3308,7 +3308,7 @@ Location *string
 
 The physical location of the organization. This does not need to be a fully qualified address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#location User#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#location User#location}
 
 ---
 
@@ -3322,7 +3322,7 @@ Name *string
 
 The name of the organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#name User#name}
 
 ---
 
@@ -3336,7 +3336,7 @@ Primary interface{}
 
 Indicates if this is the user's primary organization. A user may only have one primary organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -3350,7 +3350,7 @@ Symbol *string
 
 Text string symbol of the organization. For example, the text symbol for Google is GOOG.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#symbol User#symbol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#symbol User#symbol}
 
 ---
 
@@ -3364,7 +3364,7 @@ Title *string
 
 The user's title within the organization. For example, member or engineer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#title User#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#title User#title}
 
 ---
 
@@ -3373,7 +3373,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserPhones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserPhones {
 	Type: *string,
@@ -3406,7 +3406,7 @@ The type of phone number.
 
 Acceptable values: `assistant`, `callback`, `car`, `company_main` , `custom`, `grand_central`, `home`, `home_fax`, `isdn`, `main`, `mobile`, `other`, `other_fax`, `pager`, `radio`, `telex`, `tty_tdd`, `work`, `work_fax`, `work_mobile`, `work_pager`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -3420,7 +3420,7 @@ Value *string
 
 A human-readable phone number. It may be in any telephone number format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -3434,7 +3434,7 @@ CustomType *string
 
 If the phone number type is custom, this property contains the custom value and must be set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -3448,7 +3448,7 @@ Primary interface{}
 
 Indicates if this is the user's primary phone number. A user may only have one primary phone number.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -3457,7 +3457,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserPosixAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserPosixAccounts {
 	AccountId: *string,
@@ -3500,7 +3500,7 @@ AccountId *string
 
 A POSIX account field identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#account_id User#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#account_id User#account_id}
 
 ---
 
@@ -3514,7 +3514,7 @@ Gecos *string
 
 The GECOS (user information) for this account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#gecos User#gecos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#gecos User#gecos}
 
 ---
 
@@ -3528,7 +3528,7 @@ Gid *string
 
 The default group ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#gid User#gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#gid User#gid}
 
 ---
 
@@ -3542,7 +3542,7 @@ HomeDirectory *string
 
 The path to the home directory for this account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#home_directory User#home_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#home_directory User#home_directory}
 
 ---
 
@@ -3556,7 +3556,7 @@ OperatingSystemType *string
 
 The operating system type for this account. Acceptable values: `linux`, `unspecified`, `windows`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#operating_system_type User#operating_system_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#operating_system_type User#operating_system_type}
 
 ---
 
@@ -3570,7 +3570,7 @@ Primary interface{}
 
 If this is user's primary account within the SystemId.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -3584,7 +3584,7 @@ Shell *string
 
 The path to the login shell for this account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#shell User#shell}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#shell User#shell}
 
 ---
 
@@ -3598,7 +3598,7 @@ SystemId *string
 
 System identifier for which account Username or Uid apply to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#system_id User#system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#system_id User#system_id}
 
 ---
 
@@ -3612,7 +3612,7 @@ Uid *string
 
 The POSIX compliant user ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#uid User#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#uid User#uid}
 
 ---
 
@@ -3626,7 +3626,7 @@ Username *string
 
 The username of the account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#username User#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#username User#username}
 
 ---
 
@@ -3635,7 +3635,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserRelations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserRelations {
 	Type: *string,
@@ -3666,7 +3666,7 @@ The type of relation.
 
 Acceptable values: `admin_assistant`, `assistant`, `brother`, `child`, `custom`, `domestic_partner`, `dotted_line_manager`, `exec_assistant`, `father`, `friend`, `manager`, `mother`, `parent`, `partner`, `referred_by`, `relative`, `sister`, `spouse`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -3680,7 +3680,7 @@ Value *string
 
 The name of the person the user is related to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -3694,7 +3694,7 @@ CustomType *string
 
 If the value of type is custom, this property contains the custom type string.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -3703,7 +3703,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserSshPublicKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserSshPublicKeys {
 	Key: *string,
@@ -3730,7 +3730,7 @@ Key *string
 
 An SSH public key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#key User#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#key User#key}
 
 ---
 
@@ -3744,7 +3744,7 @@ ExpirationTimeUsec *string
 
 An expiration time in microseconds since epoch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#expiration_time_usec User#expiration_time_usec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#expiration_time_usec User#expiration_time_usec}
 
 ---
 
@@ -3753,7 +3753,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserTimeouts {
 	Create: *string,
@@ -3765,8 +3765,8 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/us
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#create User#create}. |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#update User#update}. |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#create User#create}. |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#update User#update}. |
 
 ---
 
@@ -3778,7 +3778,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#create User#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#create User#create}.
 
 ---
 
@@ -3790,7 +3790,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#update User#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#update User#update}.
 
 ---
 
@@ -3799,7 +3799,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserWebsites.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 &user.UserWebsites {
 	Type: *string,
@@ -3832,7 +3832,7 @@ The type or purpose of the website.
 
 For example, a website could be labeled as home or blog. Alternatively, an entry can have a custom type Custom types must have a customType value. Acceptable values: `app_install_page`, `blog`, `custom`, `ftp` , `home`, `home_page`, `other`, `profile`, `reservations`, `resume`, `work`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#type User#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#type User#type}
 
 ---
 
@@ -3846,7 +3846,7 @@ Value *string
 
 The URL of the website.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -3860,7 +3860,7 @@ CustomType *string
 
 The custom type. Only used if the type is custom.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#custom_type User#custom_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#custom_type User#custom_type}
 
 ---
 
@@ -3874,7 +3874,7 @@ Primary interface{}
 
 If this is user's primary website or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/user#primary User#primary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/user#primary User#primary}
 
 ---
 
@@ -3885,7 +3885,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserAddressesList
 ```
@@ -4028,7 +4028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserAddressesOutputReference
 ```
@@ -4665,7 +4665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserCustomSchemasList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserCustomSchemasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserCustomSchemasList
 ```
@@ -4808,7 +4808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserCustomSchemasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserCustomSchemasOutputReference
 ```
@@ -5119,7 +5119,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserEmailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserEmailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserEmailsList
 ```
@@ -5262,7 +5262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserEmailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserEmailsOutputReference
 ```
@@ -5638,7 +5638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserExternalIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserExternalIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserExternalIdsList
 ```
@@ -5781,7 +5781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserExternalIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserExternalIdsOutputReference
 ```
@@ -6121,7 +6121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserImsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserImsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserImsList
 ```
@@ -6264,7 +6264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserImsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserImsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserImsOutputReference
 ```
@@ -6691,7 +6691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserKeywordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserKeywordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserKeywordsList
 ```
@@ -6834,7 +6834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserKeywordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserKeywordsOutputReference
 ```
@@ -7174,7 +7174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserLanguagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserLanguagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserLanguagesList
 ```
@@ -7317,7 +7317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserLanguagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserLanguagesOutputReference
 ```
@@ -7671,7 +7671,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserLocationsList
 ```
@@ -7814,7 +7814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserLocationsOutputReference
 ```
@@ -8277,7 +8277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserNameOutputReference
 ```
@@ -8588,7 +8588,7 @@ func InternalValue() UserName
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserOrganizationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserOrganizationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserOrganizationsList
 ```
@@ -8731,7 +8731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserOrganizationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserOrganizationsOutputReference
 ```
@@ -9339,7 +9339,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserPhonesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserPhonesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserPhonesList
 ```
@@ -9482,7 +9482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserPhonesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserPhonesOutputReference
 ```
@@ -9851,7 +9851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserPosixAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserPosixAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserPosixAccountsList
 ```
@@ -9994,7 +9994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserPosixAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserPosixAccountsOutputReference
 ```
@@ -10551,7 +10551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserRelationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserRelationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserRelationsList
 ```
@@ -10694,7 +10694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserRelationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserRelationsOutputReference
 ```
@@ -11034,7 +11034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserSshPublicKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserSshPublicKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserSshPublicKeysList
 ```
@@ -11177,7 +11177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserSshPublicKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserSshPublicKeysOutputReference
 ```
@@ -11506,7 +11506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserTimeoutsOutputReference
 ```
@@ -11813,7 +11813,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserWebsitesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserWebsitesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserWebsitesList
 ```
@@ -11956,7 +11956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 
 user.NewUserWebsitesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserWebsitesOutputReference
 ```

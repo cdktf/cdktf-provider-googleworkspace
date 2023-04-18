@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/d/group
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataGoogleworkspaceGroupConfig extends cdktf.TerraformMetaArgum
   /**
   * The group's email address. If your account has multiple domains,select the appropriate domain for the email address. The email must be unique.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/group#email DataGoogleworkspaceGroup#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group#email DataGoogleworkspaceGroup#email}
   */
   readonly email?: string;
   /**
   * The unique ID of a group. A group id can be used as a group request URI's groupKey.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/group#id DataGoogleworkspaceGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group#id DataGoogleworkspaceGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -25,7 +25,7 @@ export interface DataGoogleworkspaceGroupConfig extends cdktf.TerraformMetaArgum
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/group googleworkspace_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group googleworkspace_group}
 */
 export class DataGoogleworkspaceGroup extends cdktf.TerraformDataSource {
 
@@ -39,7 +39,7 @@ export class DataGoogleworkspaceGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/d/group googleworkspace_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group googleworkspace_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

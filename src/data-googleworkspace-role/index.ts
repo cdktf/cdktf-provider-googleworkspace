@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/d/role
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataGoogleworkspaceRoleConfig extends cdktf.TerraformMetaArgume
   /**
   * Name of the role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/role#name DataGoogleworkspaceRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/role#name DataGoogleworkspaceRole#name}
   */
   readonly name: string;
 }
@@ -85,7 +85,7 @@ export class DataGoogleworkspaceRolePrivilegesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/role googleworkspace_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/role googleworkspace_role}
 */
 export class DataGoogleworkspaceRole extends cdktf.TerraformDataSource {
 
@@ -99,7 +99,7 @@ export class DataGoogleworkspaceRole extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/d/role googleworkspace_role} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/role googleworkspace_role} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

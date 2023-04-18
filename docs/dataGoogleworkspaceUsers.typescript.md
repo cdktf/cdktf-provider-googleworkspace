@@ -1,6 +1,6 @@
 # `data_googleworkspace_users`
 
-Refer to the Terraform Registory for docs: [`data_googleworkspace_users`](https://www.terraform.io/docs/providers/googleworkspace/d/users).
+Refer to the Terraform Registory for docs: [`data_googleworkspace_users`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/users).
 
 # `dataGoogleworkspaceUsers` Submodule <a name="`dataGoogleworkspaceUsers` Submodule" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_googleworkspace_users`](https:
 
 ### DataGoogleworkspaceUsers <a name="DataGoogleworkspaceUsers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/users googleworkspace_users}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/users googleworkspace_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -431,10 +431,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsers.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -543,13 +543,13 @@ const dataGoogleworkspaceUsersConfig: dataGoogleworkspaceUsers.DataGoogleworkspa
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/users#id DataGoogleworkspaceUsers#id}. |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/users#id DataGoogleworkspaceUsers#id}. |
 
 ---
 
@@ -566,10 +566,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUsers.DataGoogleworkspaceUsersConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -631,7 +631,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/users#id DataGoogleworkspaceUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/users#id DataGoogleworkspaceUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

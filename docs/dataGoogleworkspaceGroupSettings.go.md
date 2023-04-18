@@ -1,6 +1,6 @@
 # `data_googleworkspace_group_settings`
 
-Refer to the Terraform Registory for docs: [`data_googleworkspace_group_settings`](https://www.terraform.io/docs/providers/googleworkspace/d/group_settings).
+Refer to the Terraform Registory for docs: [`data_googleworkspace_group_settings`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_settings).
 
 # `dataGoogleworkspaceGroupSettings` Submodule <a name="`dataGoogleworkspaceGroupSettings` Submodule" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_googleworkspace_group_settings
 
 ### DataGoogleworkspaceGroupSettings <a name="DataGoogleworkspaceGroupSettings" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/group_settings googleworkspace_group_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_settings googleworkspace_group_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacegroupsettings"
 
 datagoogleworkspacegroupsettings.NewDataGoogleworkspaceGroupSettings(scope Construct, id *string, config DataGoogleworkspaceGroupSettingsConfig) DataGoogleworkspaceGroupSettings
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacegroupsettings"
 
 datagoogleworkspacegroupsettings.DataGoogleworkspaceGroupSettings_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacegroupsettings"
 
 datagoogleworkspacegroupsettings.DataGoogleworkspaceGroupSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datagoogleworkspacegroupsettings.DataGoogleworkspaceGroupSettings_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacegroupsettings"
 
 datagoogleworkspacegroupsettings.DataGoogleworkspaceGroupSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagoogleworkspacegroupsettings.DataGoogleworkspaceGroupSettings_IsTerraformDat
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -453,10 +453,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettings.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -845,11 +845,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacegroupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacegroupsettings"
 
 &datagoogleworkspacegroupsettings.DataGoogleworkspaceGroupSettingsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -864,7 +864,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/da
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettingsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettingsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettingsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettingsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettingsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -887,10 +887,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceGroupSettings.DataGoogleworkspaceGroupSettingsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -954,7 +954,7 @@ Email *string
 
 The group's email address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/group_settings#email DataGoogleworkspaceGroupSettings#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_settings#email DataGoogleworkspaceGroupSettings#email}
 
 ---
 

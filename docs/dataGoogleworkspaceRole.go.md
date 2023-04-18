@@ -1,6 +1,6 @@
 # `data_googleworkspace_role`
 
-Refer to the Terraform Registory for docs: [`data_googleworkspace_role`](https://www.terraform.io/docs/providers/googleworkspace/d/role).
+Refer to the Terraform Registory for docs: [`data_googleworkspace_role`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/role).
 
 # `dataGoogleworkspaceRole` Submodule <a name="`dataGoogleworkspaceRole` Submodule" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_googleworkspace_role`](https:/
 
 ### DataGoogleworkspaceRole <a name="DataGoogleworkspaceRole" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/role googleworkspace_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/role googleworkspace_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
 
 datagoogleworkspacerole.NewDataGoogleworkspaceRole(scope Construct, id *string, config DataGoogleworkspaceRoleConfig) DataGoogleworkspaceRole
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
 
 datagoogleworkspacerole.DataGoogleworkspaceRole_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
 
 datagoogleworkspacerole.DataGoogleworkspaceRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datagoogleworkspacerole.DataGoogleworkspaceRole_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
 
 datagoogleworkspacerole.DataGoogleworkspaceRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagoogleworkspacerole.DataGoogleworkspaceRole_IsTerraformDataSource(x interfac
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -429,10 +429,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -581,11 +581,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
 
 &datagoogleworkspacerole.DataGoogleworkspaceRoleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -600,7 +600,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/da
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRoleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRoleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -623,10 +623,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRoleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -690,7 +690,7 @@ Name *string
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/role#name DataGoogleworkspaceRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/role#name DataGoogleworkspaceRole#name}
 
 ---
 
@@ -699,7 +699,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRolePrivileges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
 
 &datagoogleworkspacerole.DataGoogleworkspaceRolePrivileges {
 
@@ -714,7 +714,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/da
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRolePrivilegesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
 
 datagoogleworkspacerole.NewDataGoogleworkspaceRolePrivilegesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleworkspaceRolePrivilegesList
 ```
@@ -846,7 +846,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRolePrivilegesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
 
 datagoogleworkspacerole.NewDataGoogleworkspaceRolePrivilegesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleworkspaceRolePrivilegesOutputReference
 ```

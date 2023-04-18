@@ -1,6 +1,6 @@
 # `googleworkspace_group_member`
 
-Refer to the Terraform Registory for docs: [`googleworkspace_group_member`](https://www.terraform.io/docs/providers/googleworkspace/r/group_member).
+Refer to the Terraform Registory for docs: [`googleworkspace_group_member`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member).
 
 # `groupMember` Submodule <a name="`groupMember` Submodule" id="@cdktf/provider-googleworkspace.groupMember"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`googleworkspace_group_member`](http
 
 ### GroupMember <a name="GroupMember" id="@cdktf/provider-googleworkspace.groupMember.GroupMember"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member googleworkspace_group_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member googleworkspace_group_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 groupmember.NewGroupMember(scope Construct, id *string, config GroupMemberConfig) GroupMember
 ```
@@ -311,7 +311,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 groupmember.GroupMember_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 groupmember.GroupMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ groupmember.GroupMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 groupmember.GroupMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ groupmember.GroupMember_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMember.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -490,10 +490,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -732,11 +732,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.groupMember.GroupMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 &groupmember.GroupMemberConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -746,7 +746,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/gr
 	GroupId: *string,
 	DeliverySettings: *string,
 	Role: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4.groupMember.GroupMemberTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.groupMember.GroupMemberTimeouts,
 	Type: *string,
 }
 ```
@@ -756,7 +756,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/gr
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMemberConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMemberConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMemberConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMemberConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMemberConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -784,10 +784,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.groupMember.GroupMemberConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -853,7 +853,7 @@ The member's email address.
 
 A member can be a user or another group. This property is required when adding a member to a group. The email must be unique and cannot be an alias of another group. If the email address is changed, the API automatically reflects the email address changes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member#email GroupMember#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#email GroupMember#email}
 
 ---
 
@@ -869,7 +869,7 @@ Identifies the group in the API request.
 
 The value can be the group's email address, group alias, or the unique group ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member#group_id GroupMember#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#group_id GroupMember#group_id}
 
 ---
 
@@ -891,7 +891,7 @@ Defines mail delivery preferences of member. Acceptable values are:
 * `DISABLED`: Remove subscription.
 * `NONE`: No messages.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member#delivery_settings GroupMember#delivery_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#delivery_settings GroupMember#delivery_settings}
 
 ---
 
@@ -911,7 +911,7 @@ The member's role in a group. The API returns an error for cycles in group membe
 * `MEMBER`: This role can subscribe to a group, view discussion archives, and view the group's membership list.
 * `OWNER`: This role can send messages to the group, add or remove members, change member roles, change group's settings, and delete the group. An OWNER must be a member of the group. A group can have more than one OWNER.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member#role GroupMember#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#role GroupMember#role}
 
 ---
 
@@ -925,7 +925,7 @@ Timeouts GroupMemberTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member#timeouts GroupMember#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#timeouts GroupMember#timeouts}
 
 ---
 
@@ -945,7 +945,7 @@ The type of group member. Acceptable values are:
 * `GROUP`: The member is another group.
 * `USER`: The member is a user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member#type GroupMember#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#type GroupMember#type}
 
 ---
 
@@ -954,7 +954,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.groupMember.GroupMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 &groupmember.GroupMemberTimeouts {
 	Create: *string,
@@ -966,8 +966,8 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/gr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMemberTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member#create GroupMember#create}. |
-| <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMemberTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member#update GroupMember#update}. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMemberTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#create GroupMember#create}. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupMember.GroupMemberTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#update GroupMember#update}. |
 
 ---
 
@@ -979,7 +979,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member#create GroupMember#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#create GroupMember#create}.
 
 ---
 
@@ -991,7 +991,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_member#update GroupMember#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#update GroupMember#update}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.groupMember.GroupMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 groupmember.NewGroupMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupMemberTimeoutsOutputReference
 ```

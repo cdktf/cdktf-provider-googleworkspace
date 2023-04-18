@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/d/org_unit
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/org_unit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface DataGoogleworkspaceOrgUnitConfig extends cdktf.TerraformMetaArg
   /**
   * The unique ID of the organizational unit.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/org_unit#org_unit_id DataGoogleworkspaceOrgUnit#org_unit_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/org_unit#org_unit_id DataGoogleworkspaceOrgUnit#org_unit_id}
   */
   readonly orgUnitId?: string;
   /**
   * The full path to the organizational unit. The orgUnitPath is a derived property. When listed, it is derived from parentOrgunitPath and organizational unit's name. For example, for an organizational unit named 'apps' under parent organization '/engineering', the orgUnitPath is '/engineering/apps'. In order to edit an orgUnitPath, either update the name of the organization or the parentOrgunitPath. A user's organizational unit determines which Google Workspace services the user has access to. If the user is moved to a new organization, the user's access changes. For more information about organization structures, see the [administration help center](https://support.google.com/a/answer/4352075). For more information about moving a user to a different organization, see [chromeosdevices.update a user](https://developers.google.com/admin-sdk/directory/v1/guides/manage-users#update_user).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/org_unit#org_unit_path DataGoogleworkspaceOrgUnit#org_unit_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/org_unit#org_unit_path DataGoogleworkspaceOrgUnit#org_unit_path}
   */
   readonly orgUnitPath?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/org_unit googleworkspace_org_unit}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/org_unit googleworkspace_org_unit}
 */
 export class DataGoogleworkspaceOrgUnit extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataGoogleworkspaceOrgUnit extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/d/org_unit googleworkspace_org_unit} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/org_unit googleworkspace_org_unit} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

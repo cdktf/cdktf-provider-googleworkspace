@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/r/group_members
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface GroupMembersConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifies the group in the API request. The value can be the group's email address, group alias, or the unique group ID.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_members#group_id GroupMembers#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_members#group_id GroupMembers#group_id}
   */
   readonly groupId: string;
   /**
   * members block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_members#members GroupMembers#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_members#members GroupMembers#members}
   */
   readonly members?: GroupMembersMembers[] | cdktf.IResolvable;
 }
@@ -29,13 +29,13 @@ export interface GroupMembersMembers {
 	- `DISABLED`: Remove subscription. 
 	- `NONE`: No messages.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_members#delivery_settings GroupMembers#delivery_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_members#delivery_settings GroupMembers#delivery_settings}
   */
   readonly deliverySettings?: string;
   /**
   * The member's email address. A member can be a user or another group. This property isrequired when adding a member to a group. The email must be unique and cannot be an alias of another group. If the email address is changed, the API automatically reflects the email address changes.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_members#email GroupMembers#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_members#email GroupMembers#email}
   */
   readonly email: string;
   /**
@@ -44,7 +44,7 @@ export interface GroupMembersMembers {
 	- `MEMBER`: This role can subscribe to a group, view discussion archives, and view the group's membership list. 
 	- `OWNER`: This role can send messages to the group, add or remove members, change member roles, change group's settings, and delete the group. An OWNER must be a member of the group. A group can have more than one OWNER.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_members#role GroupMembers#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_members#role GroupMembers#role}
   */
   readonly role?: string;
   /**
@@ -53,7 +53,7 @@ export interface GroupMembersMembers {
 	- `GROUP`: The member is another group. 
 	- `USER`: The member is a user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_members#type GroupMembers#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_members#type GroupMembers#type}
   */
   readonly type?: string;
 }
@@ -226,7 +226,7 @@ export class GroupMembersMembersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_members googleworkspace_group_members}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_members googleworkspace_group_members}
 */
 export class GroupMembers extends cdktf.TerraformResource {
 
@@ -240,7 +240,7 @@ export class GroupMembers extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/r/group_members googleworkspace_group_members} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_members googleworkspace_group_members} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,6 +1,6 @@
 # `googleworkspace_schema`
 
-Refer to the Terraform Registory for docs: [`googleworkspace_schema`](https://www.terraform.io/docs/providers/googleworkspace/r/schema).
+Refer to the Terraform Registory for docs: [`googleworkspace_schema`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema).
 
 # `schema` Submodule <a name="`schema` Submodule" id="@cdktf/provider-googleworkspace.schema"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`googleworkspace_schema`](https://ww
 
 ### Schema <a name="Schema" id="@cdktf/provider-googleworkspace.schema.Schema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema googleworkspace_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema googleworkspace_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.schema.Schema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 schema.NewSchema(scope Construct, id *string, config SchemaConfig) Schema
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.schema.Schema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 schema.Schema_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.schema.Schema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 schema.Schema_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ schema.Schema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.schema.Schema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 schema.Schema_IsTerraformResource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ schema.Schema_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.Schema.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -484,10 +484,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.schema.Schema.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -676,11 +676,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.schema.SchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 &schema.SchemaConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -689,7 +689,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/sc
 	Fields: interface{},
 	SchemaName: *string,
 	DisplayName: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4.schema.SchemaTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.schema.SchemaTimeouts,
 }
 ```
 
@@ -698,7 +698,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/sc
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -724,10 +724,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.schema.SchemaConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -791,7 +791,7 @@ Fields interface{}
 
 fields block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#fields Schema#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#fields Schema#fields}
 
 ---
 
@@ -805,7 +805,7 @@ SchemaName *string
 
 The schema's name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#schema_name Schema#schema_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#schema_name Schema#schema_name}
 
 ---
 
@@ -819,7 +819,7 @@ DisplayName *string
 
 Display name for the schema.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#display_name Schema#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#display_name Schema#display_name}
 
 ---
 
@@ -833,7 +833,7 @@ Timeouts SchemaTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#timeouts Schema#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#timeouts Schema#timeouts}
 
 ---
 
@@ -842,7 +842,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.schema.SchemaFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 &schema.SchemaFields {
 	FieldName: *string,
@@ -850,7 +850,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/sc
 	DisplayName: *string,
 	Indexed: interface{},
 	MultiValued: interface{},
-	NumericIndexingSpec: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4.schema.SchemaFieldsNumericIndexingSpec,
+	NumericIndexingSpec: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.schema.SchemaFieldsNumericIndexingSpec,
 	ReadAccessType: *string,
 }
 ```
@@ -879,7 +879,7 @@ FieldName *string
 
 The name of the field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#field_name Schema#field_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#field_name Schema#field_name}
 
 ---
 
@@ -893,7 +893,7 @@ FieldType *string
 
 The type of the field. Acceptable values are:  - `BOOL` - `DATE` - `DOUBLE` - `EMAIL` - `INT64` - `PHONE` - `STRING`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#field_type Schema#field_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#field_type Schema#field_type}
 
 ---
 
@@ -907,7 +907,7 @@ DisplayName *string
 
 Display Name of the field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#display_name Schema#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#display_name Schema#display_name}
 
 ---
 
@@ -921,7 +921,7 @@ Indexed interface{}
 
 Defaults to `true`. Boolean specifying whether the field is indexed or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#indexed Schema#indexed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#indexed Schema#indexed}
 
 ---
 
@@ -935,7 +935,7 @@ MultiValued interface{}
 
 Defaults to `false`. A boolean specifying whether this is a multi-valued field or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#multi_valued Schema#multi_valued}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#multi_valued Schema#multi_valued}
 
 ---
 
@@ -949,7 +949,7 @@ NumericIndexingSpec SchemaFieldsNumericIndexingSpec
 
 numeric_indexing_spec block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#numeric_indexing_spec Schema#numeric_indexing_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#numeric_indexing_spec Schema#numeric_indexing_spec}
 
 ---
 
@@ -969,7 +969,7 @@ Specifies who can view values of this field. See Retrieve users as a non-adminis
 * `ALL_DOMAIN_USERS`
   Note: It may take up to 24 hours for changes to this field to be reflected.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#read_access_type Schema#read_access_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#read_access_type Schema#read_access_type}
 
 ---
 
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.schema.SchemaFieldsNumericIndexingSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 &schema.SchemaFieldsNumericIndexingSpec {
 	MaxValue: *f64,
@@ -1007,7 +1007,7 @@ Maximum value of this field.
 
 This is meant to be indicative rather than enforced. Values outside this range will still be indexed, but search may not be as performant.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#max_value Schema#max_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#max_value Schema#max_value}
 
 ---
 
@@ -1023,7 +1023,7 @@ Minimum value of this field.
 
 This is meant to be indicative rather than enforced. Values outside this range will still be indexed, but search may not be as performant.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#min_value Schema#min_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#min_value Schema#min_value}
 
 ---
 
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.schema.SchemaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 &schema.SchemaTimeouts {
 	Create: *string,
@@ -1045,9 +1045,9 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/sc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#create Schema#create}. |
-| <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#delete Schema#delete}. |
-| <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#update Schema#update}. |
+| <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#create Schema#create}. |
+| <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#delete Schema#delete}. |
+| <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#update Schema#update}. |
 
 ---
 
@@ -1059,7 +1059,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#create Schema#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#create Schema#create}.
 
 ---
 
@@ -1071,7 +1071,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#delete Schema#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#delete Schema#delete}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/schema#update Schema#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#update Schema#update}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.schema.SchemaFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 schema.NewSchemaFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaFieldsList
 ```
@@ -1237,7 +1237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.schema.SchemaFieldsNumericIndexingSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 schema.NewSchemaFieldsNumericIndexingSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchemaFieldsNumericIndexingSpecOutputReference
 ```
@@ -1544,7 +1544,7 @@ func InternalValue() SchemaFieldsNumericIndexingSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.schema.SchemaFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 schema.NewSchemaFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaFieldsOutputReference
 ```
@@ -2035,7 +2035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.schema.SchemaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
 
 schema.NewSchemaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchemaTimeoutsOutputReference
 ```

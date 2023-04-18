@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/d/chrome_policy_schema
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/chrome_policy_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleworkspaceChromePolicySchemaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/chrome_policy_schema#id DataGoogleworkspaceChromePolicySchema#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/chrome_policy_schema#id DataGoogleworkspaceChromePolicySchema#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,7 +17,7 @@ export interface DataGoogleworkspaceChromePolicySchemaConfig extends cdktf.Terra
   /**
   * The full qualified name of the policy schema
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/chrome_policy_schema#schema_name DataGoogleworkspaceChromePolicySchema#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/chrome_policy_schema#schema_name DataGoogleworkspaceChromePolicySchema#schema_name}
   */
   readonly schemaName: string;
 }
@@ -395,7 +395,7 @@ export class DataGoogleworkspaceChromePolicySchemaNoticesList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/chrome_policy_schema googleworkspace_chrome_policy_schema}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/chrome_policy_schema googleworkspace_chrome_policy_schema}
 */
 export class DataGoogleworkspaceChromePolicySchema extends cdktf.TerraformDataSource {
 
@@ -409,7 +409,7 @@ export class DataGoogleworkspaceChromePolicySchema extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/d/chrome_policy_schema googleworkspace_chrome_policy_schema} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/chrome_policy_schema googleworkspace_chrome_policy_schema} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

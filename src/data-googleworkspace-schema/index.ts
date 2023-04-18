@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/d/schema
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataGoogleworkspaceSchemaConfig extends cdktf.TerraformMetaArgu
   /**
   * The unique identifier of the schema.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/schema#schema_id DataGoogleworkspaceSchema#schema_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/schema#schema_id DataGoogleworkspaceSchema#schema_id}
   */
   readonly schemaId?: string;
   /**
   * The schema's name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/schema#schema_name DataGoogleworkspaceSchema#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/schema#schema_name DataGoogleworkspaceSchema#schema_name}
   */
   readonly schemaName?: string;
 }
@@ -196,7 +196,7 @@ export class DataGoogleworkspaceSchemaFieldsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/schema googleworkspace_schema}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/schema googleworkspace_schema}
 */
 export class DataGoogleworkspaceSchema extends cdktf.TerraformDataSource {
 
@@ -210,7 +210,7 @@ export class DataGoogleworkspaceSchema extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/d/schema googleworkspace_schema} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/schema googleworkspace_schema} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

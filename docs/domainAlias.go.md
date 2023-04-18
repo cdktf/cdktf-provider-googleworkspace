@@ -1,6 +1,6 @@
 # `googleworkspace_domain_alias`
 
-Refer to the Terraform Registory for docs: [`googleworkspace_domain_alias`](https://www.terraform.io/docs/providers/googleworkspace/r/domain_alias).
+Refer to the Terraform Registory for docs: [`googleworkspace_domain_alias`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain_alias).
 
 # `domainAlias` Submodule <a name="`domainAlias` Submodule" id="@cdktf/provider-googleworkspace.domainAlias"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`googleworkspace_domain_alias`](http
 
 ### DomainAlias <a name="DomainAlias" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/r/domain_alias googleworkspace_domain_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain_alias googleworkspace_domain_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 domainalias.NewDomainAlias(scope Construct, id *string, config DomainAliasConfig) DomainAlias
 ```
@@ -277,7 +277,7 @@ func ResetParentDomainName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 domainalias.DomainAlias_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 domainalias.DomainAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ domainalias.DomainAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 domainalias.DomainAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ domainalias.DomainAlias_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAlias.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -448,10 +448,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -610,11 +610,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.domainAlias.DomainAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 &domainalias.DomainAliasConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -630,7 +630,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v4/do
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAliasConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAliasConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAliasConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAliasConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAliasConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.domainAlias.DomainAliasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -654,10 +654,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-googleworkspace.domainAlias.DomainAliasConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -721,7 +721,7 @@ DomainAliasName *string
 
 The domain alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/domain_alias#domain_alias_name DomainAlias#domain_alias_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain_alias#domain_alias_name DomainAlias#domain_alias_name}
 
 ---
 
@@ -737,7 +737,7 @@ The parent domain name that the domain alias is associated with.
 
 This can either be a primary or secondary domain name within a customer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/domain_alias#parent_domain_name DomainAlias#parent_domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain_alias#parent_domain_name DomainAlias#parent_domain_name}
 
 ---
 

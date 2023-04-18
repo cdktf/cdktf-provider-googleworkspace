@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/r/role_assignment
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface RoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The unique ID of the user this role is assigned to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/role_assignment#assigned_to RoleAssignment#assigned_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment#assigned_to RoleAssignment#assigned_to}
   */
   readonly assignedTo: string;
   /**
   * If the role is restricted to an organization unit, this contains the ID for the organization unit the exercise of this role is restricted to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/role_assignment#org_unit_id RoleAssignment#org_unit_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment#org_unit_id RoleAssignment#org_unit_id}
   */
   readonly orgUnitId?: string;
   /**
   * The ID of the role that is assigned.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/role_assignment#role_id RoleAssignment#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment#role_id RoleAssignment#role_id}
   */
   readonly roleId: string;
   /**
@@ -30,13 +30,13 @@ export interface RoleAssignmentConfig extends cdktf.TerraformMetaArguments {
 	- `CUSTOMER`
 	- `ORG_UNIT`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/role_assignment#scope_type RoleAssignment#scope_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment#scope_type RoleAssignment#scope_type}
   */
   readonly scopeType?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/r/role_assignment googleworkspace_role_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment googleworkspace_role_assignment}
 */
 export class RoleAssignment extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class RoleAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/r/role_assignment googleworkspace_role_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment googleworkspace_role_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

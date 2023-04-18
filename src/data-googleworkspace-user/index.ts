@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/d/user
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataGoogleworkspaceUserConfig extends cdktf.TerraformMetaArgume
   /**
   * The unique ID for the user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/user#id DataGoogleworkspaceUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/user#id DataGoogleworkspaceUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -19,7 +19,7 @@ export interface DataGoogleworkspaceUserConfig extends cdktf.TerraformMetaArgume
   /**
   * The user's primary email address. The primaryEmail must be unique and cannot be an alias of another user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/user#primary_email DataGoogleworkspaceUser#primary_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/user#primary_email DataGoogleworkspaceUser#primary_email}
   */
   readonly primaryEmail?: string;
 }
@@ -1311,7 +1311,7 @@ export class DataGoogleworkspaceUserWebsitesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/user googleworkspace_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/user googleworkspace_user}
 */
 export class DataGoogleworkspaceUser extends cdktf.TerraformDataSource {
 
@@ -1325,7 +1325,7 @@ export class DataGoogleworkspaceUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/d/user googleworkspace_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/user googleworkspace_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

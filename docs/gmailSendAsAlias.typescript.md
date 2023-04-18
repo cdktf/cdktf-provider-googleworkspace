@@ -1,6 +1,6 @@
 # `googleworkspace_gmail_send_as_alias`
 
-Refer to the Terraform Registory for docs: [`googleworkspace_gmail_send_as_alias`](https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias).
+Refer to the Terraform Registory for docs: [`googleworkspace_gmail_send_as_alias`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias).
 
 # `gmailSendAsAlias` Submodule <a name="`gmailSendAsAlias` Submodule" id="@cdktf/provider-googleworkspace.gmailSendAsAlias"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`googleworkspace_gmail_send_as_alias
 
 ### GmailSendAsAlias <a name="GmailSendAsAlias" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias googleworkspace_gmail_send_as_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias googleworkspace_gmail_send_as_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.Initializer"></a>
 
@@ -394,7 +394,7 @@ gmailSendAsAlias.GmailSendAsAlias.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -507,10 +507,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -789,7 +789,7 @@ const gmailSendAsAliasConfig: gmailSendAsAlias.GmailSendAsAliasConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAliasConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAliasConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAliasConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAliasConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAliasConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAliasConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -819,10 +819,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAliasConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -886,7 +886,7 @@ public readonly primaryEmail: string;
 
 User's primary email address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#primary_email GmailSendAsAlias#primary_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#primary_email GmailSendAsAlias#primary_email}
 
 ---
 
@@ -900,7 +900,7 @@ public readonly sendAsEmail: string;
 
 The email address that appears in the 'From:' header for mail sent using this alias.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#send_as_email GmailSendAsAlias#send_as_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#send_as_email GmailSendAsAlias#send_as_email}
 
 ---
 
@@ -916,7 +916,7 @@ A name that appears in the 'From:' header for mail sent using this alias.
 
 For custom 'from' addresses, when this is empty, Gmail will populate the 'From:' header with the name that is used for the primary address associated with the account. If the admin has disabled the ability for users to update their name format, requests to update this field for the primary login will silently fail.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#display_name GmailSendAsAlias#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#display_name GmailSendAsAlias#display_name}
 
 ---
 
@@ -932,7 +932,7 @@ Whether this address is selected as the default 'From:' address in situations su
 
 Every Gmail account has exactly one default send-as address, so the only legal value that clients may write to this field is true. Changing this from false to true for an address will result in this field becoming false for the other previous default address. Toggling an existing alias' default to false is not possible, another alias must be added/imported and toggled to true to remove the default from an existing alias. To avoid drift with Terraform, please change the previous default's config to false AFTER a new default is applied and perform a refresh to synchronize with remote state.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#is_default GmailSendAsAlias#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#is_default GmailSendAsAlias#is_default}
 
 ---
 
@@ -948,7 +948,7 @@ An optional email address that is included in a 'Reply-To:' header for mail sent
 
 If this is empty, Gmail will not generate a 'Reply-To:' header.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#reply_to_address GmailSendAsAlias#reply_to_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#reply_to_address GmailSendAsAlias#reply_to_address}
 
 ---
 
@@ -964,7 +964,7 @@ An optional HTML signature that is included in messages composed with this alias
 
 This signature is added to new emails only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#signature GmailSendAsAlias#signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#signature GmailSendAsAlias#signature}
 
 ---
 
@@ -978,7 +978,7 @@ public readonly smtpMsa: GmailSendAsAliasSmtpMsa;
 
 smtp_msa block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#smtp_msa GmailSendAsAlias#smtp_msa}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#smtp_msa GmailSendAsAlias#smtp_msa}
 
 ---
 
@@ -994,7 +994,7 @@ Defaults to `true`.
 
 Whether Gmail should treat this address as an alias for the user's primary email address. This setting only applies to custom 'from' aliases. See https://support.google.com/a/answer/1710338 for help on making this decision
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#treat_as_alias GmailSendAsAlias#treat_as_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#treat_as_alias GmailSendAsAlias#treat_as_alias}
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly host: string;
 
 The hostname of the SMTP service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#host GmailSendAsAlias#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#host GmailSendAsAlias#host}
 
 ---
 
@@ -1044,7 +1044,7 @@ public readonly port: number;
 
 The port of the SMTP service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#port GmailSendAsAlias#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#port GmailSendAsAlias#port}
 
 ---
 
@@ -1060,7 +1060,7 @@ The password that will be used for authentication with the SMTP service.
 
 This is a write-only field that can be specified in requests to create or update SendAs settings; it is never populated in responses.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#password GmailSendAsAlias#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#password GmailSendAsAlias#password}
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly securityMode: string;
 
 Defaults to `securityModeUnspecified`. The protocol that will be used to secure communication with the SMTP service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#security_mode GmailSendAsAlias#security_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#security_mode GmailSendAsAlias#security_mode}
 
 ---
 
@@ -1090,7 +1090,7 @@ The username that will be used for authentication with the SMTP service.
 
 This is a write-only field that can be specified in requests to create or update SendAs settings; it is never populated in responses.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/r/gmail_send_as_alias#username GmailSendAsAlias#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/gmail_send_as_alias#username GmailSendAsAlias#username}
 
 ---
 

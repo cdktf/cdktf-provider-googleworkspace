@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/googleworkspace/d/group_settings
+// https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataGoogleworkspaceGroupSettingsConfig extends cdktf.TerraformM
   /**
   * The group's email address.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googleworkspace/d/group_settings#email DataGoogleworkspaceGroupSettings#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_settings#email DataGoogleworkspaceGroupSettings#email}
   */
   readonly email: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/googleworkspace/d/group_settings googleworkspace_group_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_settings googleworkspace_group_settings}
 */
 export class DataGoogleworkspaceGroupSettings extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataGoogleworkspaceGroupSettings extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/googleworkspace/d/group_settings googleworkspace_group_settings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/group_settings googleworkspace_group_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
