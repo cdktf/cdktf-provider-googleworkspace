@@ -1222,7 +1222,7 @@ public resetType(): void
 | <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.email">email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.role">role</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembers">GroupMembersMembers</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembers">GroupMembersMembers</a></code> | *No description.* |
 
 ---
 
@@ -1353,10 +1353,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GroupMembersMembers | IResolvable;
+public readonly internalValue: IResolvable | GroupMembersMembers;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembers">GroupMembersMembers</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembers">GroupMembersMembers</a>
 
 ---
 

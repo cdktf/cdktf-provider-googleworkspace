@@ -554,7 +554,7 @@ group.Group.is_terraform_resource(
 | <code><a href="#@cdktf/provider-googleworkspace.group.Group.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.group.Group.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.group.Group.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.group.Group.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.group.GroupTimeouts">GroupTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.group.Group.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.group.GroupTimeouts">GroupTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.group.Group.property.aliases">aliases</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.group.Group.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.group.Group.property.email">email</a></code> | <code>str</code> | *No description.* |
@@ -807,10 +807,10 @@ name_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-googleworkspace.group.Group.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[GroupTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, GroupTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.group.GroupTimeouts">GroupTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.group.GroupTimeouts">GroupTimeouts</a>]
 
 ---
 
@@ -1359,7 +1359,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.group.GroupTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.group.GroupTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.group.GroupTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.group.GroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.group.GroupTimeouts">GroupTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.group.GroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.group.GroupTimeouts">GroupTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1430,10 +1430,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.group.GroupTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GroupTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, GroupTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.group.GroupTimeouts">GroupTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.group.GroupTimeouts">GroupTimeouts</a>]
 
 ---
 

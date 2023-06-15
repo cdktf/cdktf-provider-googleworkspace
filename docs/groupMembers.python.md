@@ -1386,7 +1386,7 @@ def reset_type() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.email">email</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.role">role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembers">GroupMembersMembers</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembers">GroupMembersMembers</a>]</code> | *No description.* |
 
 ---
 
@@ -1517,10 +1517,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GroupMembersMembers, IResolvable]
+internal_value: typing.Union[IResolvable, GroupMembersMembers]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembers">GroupMembersMembers</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.groupMembers.GroupMembersMembers">GroupMembersMembers</a>]
 
 ---
 

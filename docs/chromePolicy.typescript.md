@@ -262,12 +262,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 ##### `putPolicies` <a name="putPolicies" id="@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.putPolicies"></a>
 
 ```typescript
-public putPolicies(value: ChromePolicyPolicies[] | IResolvable): void
+public putPolicies(value: IResolvable | ChromePolicyPolicies[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.putPolicies.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[] | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[]
 
 ---
 
@@ -368,7 +368,7 @@ chromePolicy.ChromePolicy.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.property.policies">policies</a></code> | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPoliciesList">ChromePolicyPoliciesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.property.orgUnitIdInput">orgUnitIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.property.policiesInput">policiesInput</a></code> | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[] \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.property.policiesInput">policiesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.property.orgUnitId">orgUnitId</a></code> | <code>string</code> | *No description.* |
 
@@ -549,10 +549,10 @@ public readonly orgUnitIdInput: string;
 ##### `policiesInput`<sup>Optional</sup> <a name="policiesInput" id="@cdktf/provider-googleworkspace.chromePolicy.ChromePolicy.property.policiesInput"></a>
 
 ```typescript
-public readonly policiesInput: ChromePolicyPolicies[] | IResolvable;
+public readonly policiesInput: IResolvable | ChromePolicyPolicies[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[] | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[]
 
 ---
 
@@ -618,7 +618,7 @@ const chromePolicyConfig: chromePolicy.ChromePolicyConfig = { ... }
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyConfig.property.orgUnitId">orgUnitId</a></code> | <code>string</code> | The target org unit on which this policy is applied. |
-| <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyConfig.property.policies">policies</a></code> | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[] \| cdktf.IResolvable</code> | policies block. |
+| <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyConfig.property.policies">policies</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[]</code> | policies block. |
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/chrome_policy#id ChromePolicy#id}. |
 
 ---
@@ -710,10 +710,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `policies`<sup>Required</sup> <a name="policies" id="@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyConfig.property.policies"></a>
 
 ```typescript
-public readonly policies: ChromePolicyPolicies[] | IResolvable;
+public readonly policies: IResolvable | ChromePolicyPolicies[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[] | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[]
 
 policies block.
 
@@ -889,7 +889,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPoliciesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPoliciesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPoliciesList.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[] \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPoliciesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[]</code> | *No description.* |
 
 ---
 
@@ -920,10 +920,10 @@ public readonly fqn: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPoliciesList.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ChromePolicyPolicies[] | IResolvable;
+public readonly internalValue: IResolvable | ChromePolicyPolicies[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[] | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.chromePolicy.ChromePolicyPolicies">ChromePolicyPolicies</a>[]
 
 ---
 
