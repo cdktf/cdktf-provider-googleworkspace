@@ -800,7 +800,7 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.relationsInput">relationsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserRelations">UserRelations</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.sshPublicKeysInput">sshPublicKeysInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeys">UserSshPublicKeys</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.suspendedInput">suspendedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.User.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.User.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.websitesInput">websitesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserWebsites">UserWebsites</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.aliases">aliases</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.archived">archived</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -1543,10 +1543,10 @@ public readonly suspendedInput: boolean | IResolvable;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-googleworkspace.user.User.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: UserTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | UserTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a>
 
 ---
 
@@ -4228,7 +4228,7 @@ public resetStreetAddress(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.sourceIsStructured">sourceIsStructured</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.streetAddress">streetAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserAddresses">UserAddresses</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserAddresses">UserAddresses</a></code> | *No description.* |
 
 ---
 
@@ -4519,10 +4519,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserAddresses | IResolvable;
+public readonly internalValue: IResolvable | UserAddresses;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserAddresses">UserAddresses</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserAddresses">UserAddresses</a>
 
 ---
 
@@ -4902,7 +4902,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.schemaValuesInput">schemaValuesInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.schemaName">schemaName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.schemaValues">schemaValues</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemas">UserCustomSchemas</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemas">UserCustomSchemas</a></code> | *No description.* |
 
 ---
 
@@ -4973,10 +4973,10 @@ public readonly schemaValues: {[ key: string ]: string};
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserCustomSchemas | IResolvable;
+public readonly internalValue: IResolvable | UserCustomSchemas;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemas">UserCustomSchemas</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemas">UserCustomSchemas</a>
 
 ---
 
@@ -5381,7 +5381,7 @@ public resetPrimary(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.customType">customType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.primary">primary</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserEmails">UserEmails</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserEmails">UserEmails</a></code> | *No description.* |
 
 ---
 
@@ -5492,10 +5492,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserEmails | IResolvable;
+public readonly internalValue: IResolvable | UserEmails;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserEmails">UserEmails</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserEmails">UserEmails</a>
 
 ---
 
@@ -5884,7 +5884,7 @@ public resetCustomType(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.customType">customType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIds">UserExternalIds</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserExternalIds">UserExternalIds</a></code> | *No description.* |
 
 ---
 
@@ -5975,10 +5975,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserExternalIds | IResolvable;
+public readonly internalValue: IResolvable | UserExternalIds;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserExternalIds">UserExternalIds</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserExternalIds">UserExternalIds</a>
 
 ---
 
@@ -6394,7 +6394,7 @@ public resetPrimary(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.primary">primary</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.protocol">protocol</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserIms">UserIms</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserIms">UserIms</a></code> | *No description.* |
 
 ---
 
@@ -6545,10 +6545,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserIms | IResolvable;
+public readonly internalValue: IResolvable | UserIms;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserIms">UserIms</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserIms">UserIms</a>
 
 ---
 
@@ -6937,7 +6937,7 @@ public resetCustomType(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.customType">customType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywords">UserKeywords</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserKeywords">UserKeywords</a></code> | *No description.* |
 
 ---
 
@@ -7028,10 +7028,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserKeywords | IResolvable;
+public readonly internalValue: IResolvable | UserKeywords;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserKeywords">UserKeywords</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserKeywords">UserKeywords</a>
 
 ---
 
@@ -7434,7 +7434,7 @@ public resetPreference(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.customLanguage">customLanguage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.languageCode">languageCode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.preference">preference</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguages">UserLanguages</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserLanguages">UserLanguages</a></code> | *No description.* |
 
 ---
 
@@ -7525,10 +7525,10 @@ public readonly preference: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserLanguages | IResolvable;
+public readonly internalValue: IResolvable | UserLanguages;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserLanguages">UserLanguages</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserLanguages">UserLanguages</a>
 
 ---
 
@@ -7960,7 +7960,7 @@ public resetFloorSection(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.floorName">floorName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.floorSection">floorSection</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserLocations">UserLocations</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserLocations">UserLocations</a></code> | *No description.* |
 
 ---
 
@@ -8131,10 +8131,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserLocations | IResolvable;
+public readonly internalValue: IResolvable | UserLocations;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserLocations">UserLocations</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserLocations">UserLocations</a>
 
 ---
 
@@ -8922,7 +8922,7 @@ public resetTitle(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.symbol">symbol</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.title">title</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizations">UserOrganizations</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserOrganizations">UserOrganizations</a></code> | *No description.* |
 
 ---
 
@@ -9193,10 +9193,10 @@ public readonly type: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserOrganizations | IResolvable;
+public readonly internalValue: IResolvable | UserOrganizations;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserOrganizations">UserOrganizations</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserOrganizations">UserOrganizations</a>
 
 ---
 
@@ -9594,7 +9594,7 @@ public resetPrimary(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.primary">primary</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserPhones">UserPhones</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserPhones">UserPhones</a></code> | *No description.* |
 
 ---
 
@@ -9705,10 +9705,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserPhones | IResolvable;
+public readonly internalValue: IResolvable | UserPhones;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserPhones">UserPhones</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserPhones">UserPhones</a>
 
 ---
 
@@ -10174,7 +10174,7 @@ public resetUsername(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.systemId">systemId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccounts">UserPosixAccounts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserPosixAccounts">UserPosixAccounts</a></code> | *No description.* |
 
 ---
 
@@ -10405,10 +10405,10 @@ public readonly username: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserPosixAccounts | IResolvable;
+public readonly internalValue: IResolvable | UserPosixAccounts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserPosixAccounts">UserPosixAccounts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserPosixAccounts">UserPosixAccounts</a>
 
 ---
 
@@ -10797,7 +10797,7 @@ public resetCustomType(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.customType">customType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserRelations">UserRelations</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserRelations">UserRelations</a></code> | *No description.* |
 
 ---
 
@@ -10888,10 +10888,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserRelations | IResolvable;
+public readonly internalValue: IResolvable | UserRelations;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserRelations">UserRelations</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserRelations">UserRelations</a>
 
 ---
 
@@ -11279,7 +11279,7 @@ public resetExpirationTimeUsec(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.expirationTimeUsec">expirationTimeUsec</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeys">UserSshPublicKeys</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeys">UserSshPublicKeys</a></code> | *No description.* |
 
 ---
 
@@ -11360,10 +11360,10 @@ public readonly key: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserSshPublicKeys | IResolvable;
+public readonly internalValue: IResolvable | UserSshPublicKeys;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeys">UserSshPublicKeys</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeys">UserSshPublicKeys</a>
 
 ---
 
@@ -11596,7 +11596,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -11667,10 +11667,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserTimeouts | IResolvable;
+public readonly internalValue: IResolvable | UserTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a>
 
 ---
 
@@ -12068,7 +12068,7 @@ public resetPrimary(): void
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.primary">primary</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsites">UserWebsites</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.user.UserWebsites">UserWebsites</a></code> | *No description.* |
 
 ---
 
@@ -12179,10 +12179,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserWebsites | IResolvable;
+public readonly internalValue: IResolvable | UserWebsites;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.user.UserWebsites">UserWebsites</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.user.UserWebsites">UserWebsites</a>
 
 ---
 

@@ -1203,7 +1203,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-googleworkspace.role.RolePrivilegesOutputReference.property.serviceIdInput">serviceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.role.RolePrivilegesOutputReference.property.privilegeName">privilegeName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.role.RolePrivilegesOutputReference.property.serviceId">serviceId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.role.RolePrivilegesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-googleworkspace.role.RolePrivileges">RolePrivileges</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.role.RolePrivilegesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-googleworkspace.role.RolePrivileges">RolePrivileges</a></code> | *No description.* |
 
 ---
 
@@ -1274,10 +1274,10 @@ public readonly serviceId: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-googleworkspace.role.RolePrivilegesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: RolePrivileges | IResolvable;
+public readonly internalValue: IResolvable | RolePrivileges;
 ```
 
-- *Type:* <a href="#@cdktf/provider-googleworkspace.role.RolePrivileges">RolePrivileges</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-googleworkspace.role.RolePrivileges">RolePrivileges</a>
 
 ---
 

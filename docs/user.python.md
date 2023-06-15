@@ -1301,7 +1301,7 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.relationsInput">relations_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-googleworkspace.user.UserRelations">UserRelations</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.sshPublicKeysInput">ssh_public_keys_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeys">UserSshPublicKeys</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.suspendedInput">suspended_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.User.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.User.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.websitesInput">websites_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-googleworkspace.user.UserWebsites">UserWebsites</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.aliases">aliases</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.User.property.archived">archived</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -2044,10 +2044,10 @@ suspended_input: typing.Union[bool, IResolvable]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-googleworkspace.user.User.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[UserTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, UserTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a>]
 
 ---
 
@@ -4897,7 +4897,7 @@ def reset_street_address() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.sourceIsStructured">source_is_structured</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.streetAddress">street_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserAddresses">UserAddresses</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserAddresses">UserAddresses</a>]</code> | *No description.* |
 
 ---
 
@@ -5188,10 +5188,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserAddresses, IResolvable]
+internal_value: typing.Union[IResolvable, UserAddresses]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserAddresses">UserAddresses</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserAddresses">UserAddresses</a>]
 
 ---
 
@@ -5606,7 +5606,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.schemaValuesInput">schema_values_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.schemaName">schema_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.schemaValues">schema_values</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemas">UserCustomSchemas</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemas">UserCustomSchemas</a>]</code> | *No description.* |
 
 ---
 
@@ -5677,10 +5677,10 @@ schema_values: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserCustomSchemas, IResolvable]
+internal_value: typing.Union[IResolvable, UserCustomSchemas]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemas">UserCustomSchemas</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserCustomSchemas">UserCustomSchemas</a>]
 
 ---
 
@@ -6120,7 +6120,7 @@ def reset_primary() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.customType">custom_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.primary">primary</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserEmails">UserEmails</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserEmails">UserEmails</a>]</code> | *No description.* |
 
 ---
 
@@ -6231,10 +6231,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserEmails, IResolvable]
+internal_value: typing.Union[IResolvable, UserEmails]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserEmails">UserEmails</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserEmails">UserEmails</a>]
 
 ---
 
@@ -6658,7 +6658,7 @@ def reset_custom_type() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.customType">custom_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserExternalIds">UserExternalIds</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserExternalIds">UserExternalIds</a>]</code> | *No description.* |
 
 ---
 
@@ -6749,10 +6749,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserExternalIds, IResolvable]
+internal_value: typing.Union[IResolvable, UserExternalIds]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserExternalIds">UserExternalIds</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserExternalIds">UserExternalIds</a>]
 
 ---
 
@@ -7203,7 +7203,7 @@ def reset_primary() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.primary">primary</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.protocol">protocol</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserIms">UserIms</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserIms">UserIms</a>]</code> | *No description.* |
 
 ---
 
@@ -7354,10 +7354,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserImsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserIms, IResolvable]
+internal_value: typing.Union[IResolvable, UserIms]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserIms">UserIms</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserIms">UserIms</a>]
 
 ---
 
@@ -7781,7 +7781,7 @@ def reset_custom_type() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.customType">custom_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserKeywords">UserKeywords</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserKeywords">UserKeywords</a>]</code> | *No description.* |
 
 ---
 
@@ -7872,10 +7872,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserKeywords, IResolvable]
+internal_value: typing.Union[IResolvable, UserKeywords]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserKeywords">UserKeywords</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserKeywords">UserKeywords</a>]
 
 ---
 
@@ -8313,7 +8313,7 @@ def reset_preference() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.customLanguage">custom_language</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.languageCode">language_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.preference">preference</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserLanguages">UserLanguages</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserLanguages">UserLanguages</a>]</code> | *No description.* |
 
 ---
 
@@ -8404,10 +8404,10 @@ preference: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserLanguages, IResolvable]
+internal_value: typing.Union[IResolvable, UserLanguages]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserLanguages">UserLanguages</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserLanguages">UserLanguages</a>]
 
 ---
 
@@ -8874,7 +8874,7 @@ def reset_floor_section() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.floorName">floor_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.floorSection">floor_section</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserLocations">UserLocations</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserLocations">UserLocations</a>]</code> | *No description.* |
 
 ---
 
@@ -9045,10 +9045,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserLocations, IResolvable]
+internal_value: typing.Union[IResolvable, UserLocations]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserLocations">UserLocations</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserLocations">UserLocations</a>]
 
 ---
 
@@ -9896,7 +9896,7 @@ def reset_title() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.symbol">symbol</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.title">title</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserOrganizations">UserOrganizations</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserOrganizations">UserOrganizations</a>]</code> | *No description.* |
 
 ---
 
@@ -10167,10 +10167,10 @@ type: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserOrganizations, IResolvable]
+internal_value: typing.Union[IResolvable, UserOrganizations]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserOrganizations">UserOrganizations</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserOrganizations">UserOrganizations</a>]
 
 ---
 
@@ -10603,7 +10603,7 @@ def reset_primary() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.primary">primary</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserPhones">UserPhones</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserPhones">UserPhones</a>]</code> | *No description.* |
 
 ---
 
@@ -10714,10 +10714,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserPhones, IResolvable]
+internal_value: typing.Union[IResolvable, UserPhones]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserPhones">UserPhones</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserPhones">UserPhones</a>]
 
 ---
 
@@ -11218,7 +11218,7 @@ def reset_username() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.systemId">system_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.uid">uid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.username">username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserPosixAccounts">UserPosixAccounts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserPosixAccounts">UserPosixAccounts</a>]</code> | *No description.* |
 
 ---
 
@@ -11449,10 +11449,10 @@ username: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserPosixAccounts, IResolvable]
+internal_value: typing.Union[IResolvable, UserPosixAccounts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserPosixAccounts">UserPosixAccounts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserPosixAccounts">UserPosixAccounts</a>]
 
 ---
 
@@ -11876,7 +11876,7 @@ def reset_custom_type() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.customType">custom_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserRelations">UserRelations</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserRelations">UserRelations</a>]</code> | *No description.* |
 
 ---
 
@@ -11967,10 +11967,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserRelations, IResolvable]
+internal_value: typing.Union[IResolvable, UserRelations]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserRelations">UserRelations</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserRelations">UserRelations</a>]
 
 ---
 
@@ -12393,7 +12393,7 @@ def reset_expiration_time_usec() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.expirationTimeUsec">expiration_time_usec</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeys">UserSshPublicKeys</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeys">UserSshPublicKeys</a>]</code> | *No description.* |
 
 ---
 
@@ -12474,10 +12474,10 @@ key: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserSshPublicKeys, IResolvable]
+internal_value: typing.Union[IResolvable, UserSshPublicKeys]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeys">UserSshPublicKeys</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserSshPublicKeys">UserSshPublicKeys</a>]
 
 ---
 
@@ -12735,7 +12735,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -12806,10 +12806,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, UserTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserTimeouts">UserTimeouts</a>]
 
 ---
 
@@ -13242,7 +13242,7 @@ def reset_primary() -> None
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.primary">primary</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserWebsites">UserWebsites</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserWebsites">UserWebsites</a>]</code> | *No description.* |
 
 ---
 
@@ -13353,10 +13353,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[UserWebsites, IResolvable]
+internal_value: typing.Union[IResolvable, UserWebsites]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-googleworkspace.user.UserWebsites">UserWebsites</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-googleworkspace.user.UserWebsites">UserWebsites</a>]
 
 ---
 

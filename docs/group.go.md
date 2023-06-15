@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v5/group"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v5/group"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v5/group"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v5/group"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v5/group"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/group"
 
 &group.GroupConfig {
 	Connection: interface{},
@@ -735,7 +735,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v5/gr
 	Aliases: *[]*string,
 	Description: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v5.group.GroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6.group.GroupTimeouts,
 }
 ```
 
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.group.GroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v5/group"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/group"
 
 &group.GroupTimeouts {
 	Create: *string,
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.group.GroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v5/group"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/group"
 
 group.NewGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupTimeoutsOutputReference
 ```
