@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.domain.Domain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/domain"
 
 domain.NewDomain(scope Construct, id *string, config DomainConfig) Domain
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.domain.Domain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/domain"
 
 domain.Domain_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.domain.Domain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/domain"
 
 domain.Domain_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ domain.Domain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.domain.Domain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/domain"
 
 domain.Domain_IsTerraformResource(x interface{}) *bool
 ```
@@ -603,7 +603,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.domain.DomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/domain"
 
 &domain.DomainConfig {
 	Connection: interface{},
