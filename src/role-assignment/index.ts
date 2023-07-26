@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface RoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The unique ID of the user this role is assigned to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment#assigned_to RoleAssignment#assigned_to}
   */
   readonly assignedTo: string;
   /**
   * If the role is restricted to an organization unit, this contains the ID for the organization unit the exercise of this role is restricted to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment#org_unit_id RoleAssignment#org_unit_id}
   */
   readonly orgUnitId?: string;
   /**
   * The ID of the role that is assigned.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment#role_id RoleAssignment#role_id}
   */
   readonly roleId: string;
@@ -34,7 +34,7 @@ export interface RoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   * Defaults to `CUSTOMER`. The scope in which this role is assigned. Valid values are :
 	- `CUSTOMER`
 	- `ORG_UNIT`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment#scope_type RoleAssignment#scope_type}
   */
   readonly scopeType?: string;

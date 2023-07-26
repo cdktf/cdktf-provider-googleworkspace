@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataGoogleworkspaceDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * The domain name of the customer.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/domain#domain_name DataGoogleworkspaceDomain#domain_name}
   */
   readonly domainName: string;

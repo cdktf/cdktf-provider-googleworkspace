@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface SchemaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Display name for the schema.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#display_name Schema#display_name}
   */
   readonly displayName?: string;
   /**
   * The schema's name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#schema_name Schema#schema_name}
   */
   readonly schemaName: string;
   /**
   * fields block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#fields Schema#fields}
   */
   readonly fields: SchemaFields[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#timeouts Schema#timeouts}
   */
   readonly timeouts?: SchemaTimeouts;
@@ -40,13 +40,13 @@ export interface SchemaConfig extends cdktf.TerraformMetaArguments {
 export interface SchemaFieldsNumericIndexingSpec {
   /**
   * Maximum value of this field. This is meant to be indicative rather than enforced. Values outside this range will still be indexed, but search may not be as performant.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#max_value Schema#max_value}
   */
   readonly maxValue?: number;
   /**
   * Minimum value of this field. This is meant to be indicative rather than enforced. Values outside this range will still be indexed, but search may not be as performant.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#min_value Schema#min_value}
   */
   readonly minValue?: number;
@@ -136,13 +136,13 @@ export class SchemaFieldsNumericIndexingSpecOutputReference extends cdktf.Comple
 export interface SchemaFields {
   /**
   * Display Name of the field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#display_name Schema#display_name}
   */
   readonly displayName?: string;
   /**
   * The name of the field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#field_name Schema#field_name}
   */
   readonly fieldName: string;
@@ -155,19 +155,19 @@ export interface SchemaFields {
 	- `INT64`
 	- `PHONE`
 	- `STRING`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#field_type Schema#field_type}
   */
   readonly fieldType: string;
   /**
   * Defaults to `true`. Boolean specifying whether the field is indexed or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#indexed Schema#indexed}
   */
   readonly indexed?: boolean | cdktf.IResolvable;
   /**
   * Defaults to `false`. A boolean specifying whether this is a multi-valued field or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#multi_valued Schema#multi_valued}
   */
   readonly multiValued?: boolean | cdktf.IResolvable;
@@ -176,13 +176,13 @@ export interface SchemaFields {
 	- `ADMINS_AND_SELF`
 	- `ALL_DOMAIN_USERS`
 	Note: It may take up to 24 hours for changes to this field to be reflected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#read_access_type Schema#read_access_type}
   */
   readonly readAccessType?: string;
   /**
   * numeric_indexing_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#numeric_indexing_spec Schema#numeric_indexing_spec}
   */
   readonly numericIndexingSpec?: SchemaFieldsNumericIndexingSpec;
