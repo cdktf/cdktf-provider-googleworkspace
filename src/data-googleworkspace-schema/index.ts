@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/schema
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface DataGoogleworkspaceSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
   * The unique identifier of the schema.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/schema#schema_id DataGoogleworkspaceSchema#schema_id}
   */
   readonly schemaId?: string;
   /**
   * The schema's name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/schema#schema_name DataGoogleworkspaceSchema#schema_name}
   */
   readonly schemaName?: string;

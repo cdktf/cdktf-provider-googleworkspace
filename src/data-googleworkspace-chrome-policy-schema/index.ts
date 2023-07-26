@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/chrome_policy_schema
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataGoogleworkspaceChromePolicySchemaConfig extends cdktf.Terra
   readonly id?: string;
   /**
   * The full qualified name of the policy schema
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/chrome_policy_schema#schema_name DataGoogleworkspaceChromePolicySchema#schema_name}
   */
   readonly schemaName: string;

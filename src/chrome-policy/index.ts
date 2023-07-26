@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/chrome_policy
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface ChromePolicyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The target org unit on which this policy is applied.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/chrome_policy#org_unit_id ChromePolicy#org_unit_id}
   */
   readonly orgUnitId: string;
   /**
   * policies block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/chrome_policy#policies ChromePolicy#policies}
   */
   readonly policies: ChromePolicyPolicies[] | cdktf.IResolvable;
@@ -35,13 +30,13 @@ export interface ChromePolicyConfig extends cdktf.TerraformMetaArguments {
 export interface ChromePolicyPolicies {
   /**
   * The full qualified name of the policy schema.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/chrome_policy#schema_name ChromePolicy#schema_name}
   */
   readonly schemaName: string;
   /**
   * JSON encoded map that represents key/value pairs that correspond to the given schema.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/chrome_policy#schema_values ChromePolicy#schema_values}
   */
   readonly schemaValues: { [key: string]: string };
