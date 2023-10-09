@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 groupmember.NewGroupMember(scope Construct, id *string, config GroupMemberConfig) GroupMember
 ```
@@ -311,7 +311,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 groupmember.GroupMember_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 groupmember.GroupMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ groupmember.GroupMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.groupMember.GroupMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 groupmember.GroupMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -732,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.groupMember.GroupMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 &groupmember.GroupMemberConfig {
 	Connection: interface{},
@@ -746,7 +746,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/gr
 	GroupId: *string,
 	DeliverySettings: *string,
 	Role: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6.groupMember.GroupMemberTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.groupMember.GroupMemberTimeouts,
 	Type: *string,
 }
 ```
@@ -884,12 +884,11 @@ DeliverySettings *string
 Defaults to `ALL_MAIL`.
 
 Defines mail delivery preferences of member. Acceptable values are:
-
-* `ALL_MAIL`: All messages, delivered as soon as they arrive.
-* `DAILY`: No more than one message a day.
-* `DIGEST`: Up to 25 messages bundled into a single message.
-* `DISABLED`: Remove subscription.
-* `NONE`: No messages.
+- `ALL_MAIL`: All messages, delivered as soon as they arrive.
+- `DAILY`: No more than one message a day.
+- `DIGEST`: Up to 25 messages bundled into a single message.
+- `DISABLED`: Remove subscription.
+- `NONE`: No messages.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#delivery_settings GroupMember#delivery_settings}
 
@@ -906,10 +905,9 @@ Role *string
 Defaults to `MEMBER`.
 
 The member's role in a group. The API returns an error for cycles in group memberships. For example, if group1 is a member of group2, group2 cannot be a member of group1. Acceptable values are:
-
-* `MANAGER`: This role is only available if the Google Groups for Business is enabled using the Admin Console. A `MANAGER` role can do everything done by an `OWNER` role except make a member an `OWNER` or delete the group. A group can have multiple `MANAGER` members.
-* `MEMBER`: This role can subscribe to a group, view discussion archives, and view the group's membership list.
-* `OWNER`: This role can send messages to the group, add or remove members, change member roles, change group's settings, and delete the group. An OWNER must be a member of the group. A group can have more than one OWNER.
+- `MANAGER`: This role is only available if the Google Groups for Business is enabled using the Admin Console. A `MANAGER` role can do everything done by an `OWNER` role except make a member an `OWNER` or delete the group. A group can have multiple `MANAGER` members.
+- `MEMBER`: This role can subscribe to a group, view discussion archives, and view the group's membership list.
+- `OWNER`: This role can send messages to the group, add or remove members, change member roles, change group's settings, and delete the group. An OWNER must be a member of the group. A group can have more than one OWNER.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#role GroupMember#role}
 
@@ -940,10 +938,9 @@ Type *string
 Defaults to `USER`.
 
 The type of group member. Acceptable values are:
-
-* `CUSTOMER`: The member represents all users in a domain. An email address is not returned and the ID returned is the customer ID.
-* `GROUP`: The member is another group.
-* `USER`: The member is a user.
+- `CUSTOMER`: The member represents all users in a domain. An email address is not returned and the ID returned is the customer ID.
+- `GROUP`: The member is another group.
+- `USER`: The member is a user.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_member#type GroupMember#type}
 
@@ -954,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.groupMember.GroupMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 &groupmember.GroupMemberTimeouts {
 	Create: *string,
@@ -1002,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.groupMember.GroupMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/groupmember"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupmember"
 
 groupmember.NewGroupMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupMemberTimeoutsOutputReference
 ```

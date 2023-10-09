@@ -85,13 +85,13 @@ groupSettings.GroupSettings(
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.sendMessageDenyNotification">send_message_deny_notification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Defaults to `false`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.spamModerationLevel">spam_moderation_level</a></code> | <code>str</code> | Defaults to `MODERATE`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsTimeouts">GroupSettingsTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanAssistContent">who_can_assist_content</a></code> | <code>str</code> | Defaults to `NONE`. Specifies who can moderate metadata. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `MANAGERS_ONLY` - `OWNERS_ONLY` - `NONE`. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanAssistContent">who_can_assist_content</a></code> | <code>str</code> | Defaults to `NONE`. Specifies who can moderate metadata. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `MANAGERS_ONLY` 	- `OWNERS_ONLY` 	- `NONE`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanContactOwner">who_can_contact_owner</a></code> | <code>str</code> | Defaults to `ANYONE_CAN_CONTACT`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanDiscoverGroup">who_can_discover_group</a></code> | <code>str</code> | Defaults to `ALL_IN_DOMAIN_CAN_DISCOVER`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanJoin">who_can_join</a></code> | <code>str</code> | Defaults to `CAN_REQUEST_TO_JOIN`. |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanLeaveGroup">who_can_leave_group</a></code> | <code>str</code> | Defaults to `ALL_MEMBERS_CAN_LEAVE`. Permission to leave the group. Possible values are: - `ALL_MANAGERS_CAN_LEAVE` - `ALL_MEMBERS_CAN_LEAVE` - `NONE_CAN_LEAVE`. |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanModerateContent">who_can_moderate_content</a></code> | <code>str</code> | Defaults to `OWNERS_AND_MANAGERS`. Specifies who can moderate content. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`. |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanModerateMembers">who_can_moderate_members</a></code> | <code>str</code> | Defaults to `OWNERS_AND_MANAGERS`. Specifies who can manage members. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanLeaveGroup">who_can_leave_group</a></code> | <code>str</code> | Defaults to `ALL_MEMBERS_CAN_LEAVE`. Permission to leave the group. Possible values are: 	- `ALL_MANAGERS_CAN_LEAVE` 	- `ALL_MEMBERS_CAN_LEAVE` 	- `NONE_CAN_LEAVE`. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanModerateContent">who_can_moderate_content</a></code> | <code>str</code> | Defaults to `OWNERS_AND_MANAGERS`. Specifies who can moderate content. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `OWNERS_ONLY` 	- `NONE`. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanModerateMembers">who_can_moderate_members</a></code> | <code>str</code> | Defaults to `OWNERS_AND_MANAGERS`. Specifies who can manage members. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `OWNERS_ONLY` 	- `NONE`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanPostMessage">who_can_post_message</a></code> | <code>str</code> | Permissions to post messages. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanViewGroup">who_can_view_group</a></code> | <code>str</code> | Defaults to `ALL_MEMBERS_CAN_VIEW`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer.parameter.whoCanViewMembership">who_can_view_membership</a></code> | <code>str</code> | Defaults to `ALL_MEMBERS_CAN_VIEW`. |
@@ -301,12 +301,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 Defaults to `MODERATE_NONE`.
 
 Moderation level of incoming messages. Possible values are:
-
-* `MODERATE_ALL_MESSAGES`: All messages are sent to the group owner's email address for approval. If approved, the message is sent to the group.
-* `MODERATE_NON_MEMBERS`: All messages from non group members are sent to the group owner's email address for approval. If approved, the message is sent to the group.
-* `MODERATE_NEW_MEMBERS`: All messages from new members are sent to the group owner's email address for approval. If approved, the message is sent to the group.
-* `MODERATE_NONE`: No moderator approval is required. Messages are delivered directly to the group.
-  Note: When the `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the `message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam.When `member_can_post_as_the_group` is true, any message moderation settings on individual users or new members will not apply to posts made on behalf of the group.
+- `MODERATE_ALL_MESSAGES`: All messages are sent to the group owner's email address for approval. If approved, the message is sent to the group.
+- `MODERATE_NON_MEMBERS`: All messages from non group members are sent to the group owner's email address for approval. If approved, the message is sent to the group.
+- `MODERATE_NEW_MEMBERS`: All messages from new members are sent to the group owner's email address for approval. If approved, the message is sent to the group.
+- `MODERATE_NONE`: No moderator approval is required. Messages are delivered directly to the group.
+Note: When the `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the `message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam.When `member_can_post_as_the_group` is true, any message moderation settings on individual users or new members will not apply to posts made on behalf of the group.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#message_moderation_level GroupSettings#message_moderation_level}
 
@@ -331,13 +330,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 Defaults to `REPLY_TO_IGNORE`.
 
 Specifies who receives the default reply. Possible values are:
-
-* `REPLY_TO_CUSTOM`: For replies to messages, use the group's custom email address. When set to `REPLY_TO_CUSTOM`, the `custom_reply_to` property holds the custom email address used when replying to a message, the customReplyTo property must have a value. Otherwise an error is returned.
-* `REPLY_TO_SENDER`: The reply sent to author of message.
-* `REPLY_TO_LIST`: This reply message is sent to the group.
-* `REPLY_TO_OWNER`: The reply is sent to the owner(s) of the group. This does not include the group's managers.
-* `REPLY_TO_IGNORE`: Group users individually decide where the message reply is sent.
-* `REPLY_TO_MANAGERS`: This reply message is sent to the group's managers, which includes all managers and the group owner.
+- `REPLY_TO_CUSTOM`: For replies to messages, use the group's custom email address. When set to `REPLY_TO_CUSTOM`, the `custom_reply_to` property holds the custom email address used when replying to a message, the customReplyTo property must have a value. Otherwise an error is returned.
+- `REPLY_TO_SENDER`: The reply sent to author of message.
+- `REPLY_TO_LIST`: This reply message is sent to the group.
+- `REPLY_TO_OWNER`: The reply is sent to the owner(s) of the group. This does not include the group's managers.
+- `REPLY_TO_IGNORE`: Group users individually decide where the message reply is sent.
+- `REPLY_TO_MANAGERS`: This reply message is sent to the group's managers, which includes all managers and the group owner.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#reply_to GroupSettings#reply_to}
 
@@ -362,11 +360,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 Defaults to `MODERATE`.
 
 Specifies moderation levels for messages detected as spam. Possible values are:
-
-* `ALLOW`: Post the message to the group.
-* `MODERATE`: Send the message to the moderation queue. This is the default.
-* `SILENTLY_MODERATE`: Send the message to the moderation queue, but do not send notification to moderators.
-* `REJECT`: Immediately reject the message.
+- `ALLOW`: Post the message to the group.
+- `MODERATE`: Send the message to the moderation queue. This is the default.
+- `SILENTLY_MODERATE`: Send the message to the moderation queue, but do not send notification to moderators.
+- `REJECT`: Immediately reject the message.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#spam_moderation_level GroupSettings#spam_moderation_level}
 
@@ -386,7 +383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Defaults to `NONE`. Specifies who can moderate metadata. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `MANAGERS_ONLY` - `OWNERS_ONLY` - `NONE`.
+Defaults to `NONE`. Specifies who can moderate metadata. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `MANAGERS_ONLY` 	- `OWNERS_ONLY` 	- `NONE`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_assist_content GroupSettings#who_can_assist_content}
 
@@ -399,12 +396,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 Defaults to `ANYONE_CAN_CONTACT`.
 
 Permission to contact owner of the group via web UI. Possible values are:
-
-* `ALL_IN_DOMAIN_CAN_CONTACT`
-* `ALL_MANAGERS_CAN_CONTACT`
-* `ALL_MEMBERS_CAN_CONTACT`
-* `ANYONE_CAN_CONTACT`
-* `ALL_OWNERS_CAN_CONTACT`
+- `ALL_IN_DOMAIN_CAN_CONTACT`
+- `ALL_MANAGERS_CAN_CONTACT`
+- `ALL_MEMBERS_CAN_CONTACT`
+- `ANYONE_CAN_CONTACT`
+- `ALL_OWNERS_CAN_CONTACT`
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_contact_owner GroupSettings#who_can_contact_owner}
 
@@ -417,10 +413,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 Defaults to `ALL_IN_DOMAIN_CAN_DISCOVER`.
 
 Specifies the set of users for whom this group is discoverable. Possible values are:
-
-* `ANYONE_CAN_DISCOVER`
-* `ALL_IN_DOMAIN_CAN_DISCOVER`
-* `ALL_MEMBERS_CAN_DISCOVER`
+- `ANYONE_CAN_DISCOVER`
+- `ALL_IN_DOMAIN_CAN_DISCOVER`
+- `ALL_MEMBERS_CAN_DISCOVER`
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_discover_group GroupSettings#who_can_discover_group}
 
@@ -433,11 +428,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 Defaults to `CAN_REQUEST_TO_JOIN`.
 
 Permission to join group. Possible values are:
-
-* `ANYONE_CAN_JOIN`: Any Internet user, both inside and outside your domain, can join the group.
-* `ALL_IN_DOMAIN_CAN_JOIN`: Anyone in the account domain can join. This includes accounts with multiple domains.
-* `INVITED_CAN_JOIN`: Candidates for membership can be invited to join.
-* `CAN_REQUEST_TO_JOIN`: Non members can request an invitation to join.
+- `ANYONE_CAN_JOIN`: Any Internet user, both inside and outside your domain, can join the group.
+- `ALL_IN_DOMAIN_CAN_JOIN`: Anyone in the account domain can join. This includes accounts with multiple domains.
+- `INVITED_CAN_JOIN`: Candidates for membership can be invited to join.
+- `CAN_REQUEST_TO_JOIN`: Non members can request an invitation to join.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_join GroupSettings#who_can_join}
 
@@ -447,7 +441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Defaults to `ALL_MEMBERS_CAN_LEAVE`. Permission to leave the group. Possible values are: - `ALL_MANAGERS_CAN_LEAVE` - `ALL_MEMBERS_CAN_LEAVE` - `NONE_CAN_LEAVE`.
+Defaults to `ALL_MEMBERS_CAN_LEAVE`. Permission to leave the group. Possible values are: 	- `ALL_MANAGERS_CAN_LEAVE` 	- `ALL_MEMBERS_CAN_LEAVE` 	- `NONE_CAN_LEAVE`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_leave_group GroupSettings#who_can_leave_group}
 
@@ -457,7 +451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Defaults to `OWNERS_AND_MANAGERS`. Specifies who can moderate content. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`.
+Defaults to `OWNERS_AND_MANAGERS`. Specifies who can moderate content. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `OWNERS_ONLY` 	- `NONE`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_moderate_content GroupSettings#who_can_moderate_content}
 
@@ -467,7 +461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Defaults to `OWNERS_AND_MANAGERS`. Specifies who can manage members. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`.
+Defaults to `OWNERS_AND_MANAGERS`. Specifies who can manage members. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `OWNERS_ONLY` 	- `NONE`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_moderate_members GroupSettings#who_can_moderate_members}
 
@@ -480,14 +474,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 Permissions to post messages.
 
 Possible values are:
-
-* `NONE_CAN_POST`: The group is disabled and archived. No one can post a message to this group. * When archiveOnly is false, updating whoCanPostMessage to NONE_CAN_POST, results in an error. * If archiveOnly is reverted from true to false, whoCanPostMessages is set to ALL_MANAGERS_CAN_POST.
-* `ALL_MANAGERS_CAN_POST`: Managers, including group owners, can post messages.
-* `ALL_MEMBERS_CAN_POST`: Any group member can post a message.
-* `ALL_OWNERS_CAN_POST`: Only group owners can post a message.
-* `ALL_IN_DOMAIN_CAN_POST`: Anyone in the account can post a message.
-* `ANYONE_CAN_POST`: Any Internet user who outside your account can access your Google Groups service and post a message.
-  Note: When `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the`message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam. Users not belonging to the organization are not allowed to become members of this group.
+- `NONE_CAN_POST`: The group is disabled and archived. No one can post a message to this group. * When archiveOnly is false, updating whoCanPostMessage to NONE_CAN_POST, results in an error. * If archiveOnly is reverted from true to false, whoCanPostMessages is set to ALL_MANAGERS_CAN_POST.
+- `ALL_MANAGERS_CAN_POST`: Managers, including group owners, can post messages.
+- `ALL_MEMBERS_CAN_POST`: Any group member can post a message.
+- `ALL_OWNERS_CAN_POST`: Only group owners can post a message.
+- `ALL_IN_DOMAIN_CAN_POST`: Anyone in the account can post a message.
+- `ANYONE_CAN_POST`: Any Internet user who outside your account can access your Google Groups service and post a message.
+*Note: When `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the`message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam. Users not belonging to the organization are not allowed to become members of this group.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_post_message GroupSettings#who_can_post_message}
 
@@ -500,12 +493,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 Defaults to `ALL_MEMBERS_CAN_VIEW`.
 
 Permissions to view group messages. Possible values are:
-
-* `ANYONE_CAN_VIEW`: Any Internet user can view the group's messages.
-* `ALL_IN_DOMAIN_CAN_VIEW`: Anyone in your account can view this group's messages.
-* `ALL_MEMBERS_CAN_VIEW`: All group members can view the group's messages.
-* `ALL_MANAGERS_CAN_VIEW`: Any group manager can view this group's messages.
-* `ALL_OWNERS_CAN_VIEW`: The group owners can view this group's messages.
+- `ANYONE_CAN_VIEW`: Any Internet user can view the group's messages.
+- `ALL_IN_DOMAIN_CAN_VIEW`: Anyone in your account can view this group's messages.
+- `ALL_MEMBERS_CAN_VIEW`: All group members can view the group's messages.
+- `ALL_MANAGERS_CAN_VIEW`: Any group manager can view this group's messages.
+- `ALL_OWNERS_CAN_VIEW`: The group owners can view this group's messages.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_view_group GroupSettings#who_can_view_group}
 
@@ -518,11 +510,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 Defaults to `ALL_MEMBERS_CAN_VIEW`.
 
 Permissions to view membership. Possible values are:
-
-* `ALL_IN_DOMAIN_CAN_VIEW`: Anyone in the account can view the group members list. If a group already has external members, those members can still send email to this group.
-* `ALL_MEMBERS_CAN_VIEW`: The group members can view the group members list.
-* `ALL_MANAGERS_CAN_VIEW`: The group managers can view group members list.
-* `ALL_OWNERS_CAN_VIEW`: The group owners can view group members list.
+- `ALL_IN_DOMAIN_CAN_VIEW`: Anyone in the account can view the group members list. If a group already has external members, those members can still send email to this group.
+- `ALL_MEMBERS_CAN_VIEW`: The group members can view the group members list.
+- `ALL_MANAGERS_CAN_VIEW`: The group managers can view group members list.
+- `ALL_OWNERS_CAN_VIEW`: The group owners can view group members list.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_view_membership GroupSettings#who_can_view_membership}
 
@@ -1969,13 +1960,13 @@ groupSettings.GroupSettingsConfig(
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.sendMessageDenyNotification">send_message_deny_notification</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Defaults to `false`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.spamModerationLevel">spam_moderation_level</a></code> | <code>str</code> | Defaults to `MODERATE`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsTimeouts">GroupSettingsTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanAssistContent">who_can_assist_content</a></code> | <code>str</code> | Defaults to `NONE`. Specifies who can moderate metadata. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `MANAGERS_ONLY` - `OWNERS_ONLY` - `NONE`. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanAssistContent">who_can_assist_content</a></code> | <code>str</code> | Defaults to `NONE`. Specifies who can moderate metadata. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `MANAGERS_ONLY` 	- `OWNERS_ONLY` 	- `NONE`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanContactOwner">who_can_contact_owner</a></code> | <code>str</code> | Defaults to `ANYONE_CAN_CONTACT`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanDiscoverGroup">who_can_discover_group</a></code> | <code>str</code> | Defaults to `ALL_IN_DOMAIN_CAN_DISCOVER`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanJoin">who_can_join</a></code> | <code>str</code> | Defaults to `CAN_REQUEST_TO_JOIN`. |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanLeaveGroup">who_can_leave_group</a></code> | <code>str</code> | Defaults to `ALL_MEMBERS_CAN_LEAVE`. Permission to leave the group. Possible values are: - `ALL_MANAGERS_CAN_LEAVE` - `ALL_MEMBERS_CAN_LEAVE` - `NONE_CAN_LEAVE`. |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanModerateContent">who_can_moderate_content</a></code> | <code>str</code> | Defaults to `OWNERS_AND_MANAGERS`. Specifies who can moderate content. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`. |
-| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanModerateMembers">who_can_moderate_members</a></code> | <code>str</code> | Defaults to `OWNERS_AND_MANAGERS`. Specifies who can manage members. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanLeaveGroup">who_can_leave_group</a></code> | <code>str</code> | Defaults to `ALL_MEMBERS_CAN_LEAVE`. Permission to leave the group. Possible values are: 	- `ALL_MANAGERS_CAN_LEAVE` 	- `ALL_MEMBERS_CAN_LEAVE` 	- `NONE_CAN_LEAVE`. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanModerateContent">who_can_moderate_content</a></code> | <code>str</code> | Defaults to `OWNERS_AND_MANAGERS`. Specifies who can moderate content. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `OWNERS_ONLY` 	- `NONE`. |
+| <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanModerateMembers">who_can_moderate_members</a></code> | <code>str</code> | Defaults to `OWNERS_AND_MANAGERS`. Specifies who can manage members. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `OWNERS_ONLY` 	- `NONE`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanPostMessage">who_can_post_message</a></code> | <code>str</code> | Permissions to post messages. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanViewGroup">who_can_view_group</a></code> | <code>str</code> | Defaults to `ALL_MEMBERS_CAN_VIEW`. |
 | <code><a href="#@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.property.whoCanViewMembership">who_can_view_membership</a></code> | <code>str</code> | Defaults to `ALL_MEMBERS_CAN_VIEW`. |
@@ -2247,12 +2238,11 @@ message_moderation_level: str
 Defaults to `MODERATE_NONE`.
 
 Moderation level of incoming messages. Possible values are:
-
-* `MODERATE_ALL_MESSAGES`: All messages are sent to the group owner's email address for approval. If approved, the message is sent to the group.
-* `MODERATE_NON_MEMBERS`: All messages from non group members are sent to the group owner's email address for approval. If approved, the message is sent to the group.
-* `MODERATE_NEW_MEMBERS`: All messages from new members are sent to the group owner's email address for approval. If approved, the message is sent to the group.
-* `MODERATE_NONE`: No moderator approval is required. Messages are delivered directly to the group.
-  Note: When the `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the `message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam.When `member_can_post_as_the_group` is true, any message moderation settings on individual users or new members will not apply to posts made on behalf of the group.
+- `MODERATE_ALL_MESSAGES`: All messages are sent to the group owner's email address for approval. If approved, the message is sent to the group.
+- `MODERATE_NON_MEMBERS`: All messages from non group members are sent to the group owner's email address for approval. If approved, the message is sent to the group.
+- `MODERATE_NEW_MEMBERS`: All messages from new members are sent to the group owner's email address for approval. If approved, the message is sent to the group.
+- `MODERATE_NONE`: No moderator approval is required. Messages are delivered directly to the group.
+Note: When the `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the `message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam.When `member_can_post_as_the_group` is true, any message moderation settings on individual users or new members will not apply to posts made on behalf of the group.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#message_moderation_level GroupSettings#message_moderation_level}
 
@@ -2285,13 +2275,12 @@ reply_to: str
 Defaults to `REPLY_TO_IGNORE`.
 
 Specifies who receives the default reply. Possible values are:
-
-* `REPLY_TO_CUSTOM`: For replies to messages, use the group's custom email address. When set to `REPLY_TO_CUSTOM`, the `custom_reply_to` property holds the custom email address used when replying to a message, the customReplyTo property must have a value. Otherwise an error is returned.
-* `REPLY_TO_SENDER`: The reply sent to author of message.
-* `REPLY_TO_LIST`: This reply message is sent to the group.
-* `REPLY_TO_OWNER`: The reply is sent to the owner(s) of the group. This does not include the group's managers.
-* `REPLY_TO_IGNORE`: Group users individually decide where the message reply is sent.
-* `REPLY_TO_MANAGERS`: This reply message is sent to the group's managers, which includes all managers and the group owner.
+- `REPLY_TO_CUSTOM`: For replies to messages, use the group's custom email address. When set to `REPLY_TO_CUSTOM`, the `custom_reply_to` property holds the custom email address used when replying to a message, the customReplyTo property must have a value. Otherwise an error is returned.
+- `REPLY_TO_SENDER`: The reply sent to author of message.
+- `REPLY_TO_LIST`: This reply message is sent to the group.
+- `REPLY_TO_OWNER`: The reply is sent to the owner(s) of the group. This does not include the group's managers.
+- `REPLY_TO_IGNORE`: Group users individually decide where the message reply is sent.
+- `REPLY_TO_MANAGERS`: This reply message is sent to the group's managers, which includes all managers and the group owner.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#reply_to GroupSettings#reply_to}
 
@@ -2324,11 +2313,10 @@ spam_moderation_level: str
 Defaults to `MODERATE`.
 
 Specifies moderation levels for messages detected as spam. Possible values are:
-
-* `ALLOW`: Post the message to the group.
-* `MODERATE`: Send the message to the moderation queue. This is the default.
-* `SILENTLY_MODERATE`: Send the message to the moderation queue, but do not send notification to moderators.
-* `REJECT`: Immediately reject the message.
+- `ALLOW`: Post the message to the group.
+- `MODERATE`: Send the message to the moderation queue. This is the default.
+- `SILENTLY_MODERATE`: Send the message to the moderation queue, but do not send notification to moderators.
+- `REJECT`: Immediately reject the message.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#spam_moderation_level GroupSettings#spam_moderation_level}
 
@@ -2356,7 +2344,7 @@ who_can_assist_content: str
 
 - *Type:* str
 
-Defaults to `NONE`. Specifies who can moderate metadata. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `MANAGERS_ONLY` - `OWNERS_ONLY` - `NONE`.
+Defaults to `NONE`. Specifies who can moderate metadata. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `MANAGERS_ONLY` 	- `OWNERS_ONLY` 	- `NONE`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_assist_content GroupSettings#who_can_assist_content}
 
@@ -2373,12 +2361,11 @@ who_can_contact_owner: str
 Defaults to `ANYONE_CAN_CONTACT`.
 
 Permission to contact owner of the group via web UI. Possible values are:
-
-* `ALL_IN_DOMAIN_CAN_CONTACT`
-* `ALL_MANAGERS_CAN_CONTACT`
-* `ALL_MEMBERS_CAN_CONTACT`
-* `ANYONE_CAN_CONTACT`
-* `ALL_OWNERS_CAN_CONTACT`
+- `ALL_IN_DOMAIN_CAN_CONTACT`
+- `ALL_MANAGERS_CAN_CONTACT`
+- `ALL_MEMBERS_CAN_CONTACT`
+- `ANYONE_CAN_CONTACT`
+- `ALL_OWNERS_CAN_CONTACT`
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_contact_owner GroupSettings#who_can_contact_owner}
 
@@ -2395,10 +2382,9 @@ who_can_discover_group: str
 Defaults to `ALL_IN_DOMAIN_CAN_DISCOVER`.
 
 Specifies the set of users for whom this group is discoverable. Possible values are:
-
-* `ANYONE_CAN_DISCOVER`
-* `ALL_IN_DOMAIN_CAN_DISCOVER`
-* `ALL_MEMBERS_CAN_DISCOVER`
+- `ANYONE_CAN_DISCOVER`
+- `ALL_IN_DOMAIN_CAN_DISCOVER`
+- `ALL_MEMBERS_CAN_DISCOVER`
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_discover_group GroupSettings#who_can_discover_group}
 
@@ -2415,11 +2401,10 @@ who_can_join: str
 Defaults to `CAN_REQUEST_TO_JOIN`.
 
 Permission to join group. Possible values are:
-
-* `ANYONE_CAN_JOIN`: Any Internet user, both inside and outside your domain, can join the group.
-* `ALL_IN_DOMAIN_CAN_JOIN`: Anyone in the account domain can join. This includes accounts with multiple domains.
-* `INVITED_CAN_JOIN`: Candidates for membership can be invited to join.
-* `CAN_REQUEST_TO_JOIN`: Non members can request an invitation to join.
+- `ANYONE_CAN_JOIN`: Any Internet user, both inside and outside your domain, can join the group.
+- `ALL_IN_DOMAIN_CAN_JOIN`: Anyone in the account domain can join. This includes accounts with multiple domains.
+- `INVITED_CAN_JOIN`: Candidates for membership can be invited to join.
+- `CAN_REQUEST_TO_JOIN`: Non members can request an invitation to join.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_join GroupSettings#who_can_join}
 
@@ -2433,7 +2418,7 @@ who_can_leave_group: str
 
 - *Type:* str
 
-Defaults to `ALL_MEMBERS_CAN_LEAVE`. Permission to leave the group. Possible values are: - `ALL_MANAGERS_CAN_LEAVE` - `ALL_MEMBERS_CAN_LEAVE` - `NONE_CAN_LEAVE`.
+Defaults to `ALL_MEMBERS_CAN_LEAVE`. Permission to leave the group. Possible values are: 	- `ALL_MANAGERS_CAN_LEAVE` 	- `ALL_MEMBERS_CAN_LEAVE` 	- `NONE_CAN_LEAVE`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_leave_group GroupSettings#who_can_leave_group}
 
@@ -2447,7 +2432,7 @@ who_can_moderate_content: str
 
 - *Type:* str
 
-Defaults to `OWNERS_AND_MANAGERS`. Specifies who can moderate content. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`.
+Defaults to `OWNERS_AND_MANAGERS`. Specifies who can moderate content. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `OWNERS_ONLY` 	- `NONE`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_moderate_content GroupSettings#who_can_moderate_content}
 
@@ -2461,7 +2446,7 @@ who_can_moderate_members: str
 
 - *Type:* str
 
-Defaults to `OWNERS_AND_MANAGERS`. Specifies who can manage members. Possible values are:  - `ALL_MEMBERS` - `OWNERS_AND_MANAGERS` - `OWNERS_ONLY` - `NONE`.
+Defaults to `OWNERS_AND_MANAGERS`. Specifies who can manage members. Possible values are:  	- `ALL_MEMBERS` 	- `OWNERS_AND_MANAGERS` 	- `OWNERS_ONLY` 	- `NONE`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_moderate_members GroupSettings#who_can_moderate_members}
 
@@ -2478,14 +2463,13 @@ who_can_post_message: str
 Permissions to post messages.
 
 Possible values are:
-
-* `NONE_CAN_POST`: The group is disabled and archived. No one can post a message to this group. * When archiveOnly is false, updating whoCanPostMessage to NONE_CAN_POST, results in an error. * If archiveOnly is reverted from true to false, whoCanPostMessages is set to ALL_MANAGERS_CAN_POST.
-* `ALL_MANAGERS_CAN_POST`: Managers, including group owners, can post messages.
-* `ALL_MEMBERS_CAN_POST`: Any group member can post a message.
-* `ALL_OWNERS_CAN_POST`: Only group owners can post a message.
-* `ALL_IN_DOMAIN_CAN_POST`: Anyone in the account can post a message.
-* `ANYONE_CAN_POST`: Any Internet user who outside your account can access your Google Groups service and post a message.
-  Note: When `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the`message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam. Users not belonging to the organization are not allowed to become members of this group.
+- `NONE_CAN_POST`: The group is disabled and archived. No one can post a message to this group. * When archiveOnly is false, updating whoCanPostMessage to NONE_CAN_POST, results in an error. * If archiveOnly is reverted from true to false, whoCanPostMessages is set to ALL_MANAGERS_CAN_POST.
+- `ALL_MANAGERS_CAN_POST`: Managers, including group owners, can post messages.
+- `ALL_MEMBERS_CAN_POST`: Any group member can post a message.
+- `ALL_OWNERS_CAN_POST`: Only group owners can post a message.
+- `ALL_IN_DOMAIN_CAN_POST`: Anyone in the account can post a message.
+- `ANYONE_CAN_POST`: Any Internet user who outside your account can access your Google Groups service and post a message.
+*Note: When `who_can_post_message` is set to `ANYONE_CAN_POST`, we recommend the`message_moderation_level` be set to `MODERATE_NON_MEMBERS` to protect the group from possible spam. Users not belonging to the organization are not allowed to become members of this group.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_post_message GroupSettings#who_can_post_message}
 
@@ -2502,12 +2486,11 @@ who_can_view_group: str
 Defaults to `ALL_MEMBERS_CAN_VIEW`.
 
 Permissions to view group messages. Possible values are:
-
-* `ANYONE_CAN_VIEW`: Any Internet user can view the group's messages.
-* `ALL_IN_DOMAIN_CAN_VIEW`: Anyone in your account can view this group's messages.
-* `ALL_MEMBERS_CAN_VIEW`: All group members can view the group's messages.
-* `ALL_MANAGERS_CAN_VIEW`: Any group manager can view this group's messages.
-* `ALL_OWNERS_CAN_VIEW`: The group owners can view this group's messages.
+- `ANYONE_CAN_VIEW`: Any Internet user can view the group's messages.
+- `ALL_IN_DOMAIN_CAN_VIEW`: Anyone in your account can view this group's messages.
+- `ALL_MEMBERS_CAN_VIEW`: All group members can view the group's messages.
+- `ALL_MANAGERS_CAN_VIEW`: Any group manager can view this group's messages.
+- `ALL_OWNERS_CAN_VIEW`: The group owners can view this group's messages.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_view_group GroupSettings#who_can_view_group}
 
@@ -2524,11 +2507,10 @@ who_can_view_membership: str
 Defaults to `ALL_MEMBERS_CAN_VIEW`.
 
 Permissions to view membership. Possible values are:
-
-* `ALL_IN_DOMAIN_CAN_VIEW`: Anyone in the account can view the group members list. If a group already has external members, those members can still send email to this group.
-* `ALL_MEMBERS_CAN_VIEW`: The group members can view the group members list.
-* `ALL_MANAGERS_CAN_VIEW`: The group managers can view group members list.
-* `ALL_OWNERS_CAN_VIEW`: The group owners can view group members list.
+- `ALL_IN_DOMAIN_CAN_VIEW`: Anyone in the account can view the group members list. If a group already has external members, those members can still send email to this group.
+- `ALL_MEMBERS_CAN_VIEW`: The group members can view the group members list.
+- `ALL_MANAGERS_CAN_VIEW`: The group managers can view group members list.
+- `ALL_OWNERS_CAN_VIEW`: The group owners can view group members list.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#who_can_view_membership GroupSettings#who_can_view_membership}
 

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment
 // generated from terraform resource schema
 
@@ -32,8 +27,8 @@ export interface RoleAssignmentConfig extends cdktf.TerraformMetaArguments {
   readonly roleId: string;
   /**
   * Defaults to `CUSTOMER`. The scope in which this role is assigned. Valid values are :
-	- `CUSTOMER`
-	- `ORG_UNIT`
+  * 	- `CUSTOMER`
+  * 	- `ORG_UNIT`
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment#scope_type RoleAssignment#scope_type}
   */
