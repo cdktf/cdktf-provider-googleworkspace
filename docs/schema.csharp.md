@@ -860,7 +860,7 @@ new SchemaFields {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaFields.property.fieldName">FieldName</a></code> | <code>string</code> | The name of the field. |
-| <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaFields.property.fieldType">FieldType</a></code> | <code>string</code> | The type of the field. Acceptable values are:  - `BOOL` - `DATE` - `DOUBLE` - `EMAIL` - `INT64` - `PHONE` - `STRING`. |
+| <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaFields.property.fieldType">FieldType</a></code> | <code>string</code> | The type of the field. Acceptable values are:  	- `BOOL` 	- `DATE` 	- `DOUBLE` 	- `EMAIL` 	- `INT64` 	- `PHONE` 	- `STRING`. |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaFields.property.displayName">DisplayName</a></code> | <code>string</code> | Display Name of the field. |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaFields.property.indexed">Indexed</a></code> | <code>object</code> | Defaults to `true`. Boolean specifying whether the field is indexed or not. |
 | <code><a href="#@cdktf/provider-googleworkspace.schema.SchemaFields.property.multiValued">MultiValued</a></code> | <code>object</code> | Defaults to `false`. A boolean specifying whether this is a multi-valued field or not. |
@@ -891,7 +891,7 @@ public string FieldType { get; set; }
 
 - *Type:* string
 
-The type of the field. Acceptable values are:  - `BOOL` - `DATE` - `DOUBLE` - `EMAIL` - `INT64` - `PHONE` - `STRING`.
+The type of the field. Acceptable values are:  	- `BOOL` 	- `DATE` 	- `DOUBLE` 	- `EMAIL` 	- `INT64` 	- `PHONE` 	- `STRING`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#field_type Schema#field_type}
 
@@ -964,10 +964,9 @@ public string ReadAccessType { get; set; }
 Defaults to `ALL_DOMAIN_USERS`.
 
 Specifies who can view values of this field. See Retrieve users as a non-administrator for more information. Acceptable values are:
-
-* `ADMINS_AND_SELF`
-* `ALL_DOMAIN_USERS`
-  Note: It may take up to 24 hours for changes to this field to be reflected.
+- `ADMINS_AND_SELF`
+- `ALL_DOMAIN_USERS`
+Note: It may take up to 24 hours for changes to this field to be reflected.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema#read_access_type Schema#read_access_type}
 
