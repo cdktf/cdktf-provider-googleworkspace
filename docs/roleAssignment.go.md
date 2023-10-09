@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/roleassignment"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/roleassignment"
 
 roleassignment.NewRoleAssignment(scope Construct, id *string, config RoleAssignmentConfig) RoleAssignment
 ```
@@ -284,7 +284,7 @@ func ResetScopeType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/roleassignment"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/roleassignment"
 
 roleassignment.RoleAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/roleassignment"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/roleassignment"
 
 roleassignment.RoleAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ roleassignment.RoleAssignment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.roleAssignment.RoleAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/roleassignment"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/roleassignment"
 
 roleassignment.RoleAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.roleAssignment.RoleAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/roleassignment"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/roleassignment"
 
 &roleassignment.RoleAssignmentConfig {
 	Connection: interface{},
@@ -670,7 +670,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v6/ro
 | <code><a href="#@cdktf/provider-googleworkspace.roleAssignment.RoleAssignmentConfig.property.assignedTo">AssignedTo</a></code> | <code>*string</code> | The unique ID of the user this role is assigned to. |
 | <code><a href="#@cdktf/provider-googleworkspace.roleAssignment.RoleAssignmentConfig.property.roleId">RoleId</a></code> | <code>*string</code> | The ID of the role that is assigned. |
 | <code><a href="#@cdktf/provider-googleworkspace.roleAssignment.RoleAssignmentConfig.property.orgUnitId">OrgUnitId</a></code> | <code>*string</code> | If the role is restricted to an organization unit, this contains the ID for the organization unit the exercise of this role is restricted to. |
-| <code><a href="#@cdktf/provider-googleworkspace.roleAssignment.RoleAssignmentConfig.property.scopeType">ScopeType</a></code> | <code>*string</code> | Defaults to `CUSTOMER`. The scope in which this role is assigned. Valid values are : - `CUSTOMER` - `ORG_UNIT`. |
+| <code><a href="#@cdktf/provider-googleworkspace.roleAssignment.RoleAssignmentConfig.property.scopeType">ScopeType</a></code> | <code>*string</code> | Defaults to `CUSTOMER`. The scope in which this role is assigned. Valid values are : 	- `CUSTOMER` 	- `ORG_UNIT`. |
 
 ---
 
@@ -794,7 +794,7 @@ ScopeType *string
 
 - *Type:* *string
 
-Defaults to `CUSTOMER`. The scope in which this role is assigned. Valid values are : - `CUSTOMER` - `ORG_UNIT`.
+Defaults to `CUSTOMER`. The scope in which this role is assigned. Valid values are : 	- `CUSTOMER` 	- `ORG_UNIT`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment#scope_type RoleAssignment#scope_type}
 
