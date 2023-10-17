@@ -36,6 +36,20 @@ export class DomainAlias extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "googleworkspace_domain_alias";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DomainAlias resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DomainAlias to import
+  * @param importFromId The id of the existing DomainAlias that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain_alias#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DomainAlias to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "googleworkspace_domain_alias", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

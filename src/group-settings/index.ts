@@ -353,6 +353,20 @@ export class GroupSettings extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "googleworkspace_group_settings";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GroupSettings resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GroupSettings to import
+  * @param importFromId The id of the existing GroupSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GroupSettings to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "googleworkspace_group_settings", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
