@@ -267,6 +267,7 @@ public void resetServiceAccount()
 | <code><a href="#@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a GoogleworkspaceProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -327,6 +328,50 @@ GoogleworkspaceProvider.isTerraformProvider(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.googleworkspace.provider.GoogleworkspaceProvider;
+
+GoogleworkspaceProvider.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),GoogleworkspaceProvider.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a GoogleworkspaceProvider resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the GoogleworkspaceProvider to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing GoogleworkspaceProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the GoogleworkspaceProvider to import is found.
 
 ---
 
