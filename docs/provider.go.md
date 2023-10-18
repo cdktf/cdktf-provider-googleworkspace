@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 provider.NewGoogleworkspaceProvider(scope Construct, id *string, config GoogleworkspaceProviderConfig) GoogleworkspaceProvider
 ```
@@ -190,7 +190,7 @@ func ResetServiceAccount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 provider.GoogleworkspaceProvider_IsConstruct(x interface{}) *bool
 ```
@@ -222,7 +222,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 provider.GoogleworkspaceProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -236,7 +236,7 @@ provider.GoogleworkspaceProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 provider.GoogleworkspaceProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -250,7 +250,7 @@ provider.GoogleworkspaceProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 provider.GoogleworkspaceProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -567,7 +567,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.provider.GoogleworkspaceProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/provider"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/provider"
 
 &provider.GoogleworkspaceProviderConfig {
 	AccessToken: *string,
