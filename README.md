@@ -1,7 +1,9 @@
 
-# Terraform CDK googleworkspace Provider ~> 0.7
+# Terraform CDK googleworkspace Provider tracks ~> 0.7
 
 This repo builds and publishes the Terraform googleworkspace Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on googleworkspace 0.7.0
 
 ## Available Packages
 
