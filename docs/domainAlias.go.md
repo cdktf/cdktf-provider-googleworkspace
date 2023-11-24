@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 domainalias.NewDomainAlias(scope Construct, id *string, config DomainAliasConfig) DomainAlias
 ```
@@ -339,7 +339,7 @@ func ResetParentDomainName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 domainalias.DomainAlias_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 domainalias.DomainAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ domainalias.DomainAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 domainalias.DomainAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ domainalias.DomainAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.domainAlias.DomainAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 domainalias.DomainAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -716,7 +716,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.domainAlias.DomainAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domainalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domainalias"
 
 &domainalias.DomainAliasConfig {
 	Connection: interface{},
