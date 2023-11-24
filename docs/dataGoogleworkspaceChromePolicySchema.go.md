@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchema(scope Construct, id *string, config DataGoogleworkspaceChromePolicySchemaConfig) DataGoogleworkspaceChromePolicySchema
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchema_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchema_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchema_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchema_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -666,7 +666,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 &datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNames {
 
@@ -679,7 +679,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datag
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 &datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchemaConfig {
 	Connection: interface{},
@@ -814,7 +814,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 &datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchemaDefinition {
 
@@ -827,7 +827,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datag
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaDefinitionEnumType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 &datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchemaDefinitionEnumType {
 
@@ -840,7 +840,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datag
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 &datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValue {
 
@@ -853,7 +853,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datag
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaNotices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 &datagoogleworkspacechromepolicyschema.DataGoogleworkspaceChromePolicySchemaNotices {
 
@@ -868,7 +868,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datag
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNamesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNamesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNamesList
 ```
@@ -1000,7 +1000,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNamesOutputReference
 ```
@@ -1289,7 +1289,7 @@ func InternalValue() DataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNam
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeList
 ```
@@ -1421,7 +1421,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeOutputReference
 ```
@@ -1710,7 +1710,7 @@ func InternalValue() DataGoogleworkspaceChromePolicySchemaDefinitionEnumType
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValueList
 ```
@@ -1842,7 +1842,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValueOutputReference
 ```
@@ -2131,7 +2131,7 @@ func InternalValue() DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValu
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchemaDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleworkspaceChromePolicySchemaDefinitionList
 ```
@@ -2263,7 +2263,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchemaDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleworkspaceChromePolicySchemaDefinitionOutputReference
 ```
@@ -2585,7 +2585,7 @@ func InternalValue() DataGoogleworkspaceChromePolicySchemaDefinition
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaNoticesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchemaNoticesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleworkspaceChromePolicySchemaNoticesList
 ```
@@ -2717,7 +2717,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceChromePolicySchema.DataGoogleworkspaceChromePolicySchemaNoticesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacechromepolicyschema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacechromepolicyschema"
 
 datagoogleworkspacechromepolicyschema.NewDataGoogleworkspaceChromePolicySchemaNoticesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleworkspaceChromePolicySchemaNoticesOutputReference
 ```
