@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.schema.Schema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 schema.NewSchema(scope Construct, id *string, config SchemaConfig) Schema
 ```
@@ -368,7 +368,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.schema.Schema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 schema.Schema_IsConstruct(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.schema.Schema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 schema.Schema_IsTerraformElement(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ schema.Schema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.schema.Schema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 schema.Schema_IsTerraformResource(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ schema.Schema_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.schema.Schema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 schema.Schema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -778,7 +778,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.schema.SchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 &schema.SchemaConfig {
 	Connection: interface{},
@@ -791,7 +791,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schem
 	Fields: interface{},
 	SchemaName: *string,
 	DisplayName: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.schema.SchemaTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7.schema.SchemaTimeouts,
 }
 ```
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.schema.SchemaFields.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 &schema.SchemaFields {
 	FieldName: *string,
@@ -952,7 +952,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schem
 	DisplayName: *string,
 	Indexed: interface{},
 	MultiValued: interface{},
-	NumericIndexingSpec: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.schema.SchemaFieldsNumericIndexingSpec,
+	NumericIndexingSpec: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7.schema.SchemaFieldsNumericIndexingSpec,
 	ReadAccessType: *string,
 }
 ```
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.schema.SchemaFieldsNumericIndexingSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 &schema.SchemaFieldsNumericIndexingSpec {
 	MaxValue: *f64,
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.schema.SchemaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 &schema.SchemaTimeouts {
 	Create: *string,
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.schema.SchemaFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 schema.NewSchemaFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SchemaFieldsList
 ```
@@ -1338,7 +1338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.schema.SchemaFieldsNumericIndexingSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 schema.NewSchemaFieldsNumericIndexingSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchemaFieldsNumericIndexingSpecOutputReference
 ```
@@ -1645,7 +1645,7 @@ func InternalValue() SchemaFieldsNumericIndexingSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.schema.SchemaFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 schema.NewSchemaFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SchemaFieldsOutputReference
 ```
@@ -2136,7 +2136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.schema.SchemaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/schema"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/schema"
 
 schema.NewSchemaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SchemaTimeoutsOutputReference
 ```
