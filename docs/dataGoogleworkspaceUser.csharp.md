@@ -1,7 +1,3 @@
-# `data_googleworkspace_user`
-
-Refer to the Terraform Registory for docs: [`data_googleworkspace_user`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/user).
-
 # `dataGoogleworkspaceUser` Submodule <a name="`dataGoogleworkspaceUser` Submodule" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

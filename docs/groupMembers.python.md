@@ -1,7 +1,3 @@
-# `googleworkspace_group_members`
-
-Refer to the Terraform Registory for docs: [`googleworkspace_group_members`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_members).
-
 # `groupMembers` Submodule <a name="`groupMembers` Submodule" id="@cdktf/provider-googleworkspace.groupMembers"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
