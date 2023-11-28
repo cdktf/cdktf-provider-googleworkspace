@@ -1,7 +1,3 @@
-# `googleworkspace_group_settings`
-
-Refer to the Terraform Registory for docs: [`googleworkspace_group_settings`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings).
-
 # `groupSettings` Submodule <a name="`groupSettings` Submodule" id="@cdktf/provider-googleworkspace.groupSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/groupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupsettings"
 
 groupsettings.NewGroupSettings(scope Construct, id *string, config GroupSettingsConfig) GroupSettings
 ```
@@ -534,7 +530,7 @@ func ResetWhoCanViewMembership()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/groupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupsettings"
 
 groupsettings.GroupSettings_IsConstruct(x interface{}) *bool
 ```
@@ -566,7 +562,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/groupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupsettings"
 
 groupsettings.GroupSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -580,7 +576,7 @@ groupsettings.GroupSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/groupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupsettings"
 
 groupsettings.GroupSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -594,7 +590,7 @@ groupsettings.GroupSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/groupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupsettings"
 
 groupsettings.GroupSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1483,7 +1479,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/groupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupsettings"
 
 &groupsettings.GroupSettingsConfig {
 	Connection: interface{},
@@ -1510,7 +1506,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/gr
 	ReplyTo: *string,
 	SendMessageDenyNotification: interface{},
 	SpamModerationLevel: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7.groupSettings.GroupSettingsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.groupSettings.GroupSettingsTimeouts,
 	WhoCanAssistContent: *string,
 	WhoCanContactOwner: *string,
 	WhoCanDiscoverGroup: *string,
@@ -2114,7 +2110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/groupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupsettings"
 
 &groupsettings.GroupSettingsTimeouts {
 	Create: *string,
@@ -2162,7 +2158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.groupSettings.GroupSettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/groupsettings"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/groupsettings"
 
 groupsettings.NewGroupSettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GroupSettingsTimeoutsOutputReference
 ```

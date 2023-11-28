@@ -1,7 +1,3 @@
-# `googleworkspace_domain`
-
-Refer to the Terraform Registory for docs: [`googleworkspace_domain`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain).
-
 # `domain` Submodule <a name="`domain` Submodule" id="@cdktf/provider-googleworkspace.domain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.domain.Domain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
 
 domain.NewDomain(scope Construct, id *string, config DomainConfig) Domain
 ```
@@ -332,7 +328,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.domain.Domain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
 
 domain.Domain_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.domain.Domain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
 
 domain.Domain_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ domain.Domain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.domain.Domain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
 
 domain.Domain_IsTerraformResource(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ domain.Domain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.domain.Domain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
 
 domain.Domain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -709,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.domain.DomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/domain"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/domain"
 
 &domain.DomainConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `googleworkspace_role`
-
-Refer to the Terraform Registory for docs: [`googleworkspace_role`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role).
-
 # `role` Submodule <a name="`role` Submodule" id="@cdktf/provider-googleworkspace.role"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.role.Role.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/role"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/role"
 
 role.NewRole(scope Construct, id *string, config RoleConfig) Role
 ```
@@ -352,7 +348,7 @@ func ResetDescription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.role.Role.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/role"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/role"
 
 role.Role_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +380,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.role.Role.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/role"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/role"
 
 role.Role_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ role.Role_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.role.Role.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/role"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/role"
 
 role.Role_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ role.Role_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.role.Role.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/role"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/role"
 
 role.Role_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.role.RoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/role"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/role"
 
 &role.RoleConfig {
 	Connection: interface{},
@@ -901,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.role.RolePrivileges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/role"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/role"
 
 &role.RolePrivileges {
 	PrivilegeName: *string,
@@ -953,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.role.RolePrivilegesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/role"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/role"
 
 role.NewRolePrivilegesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RolePrivilegesList
 ```
@@ -1096,7 +1092,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.role.RolePrivilegesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/role"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/role"
 
 role.NewRolePrivilegesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RolePrivilegesOutputReference
 ```

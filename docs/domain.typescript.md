@@ -1,7 +1,3 @@
-# `googleworkspace_domain`
-
-Refer to the Terraform Registory for docs: [`googleworkspace_domain`](https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/domain).
-
 # `domain` Submodule <a name="`domain` Submodule" id="@cdktf/provider-googleworkspace.domain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
