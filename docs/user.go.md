@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -768,7 +768,7 @@ func ResetWebsites()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -800,7 +800,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -814,7 +814,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -828,7 +828,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.user.User.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.User_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1860,7 +1860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserAddresses {
 	Type: *string,
@@ -2086,7 +2086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserConfig {
 	Connection: interface{},
@@ -2096,7 +2096,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Name: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.user.UserName,
+	Name: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7.user.UserName,
 	PrimaryEmail: *string,
 	Addresses: interface{},
 	Aliases: *[]*string,
@@ -2123,7 +2123,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
 	Relations: interface{},
 	SshPublicKeys: interface{},
 	Suspended: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.user.UserTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7.user.UserTimeouts,
 	Websites: interface{},
 }
 ```
@@ -2664,7 +2664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserCustomSchemas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserCustomSchemas {
 	SchemaName: *string,
@@ -2714,7 +2714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserEmails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserEmails {
 	Type: *string,
@@ -2798,7 +2798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserExternalIds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserExternalIds {
 	Type: *string,
@@ -2866,7 +2866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserIms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserIms {
 	Protocol: *string,
@@ -2984,7 +2984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserKeywords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserKeywords {
 	Type: *string,
@@ -3052,7 +3052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserLanguages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserLanguages {
 	CustomLanguage: *string,
@@ -3124,7 +3124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserLocations {
 	Type: *string,
@@ -3258,7 +3258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserName {
 	FamilyName: *string,
@@ -3308,7 +3308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserOrganizations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserOrganizations {
 	Type: *string,
@@ -3518,7 +3518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserPhones.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserPhones {
 	Type: *string,
@@ -3602,7 +3602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserPosixAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserPosixAccounts {
 	AccountId: *string,
@@ -3780,7 +3780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserRelations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserRelations {
 	Type: *string,
@@ -3848,7 +3848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserSshPublicKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserSshPublicKeys {
 	Key: *string,
@@ -3898,7 +3898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserTimeouts {
 	Create: *string,
@@ -3944,7 +3944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.user.UserWebsites.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 &user.UserWebsites {
 	Type: *string,
@@ -4030,7 +4030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserAddressesList
 ```
@@ -4173,7 +4173,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserAddressesOutputReference
 ```
@@ -4810,7 +4810,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserCustomSchemasList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserCustomSchemasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserCustomSchemasList
 ```
@@ -4953,7 +4953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserCustomSchemasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserCustomSchemasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserCustomSchemasOutputReference
 ```
@@ -5264,7 +5264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserEmailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserEmailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserEmailsList
 ```
@@ -5407,7 +5407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserEmailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserEmailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserEmailsOutputReference
 ```
@@ -5783,7 +5783,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserExternalIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserExternalIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserExternalIdsList
 ```
@@ -5926,7 +5926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserExternalIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserExternalIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserExternalIdsOutputReference
 ```
@@ -6266,7 +6266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserImsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserImsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserImsList
 ```
@@ -6409,7 +6409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserImsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserImsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserImsOutputReference
 ```
@@ -6836,7 +6836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserKeywordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserKeywordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserKeywordsList
 ```
@@ -6979,7 +6979,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserKeywordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserKeywordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserKeywordsOutputReference
 ```
@@ -7319,7 +7319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserLanguagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserLanguagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserLanguagesList
 ```
@@ -7462,7 +7462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserLanguagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserLanguagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserLanguagesOutputReference
 ```
@@ -7816,7 +7816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserLocationsList
 ```
@@ -7959,7 +7959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserLocationsOutputReference
 ```
@@ -8422,7 +8422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserNameOutputReference
 ```
@@ -8733,7 +8733,7 @@ func InternalValue() UserName
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserOrganizationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserOrganizationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserOrganizationsList
 ```
@@ -8876,7 +8876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserOrganizationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserOrganizationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserOrganizationsOutputReference
 ```
@@ -9484,7 +9484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserPhonesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserPhonesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserPhonesList
 ```
@@ -9627,7 +9627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserPhonesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserPhonesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserPhonesOutputReference
 ```
@@ -9996,7 +9996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserPosixAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserPosixAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserPosixAccountsList
 ```
@@ -10139,7 +10139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserPosixAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserPosixAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserPosixAccountsOutputReference
 ```
@@ -10696,7 +10696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserRelationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserRelationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserRelationsList
 ```
@@ -10839,7 +10839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserRelationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserRelationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserRelationsOutputReference
 ```
@@ -11179,7 +11179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserSshPublicKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserSshPublicKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserSshPublicKeysList
 ```
@@ -11322,7 +11322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserSshPublicKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserSshPublicKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserSshPublicKeysOutputReference
 ```
@@ -11651,7 +11651,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserTimeoutsOutputReference
 ```
@@ -11958,7 +11958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserWebsitesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserWebsitesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserWebsitesList
 ```
@@ -12101,7 +12101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.user.UserWebsitesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/user"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/user"
 
 user.NewUserWebsitesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserWebsitesOutputReference
 ```
