@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.orgUnit.OrgUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/orgunit"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/orgunit"
 
 orgunit.NewOrgUnit(scope Construct, id *string, config OrgUnitConfig) OrgUnit
 ```
@@ -399,7 +399,7 @@ func ResetParentOrgUnitPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.orgUnit.OrgUnit.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/orgunit"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/orgunit"
 
 orgunit.OrgUnit_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.orgUnit.OrgUnit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/orgunit"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/orgunit"
 
 orgunit.OrgUnit_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ orgunit.OrgUnit_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.orgUnit.OrgUnit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/orgunit"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/orgunit"
 
 orgunit.OrgUnit_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ orgunit.OrgUnit_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.orgUnit.OrgUnit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/orgunit"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/orgunit"
 
 orgunit.OrgUnit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.orgUnit.OrgUnitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/orgunit"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/orgunit"
 
 &orgunit.OrgUnitConfig {
 	Connection: interface{},
