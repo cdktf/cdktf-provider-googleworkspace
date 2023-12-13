@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacerole"
 
 datagoogleworkspacerole.NewDataGoogleworkspaceRole(scope Construct, id *string, config DataGoogleworkspaceRoleConfig) DataGoogleworkspaceRole
 ```
@@ -267,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacerole"
 
 datagoogleworkspacerole.DataGoogleworkspaceRole_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacerole"
 
 datagoogleworkspacerole.DataGoogleworkspaceRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ datagoogleworkspacerole.DataGoogleworkspaceRole_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacerole"
 
 datagoogleworkspacerole.DataGoogleworkspaceRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ datagoogleworkspacerole.DataGoogleworkspaceRole_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacerole"
 
 datagoogleworkspacerole.DataGoogleworkspaceRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacerole"
 
 &datagoogleworkspacerole.DataGoogleworkspaceRoleConfig {
 	Connection: interface{},
@@ -740,7 +740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRolePrivileges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacerole"
 
 &datagoogleworkspacerole.DataGoogleworkspaceRolePrivileges {
 
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datag
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRolePrivilegesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacerole"
 
 datagoogleworkspacerole.NewDataGoogleworkspaceRolePrivilegesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleworkspaceRolePrivilegesList
 ```
@@ -887,7 +887,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.dataGoogleworkspaceRole.DataGoogleworkspaceRolePrivilegesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/datagoogleworkspacerole"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/datagoogleworkspacerole"
 
 datagoogleworkspacerole.NewDataGoogleworkspaceRolePrivilegesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleworkspaceRolePrivilegesOutputReference
 ```
