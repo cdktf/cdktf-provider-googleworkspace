@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [chromePolicy](./chromePolicy.go.md)
 - [dataGoogleworkspaceChromePolicySchema](./dataGoogleworkspaceChromePolicySchema.go.md)
 - [dataGoogleworkspaceDomain](./dataGoogleworkspaceDomain.go.md)
@@ -29,3 +32,8 @@ The following submodules are available:
 - [roleAssignment](./roleAssignment.go.md)
 - [schema](./schema.go.md)
 - [user](./user.go.md)
+
+
+
+
+
