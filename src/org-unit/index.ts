@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/org_unit
 // generated from terraform resource schema
 
@@ -215,5 +210,43 @@ export class OrgUnit extends cdktf.TerraformResource {
       parent_org_unit_id: cdktf.stringToTerraform(this._parentOrgUnitId),
       parent_org_unit_path: cdktf.stringToTerraform(this._parentOrgUnitPath),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      block_inheritance: {
+        value: cdktf.booleanToHclTerraform(this._blockInheritance),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent_org_unit_id: {
+        value: cdktf.stringToHclTerraform(this._parentOrgUnitId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent_org_unit_path: {
+        value: cdktf.stringToHclTerraform(this._parentOrgUnitPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

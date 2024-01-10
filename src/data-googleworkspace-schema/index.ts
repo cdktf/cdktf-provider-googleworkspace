@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/schema
 // generated from terraform resource schema
 
@@ -35,6 +30,17 @@ export function dataGoogleworkspaceSchemaFieldsNumericIndexingSpecToTerraform(st
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceSchemaFieldsNumericIndexingSpecToHclTerraform(struct?: DataGoogleworkspaceSchemaFieldsNumericIndexingSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceSchemaFieldsNumericIndexingSpecOutputReference extends cdktf.ComplexObject {
@@ -104,6 +110,17 @@ export function dataGoogleworkspaceSchemaFieldsToTerraform(struct?: DataGooglewo
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceSchemaFieldsToHclTerraform(struct?: DataGoogleworkspaceSchemaFields): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceSchemaFieldsOutputReference extends cdktf.ComplexObject {
@@ -321,5 +338,25 @@ export class DataGoogleworkspaceSchema extends cdktf.TerraformDataSource {
       schema_id: cdktf.stringToTerraform(this._schemaId),
       schema_name: cdktf.stringToTerraform(this._schemaName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      schema_id: {
+        value: cdktf.stringToHclTerraform(this._schemaId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema_name: {
+        value: cdktf.stringToHclTerraform(this._schemaName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

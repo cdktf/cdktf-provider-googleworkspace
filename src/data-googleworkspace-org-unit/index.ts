@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/data-sources/org_unit
 // generated from terraform resource schema
 
@@ -161,5 +156,25 @@ export class DataGoogleworkspaceOrgUnit extends cdktf.TerraformDataSource {
       org_unit_id: cdktf.stringToTerraform(this._orgUnitId),
       org_unit_path: cdktf.stringToTerraform(this._orgUnitPath),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      org_unit_id: {
+        value: cdktf.stringToHclTerraform(this._orgUnitId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_unit_path: {
+        value: cdktf.stringToHclTerraform(this._orgUnitPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

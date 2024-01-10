@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/schema
 // generated from terraform resource schema
 
@@ -61,6 +56,31 @@ export function schemaFieldsNumericIndexingSpecToTerraform(struct?: SchemaFields
     max_value: cdktf.numberToTerraform(struct!.maxValue),
     min_value: cdktf.numberToTerraform(struct!.minValue),
   }
+}
+
+
+export function schemaFieldsNumericIndexingSpecToHclTerraform(struct?: SchemaFieldsNumericIndexingSpecOutputReference | SchemaFieldsNumericIndexingSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_value: {
+      value: cdktf.numberToHclTerraform(struct!.maxValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_value: {
+      value: cdktf.numberToHclTerraform(struct!.minValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SchemaFieldsNumericIndexingSpecOutputReference extends cdktf.ComplexObject {
@@ -202,6 +222,61 @@ export function schemaFieldsToTerraform(struct?: SchemaFields | cdktf.IResolvabl
     read_access_type: cdktf.stringToTerraform(struct!.readAccessType),
     numeric_indexing_spec: schemaFieldsNumericIndexingSpecToTerraform(struct!.numericIndexingSpec),
   }
+}
+
+
+export function schemaFieldsToHclTerraform(struct?: SchemaFields | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    display_name: {
+      value: cdktf.stringToHclTerraform(struct!.displayName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_name: {
+      value: cdktf.stringToHclTerraform(struct!.fieldName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field_type: {
+      value: cdktf.stringToHclTerraform(struct!.fieldType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    indexed: {
+      value: cdktf.booleanToHclTerraform(struct!.indexed),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    multi_valued: {
+      value: cdktf.booleanToHclTerraform(struct!.multiValued),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    read_access_type: {
+      value: cdktf.stringToHclTerraform(struct!.readAccessType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    numeric_indexing_spec: {
+      value: schemaFieldsNumericIndexingSpecToHclTerraform(struct!.numericIndexingSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "SchemaFieldsNumericIndexingSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SchemaFieldsOutputReference extends cdktf.ComplexObject {
@@ -445,6 +520,37 @@ export function schemaTimeoutsToTerraform(struct?: SchemaTimeouts | cdktf.IResol
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function schemaTimeoutsToHclTerraform(struct?: SchemaTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class SchemaTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -695,5 +801,37 @@ export class Schema extends cdktf.TerraformResource {
       fields: cdktf.listMapper(schemaFieldsToTerraform, true)(this._fields.internalValue),
       timeouts: schemaTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema_name: {
+        value: cdktf.stringToHclTerraform(this._schemaName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fields: {
+        value: cdktf.listMapperHcl(schemaFieldsToHclTerraform, true)(this._fields.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SchemaFieldsList",
+      },
+      timeouts: {
+        value: schemaTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "SchemaTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

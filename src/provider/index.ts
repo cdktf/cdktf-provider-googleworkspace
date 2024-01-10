@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs
 // generated from terraform resource schema
 
@@ -240,5 +235,55 @@ export class GoogleworkspaceProvider extends cdktf.TerraformProvider {
       service_account: cdktf.stringToTerraform(this._serviceAccount),
       alias: cdktf.stringToTerraform(this._alias),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_token: {
+        value: cdktf.stringToHclTerraform(this._accessToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      credentials: {
+        value: cdktf.stringToHclTerraform(this._credentials),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customer_id: {
+        value: cdktf.stringToHclTerraform(this._customerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      impersonated_user_email: {
+        value: cdktf.stringToHclTerraform(this._impersonatedUserEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oauth_scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._oauthScopes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      service_account: {
+        value: cdktf.stringToHclTerraform(this._serviceAccount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/googlework
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/gmailsendasalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/gmailsendasalias"
 
 gmailsendasalias.NewGmailSendAsAlias(scope Construct, id *string, config GmailSendAsAliasConfig) GmailSendAsAlias
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.toMetadata"></a>
 
@@ -426,7 +433,7 @@ func ResetTreatAsAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/gmailsendasalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/gmailsendasalias"
 
 gmailsendasalias.GmailSendAsAlias_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/gmailsendasalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/gmailsendasalias"
 
 gmailsendasalias.GmailSendAsAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ gmailsendasalias.GmailSendAsAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/gmailsendasalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/gmailsendasalias"
 
 gmailsendasalias.GmailSendAsAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +493,7 @@ gmailsendasalias.GmailSendAsAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/gmailsendasalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/gmailsendasalias"
 
 gmailsendasalias.GmailSendAsAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -924,7 +931,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/gmailsendasalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/gmailsendasalias"
 
 &gmailsendasalias.GmailSendAsAliasConfig {
 	Connection: interface{},
@@ -940,7 +947,7 @@ import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/gm
 	IsDefault: interface{},
 	ReplyToAddress: *string,
 	Signature: *string,
-	SmtpMsa: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7.gmailSendAsAlias.GmailSendAsAliasSmtpMsa,
+	SmtpMsa: github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace.gmailSendAsAlias.GmailSendAsAliasSmtpMsa,
 	TreatAsAlias: interface{},
 }
 ```
@@ -1164,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAliasSmtpMsa.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/gmailsendasalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/gmailsendasalias"
 
 &gmailsendasalias.GmailSendAsAliasSmtpMsa {
 	Host: *string,
@@ -1268,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-googleworkspace.gmailSendAsAlias.GmailSendAsAliasSmtpMsaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/v7/gmailsendasalias"
+import "github.com/cdktf/cdktf-provider-googleworkspace-go/googleworkspace/gmailsendasalias"
 
 gmailsendasalias.NewGmailSendAsAliasSmtpMsaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GmailSendAsAliasSmtpMsaOutputReference
 ```

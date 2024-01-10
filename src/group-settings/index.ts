@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/group_settings
 // generated from terraform resource schema
 
@@ -260,6 +255,31 @@ export function groupSettingsTimeoutsToTerraform(struct?: GroupSettingsTimeouts 
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function groupSettingsTimeoutsToHclTerraform(struct?: GroupSettingsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GroupSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -928,5 +948,181 @@ export class GroupSettings extends cdktf.TerraformResource {
       who_can_view_membership: cdktf.stringToTerraform(this._whoCanViewMembership),
       timeouts: groupSettingsTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_external_members: {
+        value: cdktf.booleanToHclTerraform(this._allowExternalMembers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_web_posting: {
+        value: cdktf.booleanToHclTerraform(this._allowWebPosting),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      archive_only: {
+        value: cdktf.booleanToHclTerraform(this._archiveOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      custom_footer_text: {
+        value: cdktf.stringToHclTerraform(this._customFooterText),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_reply_to: {
+        value: cdktf.stringToHclTerraform(this._customReplyTo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_message_deny_notification_text: {
+        value: cdktf.stringToHclTerraform(this._defaultMessageDenyNotificationText),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_collaborative_inbox: {
+        value: cdktf.booleanToHclTerraform(this._enableCollaborativeInbox),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      include_custom_footer: {
+        value: cdktf.booleanToHclTerraform(this._includeCustomFooter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      include_in_global_address_list: {
+        value: cdktf.booleanToHclTerraform(this._includeInGlobalAddressList),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_archived: {
+        value: cdktf.booleanToHclTerraform(this._isArchived),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      members_can_post_as_the_group: {
+        value: cdktf.booleanToHclTerraform(this._membersCanPostAsTheGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      message_moderation_level: {
+        value: cdktf.stringToHclTerraform(this._messageModerationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_language: {
+        value: cdktf.stringToHclTerraform(this._primaryLanguage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      reply_to: {
+        value: cdktf.stringToHclTerraform(this._replyTo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      send_message_deny_notification: {
+        value: cdktf.booleanToHclTerraform(this._sendMessageDenyNotification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      spam_moderation_level: {
+        value: cdktf.stringToHclTerraform(this._spamModerationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      who_can_assist_content: {
+        value: cdktf.stringToHclTerraform(this._whoCanAssistContent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      who_can_contact_owner: {
+        value: cdktf.stringToHclTerraform(this._whoCanContactOwner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      who_can_discover_group: {
+        value: cdktf.stringToHclTerraform(this._whoCanDiscoverGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      who_can_join: {
+        value: cdktf.stringToHclTerraform(this._whoCanJoin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      who_can_leave_group: {
+        value: cdktf.stringToHclTerraform(this._whoCanLeaveGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      who_can_moderate_content: {
+        value: cdktf.stringToHclTerraform(this._whoCanModerateContent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      who_can_moderate_members: {
+        value: cdktf.stringToHclTerraform(this._whoCanModerateMembers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      who_can_post_message: {
+        value: cdktf.stringToHclTerraform(this._whoCanPostMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      who_can_view_group: {
+        value: cdktf.stringToHclTerraform(this._whoCanViewGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      who_can_view_membership: {
+        value: cdktf.stringToHclTerraform(this._whoCanViewMembership),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: groupSettingsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GroupSettingsTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

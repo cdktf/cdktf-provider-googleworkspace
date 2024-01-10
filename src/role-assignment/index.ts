@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/googleworkspace/0.7.0/docs/resources/role_assignment
 // generated from terraform resource schema
 
@@ -180,5 +175,37 @@ export class RoleAssignment extends cdktf.TerraformResource {
       role_id: cdktf.stringToTerraform(this._roleId),
       scope_type: cdktf.stringToTerraform(this._scopeType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assigned_to: {
+        value: cdktf.stringToHclTerraform(this._assignedTo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_unit_id: {
+        value: cdktf.stringToHclTerraform(this._orgUnitId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_id: {
+        value: cdktf.stringToHclTerraform(this._roleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_type: {
+        value: cdktf.stringToHclTerraform(this._scopeType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
