@@ -57,6 +57,31 @@ export function rolePrivilegesToTerraform(struct?: RolePrivileges | cdktf.IResol
   }
 }
 
+
+export function rolePrivilegesToHclTerraform(struct?: RolePrivileges | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    privilege_name: {
+      value: cdktf.stringToHclTerraform(struct!.privilegeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_id: {
+      value: cdktf.stringToHclTerraform(struct!.serviceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RolePrivilegesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -286,5 +311,31 @@ export class Role extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       privileges: cdktf.listMapper(rolePrivilegesToTerraform, true)(this._privileges.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      privileges: {
+        value: cdktf.listMapperHcl(rolePrivilegesToHclTerraform, true)(this._privileges.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "RolePrivilegesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

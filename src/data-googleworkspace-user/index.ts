@@ -40,6 +40,17 @@ export function dataGoogleworkspaceUserAddressesToTerraform(struct?: DataGooglew
   }
 }
 
+
+export function dataGoogleworkspaceUserAddressesToHclTerraform(struct?: DataGoogleworkspaceUserAddresses): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceUserAddressesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -164,6 +175,17 @@ export function dataGoogleworkspaceUserCustomSchemasToTerraform(struct?: DataGoo
   }
 }
 
+
+export function dataGoogleworkspaceUserCustomSchemasToHclTerraform(struct?: DataGoogleworkspaceUserCustomSchemas): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceUserCustomSchemasOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -232,6 +254,17 @@ export function dataGoogleworkspaceUserEmailsToTerraform(struct?: DataGooglework
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceUserEmailsToHclTerraform(struct?: DataGoogleworkspaceUserEmails): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceUserEmailsOutputReference extends cdktf.ComplexObject {
@@ -313,6 +346,17 @@ export function dataGoogleworkspaceUserExternalIdsToTerraform(struct?: DataGoogl
   }
 }
 
+
+export function dataGoogleworkspaceUserExternalIdsToHclTerraform(struct?: DataGoogleworkspaceUserExternalIds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceUserExternalIdsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -385,6 +429,17 @@ export function dataGoogleworkspaceUserImsToTerraform(struct?: DataGoogleworkspa
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceUserImsToHclTerraform(struct?: DataGoogleworkspaceUserIms): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceUserImsOutputReference extends cdktf.ComplexObject {
@@ -476,6 +531,17 @@ export function dataGoogleworkspaceUserKeywordsToTerraform(struct?: DataGooglewo
   }
 }
 
+
+export function dataGoogleworkspaceUserKeywordsToHclTerraform(struct?: DataGoogleworkspaceUserKeywords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceUserKeywordsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -550,6 +616,17 @@ export function dataGoogleworkspaceUserLanguagesToTerraform(struct?: DataGooglew
   }
 }
 
+
+export function dataGoogleworkspaceUserLanguagesToHclTerraform(struct?: DataGoogleworkspaceUserLanguages): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceUserLanguagesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -622,6 +699,17 @@ export function dataGoogleworkspaceUserLocationsToTerraform(struct?: DataGooglew
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceUserLocationsToHclTerraform(struct?: DataGoogleworkspaceUserLocations): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceUserLocationsOutputReference extends cdktf.ComplexObject {
@@ -718,6 +806,17 @@ export function dataGoogleworkspaceUserNameToTerraform(struct?: DataGoogleworksp
   }
 }
 
+
+export function dataGoogleworkspaceUserNameToHclTerraform(struct?: DataGoogleworkspaceUserName): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceUserNameOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -790,6 +889,17 @@ export function dataGoogleworkspaceUserOrganizationsToTerraform(struct?: DataGoo
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceUserOrganizationsToHclTerraform(struct?: DataGoogleworkspaceUserOrganizations): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceUserOrganizationsOutputReference extends cdktf.ComplexObject {
@@ -911,6 +1021,17 @@ export function dataGoogleworkspaceUserPhonesToTerraform(struct?: DataGooglework
   }
 }
 
+
+export function dataGoogleworkspaceUserPhonesToHclTerraform(struct?: DataGoogleworkspaceUserPhones): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceUserPhonesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -988,6 +1109,17 @@ export function dataGoogleworkspaceUserPosixAccountsToTerraform(struct?: DataGoo
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceUserPosixAccountsToHclTerraform(struct?: DataGoogleworkspaceUserPosixAccounts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceUserPosixAccountsOutputReference extends cdktf.ComplexObject {
@@ -1099,6 +1231,17 @@ export function dataGoogleworkspaceUserRelationsToTerraform(struct?: DataGooglew
   }
 }
 
+
+export function dataGoogleworkspaceUserRelationsToHclTerraform(struct?: DataGoogleworkspaceUserRelations): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceUserRelationsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1173,6 +1316,17 @@ export function dataGoogleworkspaceUserSshPublicKeysToTerraform(struct?: DataGoo
   }
 }
 
+
+export function dataGoogleworkspaceUserSshPublicKeysToHclTerraform(struct?: DataGoogleworkspaceUserSshPublicKeys): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceUserSshPublicKeysOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1245,6 +1399,17 @@ export function dataGoogleworkspaceUserWebsitesToTerraform(struct?: DataGooglewo
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceUserWebsitesToHclTerraform(struct?: DataGoogleworkspaceUserWebsites): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceUserWebsitesOutputReference extends cdktf.ComplexObject {
@@ -1635,5 +1800,25 @@ export class DataGoogleworkspaceUser extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       primary_email: cdktf.stringToTerraform(this._primaryEmail),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_email: {
+        value: cdktf.stringToHclTerraform(this._primaryEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

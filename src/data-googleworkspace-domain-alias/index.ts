@@ -125,4 +125,18 @@ export class DataGoogleworkspaceDomainAlias extends cdktf.TerraformDataSource {
       domain_alias_name: cdktf.stringToTerraform(this._domainAliasName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      domain_alias_name: {
+        value: cdktf.stringToHclTerraform(this._domainAliasName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

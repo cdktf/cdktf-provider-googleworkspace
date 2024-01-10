@@ -38,6 +38,17 @@ export function dataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNamesToT
   }
 }
 
+
+export function dataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNamesToHclTerraform(struct?: DataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNames): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceChromePolicySchemaAdditionalTargetKeyNamesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -105,6 +116,17 @@ export function dataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValueToTe
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValueToHclTerraform(struct?: DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeValueOutputReference extends cdktf.ComplexObject {
@@ -176,6 +198,17 @@ export function dataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeToTerrafo
   }
 }
 
+
+export function dataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeToHclTerraform(struct?: DataGoogleworkspaceChromePolicySchemaDefinitionEnumType): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGoogleworkspaceChromePolicySchemaDefinitionEnumTypeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -244,6 +277,17 @@ export function dataGoogleworkspaceChromePolicySchemaDefinitionToTerraform(struc
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceChromePolicySchemaDefinitionToHclTerraform(struct?: DataGoogleworkspaceChromePolicySchemaDefinition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceChromePolicySchemaDefinitionOutputReference extends cdktf.ComplexObject {
@@ -329,6 +373,17 @@ export function dataGoogleworkspaceChromePolicySchemaNoticesToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataGoogleworkspaceChromePolicySchemaNoticesToHclTerraform(struct?: DataGoogleworkspaceChromePolicySchemaNotices): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGoogleworkspaceChromePolicySchemaNoticesOutputReference extends cdktf.ComplexObject {
@@ -534,5 +589,25 @@ export class DataGoogleworkspaceChromePolicySchema extends cdktf.TerraformDataSo
       id: cdktf.stringToTerraform(this._id),
       schema_name: cdktf.stringToTerraform(this._schemaName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema_name: {
+        value: cdktf.stringToHclTerraform(this._schemaName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
